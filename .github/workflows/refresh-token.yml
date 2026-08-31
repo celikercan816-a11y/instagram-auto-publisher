@@ -29,3 +29,4 @@ jobs:
           GH_REPO: ${{ github.repository }}
           GH_PAT: ${{ secrets.GH_PAT }}
         run: python -m scripts.refresh_token
+
