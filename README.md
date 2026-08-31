@@ -88,50 +88,30 @@ Bu komut `IG_ACCESS_TOKEN` (60 gün geçerli) ve `IG_USER_ID` değerlerini otoma
 olarak `.env` dosyana yazar. Token'ın kendisini sana göstermem — sadece ilk/son
 birkaç karakteri maskeli şekilde terminalde görürsün.
 
-### 4. GitHub reposu oluştur (MANUEL — bende `gh` CLI kurulu değil)
+### 4. GitHub reposu (TAMAMLANDI)
 
-1. https://github.com/new adresinden yeni bir **public** repo oluştur (public
-   olması gerekiyor çünkü medya dosyalarını ücretsiz `raw.githubusercontent.com`
-   üzerinden herkese açık servis edeceğiz — özel repo istersen medyayı ayrı bir
-   ücretsiz barındırma servisine koymamız gerekir, bana söyle).
-2. Repo adını not al (örn. `kullaniciadi/instagram-auto-publisher`).
+`gh` CLI kuruldu (winget), tarayıcı üzerinden device-code ile giriş yapıldı
+(`workflow` kapsamı dahil), `celikercan816-a11y/instagram-auto-publisher` adında
+**public** repo oluşturuldu ve proje otomatik olarak push edildi:
+https://github.com/celikercan816-a11y/instagram-auto-publisher
 
-Sonra bana "repo oluşturdum: kullaniciadi/instagram-auto-publisher" de, kodu
-otomatik olarak push edeyim.
+### 5. GitHub Secrets (TAMAMLANDI — IG_ACCESS_TOKEN, IG_USER_ID, IG_APP_SECRET)
 
-### 5. GitHub Personal Access Token oluştur (MANUEL — token yenilemeyi otomatikleştirmek için)
+`scripts/push_secrets_via_gh.py` ile `.env` içindeki değerler, ekrana hiç
+yazdırılmadan, `gh secret set` komutu üzerinden doğrudan repoya yazıldı.
 
-Bu adım sadece 60 günde bir token yenilemenin **de otomatik** olması için gerekli.
-İstemezsen atlayabilirsin ama o zaman 60 günde bir 3. adımı elle tekrarlaman gerekir.
+### 6. GitHub Personal Access Token (MANUEL — sadece otomatik token yenileme için)
+
+Bu adım *opsiyonel*: sadece 60 günlük access token'ın **de otomatik** yenilenmesi
+için gerekli (`.github/workflows/refresh-token.yml`). Atlarsan sistemin geri
+kalanı normal çalışır, sadece ~60 günde bir 3. adımı elle tekrarlaman gerekir.
 
 1. https://github.com/settings/personal-access-tokens/new
-2. **Fine-grained token**, sadece bu repoyu seç, **Repository permissions →
-   Secrets → Read and write** izni ver.
-3. Token'ı oluştur, `.env` dosyandaki `GH_PAT` alanına yapıştır (bana gösterme).
-
-### 6. GitHub Secrets'ı ayarla (MANUEL — GitHub arayüzünden)
-
-Repo → **Settings → Secrets and variables → Actions → New repository secret**
-ile şunları tek tek ekle (değerleri `.env` dosyandan kopyala):
-
-- `IG_ACCESS_TOKEN`
-- `IG_USER_ID`
-- `IG_APP_SECRET`
-- `GH_PAT` (5. adımı yaptıysan)
-
-Bunları bana yapıştırma — sadece GitHub arayüzünde kendin ekle.
-
-### 7. Kodu GitHub'a push et
-
-4. adımdaki repo adını bana söylediğinde bunu senin için yapacağım:
-```
-git remote add origin https://github.com/<kullaniciadi>/<repo>.git
-git branch -M main
-git push -u origin main
-```
-
-Push edilince `.github/workflows/publish.yml` otomatik olarak devreye girer ve
-her 15 dakikada bir kuyruğu kontrol etmeye başlar.
+2. **Fine-grained token**, sadece bu repoyu (`instagram-auto-publisher`) seç,
+   **Repository permissions → Secrets → Read and write** izni ver.
+3. Token'ı oluştur, `.env` dosyandaki `GH_PAT` alanına kendin yapıştır (bana
+   gösterme). Sonra bana haber ver, `python -m scripts.push_secrets_via_gh`
+   ile bunu da GitHub'a secret olarak ekleyeyim.
 
 ## Kuyruğa içerik ekleme
 
