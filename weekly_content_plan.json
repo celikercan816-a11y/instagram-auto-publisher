@@ -12,8 +12,8 @@
       "media_source_plan": "local_if_available_else_ai",
       "caption_idea": "'travel_landscape' temasında doğal, kısa bir caption",
       "hashtag_strategy": "travel_landscape hashtag havuzundan 5-10 tanesi, son kullanılanla düşük örtüşme",
-      "status": "failed",
-      "queue_item_id": null
+      "status": "published",
+      "queue_item_id": "3f163485-4ad4-4689-ba83-9318e1910303"
     },
     {
       "id": "e8a777f2-6b71-49e9-9dee-82ada615426a",
