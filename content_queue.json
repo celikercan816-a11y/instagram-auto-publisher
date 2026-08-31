@@ -56,10 +56,10 @@
       "#anlar"
     ],
     "scheduled_at": "2026-08-31T14:21:49.227813+00:00",
-    "status": "pending",
+    "status": "published",
     "created_at": "2026-08-31T14:21:49.227813+00:00",
-    "published_at": null,
-    "instagram_media_id": null,
+    "published_at": "2026-08-31T14:32:08.957192+00:00",
+    "instagram_media_id": "18340592806283811",
     "quality_score": 100,
     "performance_score": null,
     "error": null
