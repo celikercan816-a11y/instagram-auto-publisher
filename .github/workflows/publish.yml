@@ -1,0 +1,50 @@
+name: Publish scheduled Instagram content
+
+on:
+  schedule:
+    # every 15 minutes. GitHub may delay this by a few minutes under load --
+    # posts are not guaranteed to go out at the exact second scheduled.
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: instagram-publisher
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run publisher
+        id: run_publisher
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          GH_REPO: ${{ github.repository }}
+          GH_BRANCH: ${{ github.ref_name }}
+        run: python -m src.publisher
+
+      - name: Commit updated queue and logs
+        if: always()
+        run: |
+          git config user.name "instagram-auto-publisher-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add content_queue.json logs/publish_log.jsonl
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update publish queue/log [skip ci]"
+            git push
+          else
+            echo "No changes to commit."
+          fi
