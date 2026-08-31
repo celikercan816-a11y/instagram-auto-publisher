@@ -32,16 +32,111 @@ GitHub Actions bu değişiklikleri repoya geri commit'ler (durum kalıcı olur)
 
 Bilgisayarınız kapalı olsa bile çalışır çünkü zamanlayıcı GitHub'ın sunucularında koşar.
 
+## Otonom içerik katmanı
+
+`publish.yml` ve `src/publisher.py` yukarıdaki gibi değişmeden çalışmaya devam
+ediyor. Üstüne, kuyruğu kendi kendine dolduran bir katman eklendi:
+
+```
+her Pazar (weekly-plan.yml)
+  -> src/content_planner.generate_weekly_plan()
+  -> weekly_content_plan.json (6 slot: 4 post + 2 reels, gün/saat/tema/durum)
+
+her gün (daily-content-fill.yml)
+  -> src/content_planner.ensure_queue_filled()
+     -> onumuzdeki 7 gunde < 3 hazir icerik varsa:
+        -> src/image_generator: once media/library/<tema>/, yoksa OpenAI ile uret
+        -> src/content_bank: caption + hashtag (yerel sablon+rotasyon, LLM cagrisi yok)
+        -> src/content_quality.run_quality_control(): 0-100 puan
+           >=70 -> status=pending (publish.yml normal sekilde alir)
+           <70  -> status=needs_review (otomatik yayinlanmaz)
+        -> reels slotlari: video uretim servisi baglanana kadar status=needs_generation
+  -> src/performance.update_history_with_performance() (Instagram Insights, best-effort)
+  -> content_queue.json + content_history.json + weekly_content_plan.json commit edilir
+```
+
+- `content_history.json` — yayınlanan her içeriğin tema/caption özeti/hashtag
+  seti/görsel fingerprint/insights kaydı. Tekrar kontrolü ve performans
+  öğrenmesi buradan besleniyor.
+- `strategy_weights.json` — `scripts/update_performance.py` en az 5 örnek
+  biriken tema/saat/içerik-türü gruplarının ortalama performansını buraya
+  yazar. Şu an sadece raporlama amaçlı; planlayıcıya otomatik geri
+  beslenmesi (yeterli veri birikince) ayrı bir adım olarak bırakıldı --
+  tek bir gönderiye göre stratejiyi agresif değiştirmemek için.
+- Caption/hashtag üretimi **yerel bir şablon+rotasyon bankası**
+  (`src/content_bank.py`), bir LLM API çağrısı değil -- headless GitHub
+  Actions job'ının ek bir ücretli anahtara bağımlı olmaması için bilinçli bir
+  tercih. `content_quality.py` aynı/çok benzer caption ve hashtag setinin
+  tekrarını `content_history.json`'a bakarak engelliyor.
+- Reels için bağlı bir video üretim servisi yok (bkz. "Reels / video üretimi"
+  bölümü) -- slot otomatik olarak `needs_generation` durumunda bırakılıyor,
+  telif riskli slideshow+müzik gibi bir yöntem otomatik devreye girmiyor.
+
 ## Klasör yapısı
 
 - `content_queue.json` — paylaşım kuyruğu (tek kaynak, git ile versiyonlanır)
+- `content_history.json` — yayınlanan içeriklerin geçmişi (tekrar kontrolü + performans)
+- `weekly_content_plan.json` — haftalık içerik planı (gün/saat/tema/durum)
+- `strategy_weights.json` — performansa göre tema/saat/tür ortalamaları (raporlama)
 - `media/` — repoya commit'lenen görsel/video dosyaları (Instagram, herkese açık bir
   URL istediği için `raw.githubusercontent.com` üzerinden servis edilir)
-- `logs/publish_log.jsonl` — her denemenin (başarılı/başarısız) satır satır kaydı
-- `src/` — API istemcisi, kuyruk yönetimi, zamanlayıcı mantığı
-- `scripts/` — bir kere çalıştırılan kurulum scriptleri (OAuth, token yenileme, GitHub secret güncelleme) ve `add_to_queue.py`
-- `.github/workflows/publish.yml` — her 15 dakikada bir çalışan yayın zamanlayıcı
-- `.github/workflows/refresh-token.yml` — haftalık token yenileme (60 günlük token süresi dolmadan)
+  - `media/library/<tema>/` — buraya gerçek/kendi fotoğraflarınızı koyarsanız
+    AI görsel üretiminden önce öncelikle bunlar kullanılır
+  - `media/generated/` — AI ile üretilen görseller (dosya adı = queue item id)
+- `logs/publish_log.jsonl`, `logs/image_generation_log.jsonl` — satır satır kayıtlar
+- `src/` — API istemcisi, kuyruk yönetimi, içerik bankası, görsel üretimi,
+  kalite kontrolü, planlayıcı, performans analizi
+- `scripts/` — bir kere çalıştırılan kurulum scriptleri (OAuth, token yenileme,
+  GitHub secret güncelleme), `add_to_queue.py` ve otonom pipeline'ın günlük/haftalık girişleri
+- `.github/workflows/publish.yml` — her 15 dakikada bir çalışan yayın zamanlayıcı (değişmedi)
+- `.github/workflows/refresh-token.yml` — haftalık token yenileme (değişmedi)
+- `.github/workflows/weekly-plan.yml` — her Pazar haftalık planı üretir
+- `.github/workflows/daily-content-fill.yml` — her gün kuyruğu doldurur + performans çeker
+
+## AI görsel üretimi
+
+Servis: **OpenAI Images API, model `gpt-image-2`** (2026-08-31 itibarıyla
+güncel dokümantasyon doğrulandı, deprecated değil). Tercih sebebi: tek basit
+REST çağrısı + tek API key, ticari kullanım serbest, dahili moderasyon gerçek
+kişi taklidi riskini azaltıyor. Yaklaşık maliyet: `medium` kalite ayarında
+görsel başına **~$0.02-0.07** (bkz. `IMAGE_GEN_QUALITY` env değişkeni,
+`low`/`medium`/`high`).
+
+Üretim önceliği (`src/image_generator.get_media_for_theme`): önce
+`media/library/<tema>/`'daki kullanılmamış gerçek fotoğraf, yoksa AI üretimi.
+Rastgele internet görseli hiçbir koşulda kullanılmıyor.
+
+Her üretilen görsel iki aşamalı kontrolden geçiyor:
+1. `content_quality.check_image` — bozuk dosya, düşük çözünürlük, yanlış en-boy oranı
+2. `image_generator._vision_qc` — aynı OpenAI anahtarıyla bir vision modeline
+   (`gpt-5-mini`) görseli gösterip bozuk el/yüz/nesne veya tanınabilir gerçek
+   yüz riski sorup REJECT/OK cevabı alıyor
+
+Reddedilen görsel otomatik olarak yeniden denenir (max 3), hepsi başarısız
+olursa slot `needs_review`/hata olarak işaretlenir, asla sessizce kötü bir
+görsel yayına girmez.
+
+**Gerekli manuel adım:** `OPENAI_API_KEY` -- https://platform.openai.com/api-keys
+üzerinden oluşturulur (organizasyon için faturalandırma/ödeme yöntemi
+eklenmiş olması gerekir, bu OpenAI tarafında ödeme onayı gerektiren bir
+adımdır). Oluşturunca `.env` dosyana kendin ekle, haber ver --
+`scripts/push_secrets_via_gh.py` ile GitHub Secrets'a ekleyeyim (`OPENAI_API_KEY`
+adıyla; script'e bu ismi de eklemem gerekiyor).
+
+## Reels / video üretimi
+
+Şu an bağlı bir video üretim servisi yok. Seçenekler (karar senin):
+- **Kısa video üretim API'si** (ör. Runway, Kling, Pika, Luma) — gerçek AI
+  video, ek maliyetli ve ayrı bir API key gerektirir.
+- **Görsel + statik slayt** (AI görsellerden basit bir slideshow, müziksiz,
+  sadece görsel geçişleri) — düşük maliyetli ama "Reels" formatının asıl
+  gücü olan hareketli video hissini vermez.
+- Müzik eklenen slideshow'lar **otomatik devreye alınmıyor** çünkü telif
+  riski taşıyor (Instagram'ın kendi telifsiz müzik kütüphanesi API ile
+  otomatik seçilemiyor).
+
+Karar verilene kadar reels slotları `needs_generation` durumunda bekliyor;
+`content_queue.json`'da hazır caption/hashtag'leriyle görülebilir.
 
 ## Kurulum
 

@@ -8,7 +8,7 @@ import subprocess
 import sys
 
 GH_EXE = r"C:\Program Files\GitHub CLI\gh.exe"
-SECRET_NAMES = ["IG_ACCESS_TOKEN", "IG_USER_ID", "IG_APP_SECRET", "GH_PAT"]
+SECRET_NAMES = ["IG_ACCESS_TOKEN", "IG_USER_ID", "IG_APP_SECRET", "GH_PAT", "OPENAI_API_KEY"]
 
 
 def main() -> int:

@@ -1,0 +1,56 @@
+name: Fill content queue and update performance
+
+on:
+  schedule:
+    # 05:00 UTC daily (08:00 Istanbul), well before the weekly-plan job runs
+    - cron: "0 5 * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: instagram-content-pipeline
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  fill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Ensure at least 3 ready items in the queue
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GH_REPO: ${{ github.repository }}
+          GH_BRANCH: ${{ github.ref_name }}
+        run: python -m scripts.fill_queue
+
+      - name: Update performance data (best-effort)
+        continue-on-error: true
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: python -m scripts.update_performance
+
+      - name: Commit generated content and history
+        if: always()
+        run: |
+          git config user.name "instagram-auto-publisher-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add --ignore-errors content_queue.json content_history.json weekly_content_plan.json \
+                  media/generated strategy_weights.json logs/image_generation_log.jsonl || true
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: daily content fill [skip ci]"
+            git pull --rebase origin "${{ github.ref_name }}"
+            git push
+          else
+            echo "No changes to commit."
+          fi

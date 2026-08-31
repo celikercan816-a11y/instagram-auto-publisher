@@ -11,6 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from src.config import Config, ConfigError
+from src.content_history import file_fingerprint, record_published
 from src.instagram_api import InstagramAPIError, InstagramClient
 from src.queue_manager import QUEUE_PATH, get_due_items, load_queue, mark_failed, mark_published, save_queue
 
@@ -92,6 +93,13 @@ def main() -> int:
             media_id = publish_item(client, item)
             mark_published(item, media_id)
             quota_usage += 1
+            try:
+                media_path = item.get("media_path")
+                fp_source = media_path[0] if isinstance(media_path, list) else media_path
+                fingerprint = file_fingerprint(Path(fp_source)) if fp_source else None
+                record_published(item, fingerprint)
+            except Exception:
+                pass
             log_event({
                 "level": "success",
                 "item_id": item["id"],

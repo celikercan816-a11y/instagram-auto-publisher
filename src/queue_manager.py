@@ -1,16 +1,33 @@
 """Reads/writes content_queue.json.
 
-Schema per item:
+Core schema per item (unchanged since the manually-published test post -- the
+publisher only ever reads media_type/media_url/caption/status/id, so this stays
+stable regardless of what gets added below):
 {
   "id": "uuid4 string",
   "media_type": "IMAGE" | "VIDEO" | "REELS" | "CAROUSEL",
   "media_url": "https://..." (str) or [str, ...] for CAROUSEL,
   "caption": "text with hashtags",
   "scheduled_at": "2026-09-01T19:30:00+03:00"  (ISO 8601, include UTC offset),
-  "status": "pending" | "published" | "failed",
+  "status": "pending" | "published" | "failed" | "needs_review" | "needs_generation",
   "published_at": "2026-09-01T19:31:04+00:00" | null,
   "instagram_media_id": "17895..." | null,
   "error": "human readable reason" | null
+}
+
+Extended fields added for the autonomous content manager (all optional, default
+to a neutral value so every pre-existing item and every pre-existing caller of
+add_item() keeps working unmodified):
+{
+  "content_type": "post" | "reels",
+  "theme": "lifestyle" | "travel_landscape" | "style_fashion" | "motivation" | "reels" | null,
+  "media_source": "local" | "ai_generated" | "manual" | null,
+  "media_path": "media/xxx.jpg" (repo-relative) or [str, ...] | null,
+  "image_prompt": "the prompt used for AI generation" | null,
+  "hashtags": ["#tag1", "#tag2", ...],
+  "quality_score": 0-100 | null,
+  "created_at": ISO 8601,
+  "performance_score": 0-100 | null (filled in later by src/performance.py)
 }
 """
 import hashlib
@@ -61,22 +78,41 @@ def add_item(
     caption: str,
     scheduled_at: str,
     allow_duplicate: bool = False,
+    *,
+    content_type: str | None = None,
+    theme: str | None = None,
+    media_source: str | None = None,
+    media_path=None,
+    image_prompt: str | None = None,
+    hashtags: list[str] | None = None,
+    quality_score: int | None = None,
+    status: str = "pending",
+    item_id: str | None = None,
 ) -> dict:
-    dup = None if allow_duplicate else find_duplicate(items, media_type, media_url, caption)
+    dup = None if (allow_duplicate or not media_url) else find_duplicate(items, media_type, media_url, caption)
     if dup:
         raise ValueError(
             f"Duplicate content detected (matches queue item {dup['id']}, status={dup['status']}). "
             "Pass allow_duplicate=True if this is intentional."
         )
     item = {
-        "id": str(uuid.uuid4()),
+        "id": item_id or str(uuid.uuid4()),
+        "content_type": content_type or ("reels" if media_type == "REELS" else "post"),
+        "theme": theme,
         "media_type": media_type,
+        "media_source": media_source,
+        "media_path": media_path,
         "media_url": media_url,
+        "image_prompt": image_prompt,
         "caption": caption,
+        "hashtags": hashtags or [],
         "scheduled_at": scheduled_at,
-        "status": "pending",
+        "status": status,
+        "created_at": datetime.now(timezone.utc).isoformat(),
         "published_at": None,
         "instagram_media_id": None,
+        "quality_score": quality_score,
+        "performance_score": None,
         "error": None,
     }
     items.append(item)
