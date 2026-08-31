@@ -1,16 +1,27 @@
 """Weekly plan generation + daily queue-filling.
 
 generate_weekly_plan() runs Sundays (see .github/workflows/weekly-plan.yml) and
-lays out next week's 6 slots (4 posts + 2 reels, per the user's default split)
-as *intentions* in weekly_content_plan.json -- day, time, content type, theme,
-planned media source, a caption idea note and a hashtag strategy note. No
-media/caption is actually generated yet at this point.
+lays out next week's 6 slots as *intentions* in weekly_content_plan.json --
+day, time, content type, theme, planned media source, a caption idea note and
+a hashtag strategy note. No media/caption is actually generated yet at this
+point.
+
+Reels are disabled for now (no video-generation service is connected, and the
+user does not want a risky slideshow+music placeholder auto-enabled) -- every
+slot is a plain "post" (IMAGE), converted from the original 4-post/2-reels
+split. Re-enabling reels later just means adding "reels" entries back to
+SLOT_TEMPLATE and restoring a _build_reels_item() path; the REELS media_type
+support in src/image_generator.py and src/instagram_api.py is untouched.
 
 ensure_queue_filled() runs daily (see .github/workflows/daily-content-fill.yml)
 and turns the next unqueued plan slots into real content_queue.json entries
 (generating an image and a caption/hashtag set, then running them through
 content_quality.run_quality_control) until there are at least MIN_READY
-pending items scheduled within the next HORIZON_DAYS days.
+pending items scheduled within the next HORIZON_DAYS days. It only ever calls
+the free Hugging Face image provider (see src/image_generator.py) -- if that
+provider's free monthly quota is exhausted, it stops trying for the rest of
+this run and leaves the remaining slots as "planned" for tomorrow's run,
+rather than falling back to any paid service.
 """
 import json
 import uuid
@@ -20,7 +31,7 @@ from src.config import Config
 from src.content_bank import generate_caption, generate_hashtags, pick_theme_for_slot
 from src.content_history import load_history, recent
 from src.content_quality import run_quality_control
-from src.image_generator import find_local_media, generate_image, generate_image_prompt
+from src.image_generator import QuotaExhaustedError, find_local_media, generate_image, generate_image_prompt
 from src.queue_manager import add_item, load_queue, save_queue
 
 from pathlib import Path
@@ -32,13 +43,15 @@ MIN_READY = 3
 HORIZON_DAYS = 7
 
 # (day offset from week start (Mon=0), "HH:MM" local time, content_type)
+# Reels disabled for now -- all slots are "post". Kept spread across the week
+# (not daily) per the "spam yapma" instruction.
 SLOT_TEMPLATE = [
     (0, "12:00", "post"),
-    (1, "19:30", "reels"),
+    (1, "19:30", "post"),
     (3, "19:30", "post"),
     (4, "12:00", "post"),
     (5, "19:30", "post"),
-    (6, "18:00", "reels"),
+    (6, "18:00", "post"),
 ]
 
 TZ_OFFSET = "+03:00"
@@ -79,7 +92,7 @@ def generate_weekly_plan(start_date: date | None = None) -> dict:
             "time": time_str,
             "content_type": content_type,
             "theme": theme,
-            "media_source_plan": "local_if_available_else_ai" if content_type == "post" else "needs_video_solution",
+            "media_source_plan": "local_if_available_else_ai",
             "caption_idea": f"'{theme}' temasında doğal, kısa bir caption",
             "hashtag_strategy": f"{theme} hashtag havuzundan 5-10 tanesi, son kullanılanla düşük örtüşme",
             "status": "planned",
@@ -146,37 +159,6 @@ def _build_post_item(slot: dict, config: Config, history: list[dict]) -> dict:
     return item
 
 
-def _build_reels_placeholder(slot: dict) -> dict:
-    """No video-generation service is connected yet (see README / the
-    conversation where this was raised) -- a reels slot becomes a
-    needs_generation queue item with the caption/hashtags already drafted so
-    it's one step (attach a video) away from ready, rather than silently
-    skipped or filled with a risky slideshow+music placeholder."""
-    theme = slot["theme"]
-    caption_text = generate_caption(theme, set())
-    hashtags = generate_hashtags(theme, [])
-    caption = caption_text + "\n\n" + " ".join(hashtags)
-
-    items = load_queue()
-    item = add_item(
-        items,
-        media_type="REELS",
-        media_url=None,
-        caption=caption,
-        scheduled_at=_slot_datetime(slot).isoformat(),
-        allow_duplicate=True,
-        content_type="reels",
-        theme=theme,
-        media_source=None,
-        media_path=None,
-        hashtags=hashtags,
-        status="needs_generation",
-        item_id=slot["id"],
-    )
-    save_queue(items)
-    return item
-
-
 def ensure_queue_filled(min_ready: int = MIN_READY, horizon_days: int = HORIZON_DAYS) -> dict:
     """Returns a small report dict describing what it did (for logging)."""
     config = Config.load(require_token=False)
@@ -191,7 +173,7 @@ def ensure_queue_filled(min_ready: int = MIN_READY, horizon_days: int = HORIZON_
         and now <= datetime.fromisoformat(i["scheduled_at"]) <= horizon_end
     )
 
-    report = {"ready_before": ready_count, "created": [], "needs_generation": [], "needs_review": []}
+    report = {"ready_before": ready_count, "created": [], "needs_review": [], "quota_stopped": False}
     if ready_count >= min_ready:
         return report
 
@@ -210,22 +192,25 @@ def ensure_queue_filled(min_ready: int = MIN_READY, horizon_days: int = HORIZON_
         if ready_count >= min_ready:
             break
         try:
-            if slot["content_type"] == "reels":
-                item = _build_reels_placeholder(slot)
-                slot["status"] = "needs_generation"
-                slot["queue_item_id"] = item["id"]
-                report["needs_generation"].append(item["id"])
+            item = _build_post_item(slot, config, history)
+            slot["status"] = "queued"
+            slot["queue_item_id"] = item["id"]
+            if item["status"] == "pending":
+                ready_count += 1
+                report["created"].append(item["id"])
             else:
-                item = _build_post_item(slot, config, history)
-                slot["status"] = "queued"
-                slot["queue_item_id"] = item["id"]
-                if item["status"] == "pending":
-                    ready_count += 1
-                    report["created"].append(item["id"])
-                else:
-                    report["needs_review"].append(item["id"])
+                report["needs_review"].append(item["id"])
+        except QuotaExhaustedError as e:
+            # Free quota is used up for this run -- stop entirely, leave this
+            # and every remaining slot as "planned" so tomorrow's run retries
+            # them. Never fall back to a paid provider.
+            report["quota_stopped"] = True
+            report.setdefault("errors", []).append(f"{slot['id']}: {e}")
+            break
         except Exception as e:
-            slot["status"] = "failed"
+            # Transient failure (network hiccup, etc.) -- leave the slot
+            # "planned" so it's retried on the next run instead of being
+            # permanently given up on.
             report.setdefault("errors", []).append(f"{slot['id']}: {e}")
 
     _save_plan(plan)

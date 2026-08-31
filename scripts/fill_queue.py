@@ -13,11 +13,12 @@ def main() -> int:
         print(f"Yeni hazir icerik: {len(report['created'])}")
     if report.get("needs_review"):
         print(f"Kalite kontrolden gecemedi, needs_review: {report['needs_review']}")
-    if report.get("needs_generation"):
-        print(f"Reels icin video gerekiyor, needs_generation: {report['needs_generation']}")
+    if report.get("quota_stopped"):
+        print("Ucretsiz Hugging Face kotasi tukendi, bu calistirmada durduruldu (yarin tekrar denenecek).")
     if report.get("errors"):
-        print(f"Hatalar: {report['errors']}")
-        return 1
+        print(f"Hatalar/uyarilar: {report['errors']}")
+        if not report.get("quota_stopped"):
+            return 1
     if report.get("note"):
         print(report["note"])
     return 0

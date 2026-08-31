@@ -1,10 +1,10 @@
 {
   "week_start": "2026-08-31",
   "week_end": "2026-09-06",
-  "generated_at": "2026-08-31T16:29:33.312786",
+  "generated_at": "2026-08-31T17:02:52.221620",
   "items": [
     {
-      "id": "ef53658a-9573-4a26-ac95-16468790686e",
+      "id": "07efd9b1-fa87-413d-8c88-c5a8bc5c8369",
       "day": "2026-08-31",
       "time": "12:00",
       "content_type": "post",
@@ -16,19 +16,19 @@
       "queue_item_id": null
     },
     {
-      "id": "221b0566-174b-48d4-9817-9a5acc2f5abd",
+      "id": "73d2a16d-54ba-4fc2-8b5d-1e125c27cc31",
       "day": "2026-09-01",
       "time": "19:30",
-      "content_type": "reels",
-      "theme": "motivation",
-      "media_source_plan": "needs_video_solution",
-      "caption_idea": "'motivation' temasında doğal, kısa bir caption",
-      "hashtag_strategy": "motivation hashtag havuzundan 5-10 tanesi, son kullanılanla düşük örtüşme",
+      "content_type": "post",
+      "theme": "style_fashion",
+      "media_source_plan": "local_if_available_else_ai",
+      "caption_idea": "'style_fashion' temasında doğal, kısa bir caption",
+      "hashtag_strategy": "style_fashion hashtag havuzundan 5-10 tanesi, son kullanılanla düşük örtüşme",
       "status": "planned",
       "queue_item_id": null
     },
     {
-      "id": "7781e12b-7387-402f-b47d-499b5333818b",
+      "id": "86c3480a-ce6c-4bbc-94d3-dd8ef4934eb0",
       "day": "2026-09-03",
       "time": "19:30",
       "content_type": "post",
@@ -40,38 +40,38 @@
       "queue_item_id": null
     },
     {
-      "id": "8c53dea5-78d6-48ef-91d3-e68205ebe375",
+      "id": "7ba195e5-a2b5-4243-ad37-332e76324912",
       "day": "2026-09-04",
       "time": "12:00",
+      "content_type": "post",
+      "theme": "style_fashion",
+      "media_source_plan": "local_if_available_else_ai",
+      "caption_idea": "'style_fashion' temasında doğal, kısa bir caption",
+      "hashtag_strategy": "style_fashion hashtag havuzundan 5-10 tanesi, son kullanılanla düşük örtüşme",
+      "status": "planned",
+      "queue_item_id": null
+    },
+    {
+      "id": "ec78f44c-0a35-4031-a31b-42ccd0609fa7",
+      "day": "2026-09-05",
+      "time": "19:30",
+      "content_type": "post",
+      "theme": "travel_landscape",
+      "media_source_plan": "local_if_available_else_ai",
+      "caption_idea": "'travel_landscape' temasında doğal, kısa bir caption",
+      "hashtag_strategy": "travel_landscape hashtag havuzundan 5-10 tanesi, son kullanılanla düşük örtüşme",
+      "status": "planned",
+      "queue_item_id": null
+    },
+    {
+      "id": "5818657a-92a7-43da-b320-722f4e7448b6",
+      "day": "2026-09-06",
+      "time": "18:00",
       "content_type": "post",
       "theme": "lifestyle",
       "media_source_plan": "local_if_available_else_ai",
       "caption_idea": "'lifestyle' temasında doğal, kısa bir caption",
       "hashtag_strategy": "lifestyle hashtag havuzundan 5-10 tanesi, son kullanılanla düşük örtüşme",
-      "status": "planned",
-      "queue_item_id": null
-    },
-    {
-      "id": "e773e391-ede6-47b2-a145-aa7ab0b2b597",
-      "day": "2026-09-05",
-      "time": "19:30",
-      "content_type": "post",
-      "theme": "motivation",
-      "media_source_plan": "local_if_available_else_ai",
-      "caption_idea": "'motivation' temasında doğal, kısa bir caption",
-      "hashtag_strategy": "motivation hashtag havuzundan 5-10 tanesi, son kullanılanla düşük örtüşme",
-      "status": "planned",
-      "queue_item_id": null
-    },
-    {
-      "id": "c0120592-ade2-4d54-8e16-3ed20f8c07d9",
-      "day": "2026-09-06",
-      "time": "18:00",
-      "content_type": "reels",
-      "theme": "style_fashion",
-      "media_source_plan": "needs_video_solution",
-      "caption_idea": "'style_fashion' temasında doğal, kısa bir caption",
-      "hashtag_strategy": "style_fashion hashtag havuzundan 5-10 tanesi, son kullanılanla düşük örtüşme",
       "status": "planned",
       "queue_item_id": null
     }

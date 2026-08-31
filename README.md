@@ -40,7 +40,7 @@ ediyor. Üstüne, kuyruğu kendi kendine dolduran bir katman eklendi:
 ```
 her Pazar (weekly-plan.yml)
   -> src/content_planner.generate_weekly_plan()
-  -> weekly_content_plan.json (6 slot: 4 post + 2 reels, gün/saat/tema/durum)
+  -> weekly_content_plan.json (6 slot, hepsi IMAGE post -- reels şimdilik devre dışı, gün/saat/tema/durum)
 
 her gün (daily-content-fill.yml)
   -> src/content_planner.ensure_queue_filled()
@@ -50,10 +50,20 @@ her gün (daily-content-fill.yml)
         -> src/content_quality.run_quality_control(): 0-100 puan
            >=70 -> status=pending (publish.yml normal sekilde alir)
            <70  -> status=needs_review (otomatik yayinlanmaz)
-        -> reels slotlari: video uretim servisi baglanana kadar status=needs_generation
+        -> ucretsiz kota tukenirse (HTTP 402): bu calistirmayi durdur, kalan
+           slotlari "planned" birak (yarin tekrar denenir), ucretli servise GECME
   -> src/performance.update_history_with_performance() (Instagram Insights, best-effort)
   -> content_queue.json + content_history.json + weekly_content_plan.json commit edilir
 ```
+
+**Reels şimdilik devre dışı** (kullanıcı talebiyle): `SLOT_TEMPLATE`'teki tüm
+slotlar `"post"` (IMAGE). Video üretim servisi bağlanana kadar reels
+üretilmiyor; ne slideshow+müzik gibi bir yöntem otomatik devreye giriyor ne de
+boş bir "needs_generation" kaydı oluşuyor -- slot tipi zaten hiç "reels"
+üretmiyor. Reels'i geri açmak istersen `src/content_planner.py`'deki
+`SLOT_TEMPLATE`'e `"reels"` girdileri eklemek ve bir üretim yöntemi (video API
+veya onayladığın başka bir yöntem) bağlamak yeterli -- REELS `media_type`
+desteği `src/image_generator.py` ve `src/instagram_api.py`'de zaten duruyor.
 
 - `content_history.json` — yayınlanan her içeriğin tema/caption özeti/hashtag
   seti/görsel fingerprint/insights kaydı. Tekrar kontrolü ve performans
@@ -68,8 +78,7 @@ her gün (daily-content-fill.yml)
   Actions job'ının ek bir ücretli anahtara bağımlı olmaması için bilinçli bir
   tercih. `content_quality.py` aynı/çok benzer caption ve hashtag setinin
   tekrarını `content_history.json`'a bakarak engelliyor.
-- Reels için bağlı bir video üretim servisi yok (bkz. "Reels / video üretimi"
-  bölümü) -- slot otomatik olarak `needs_generation` durumunda bırakılıyor,
+- Reels şimdilik tamamen devre dışı (bkz. "Reels / video üretimi" bölümü) --
   telif riskli slideshow+müzik gibi bir yöntem otomatik devreye girmiyor.
 
 ## Klasör yapısı
@@ -129,18 +138,18 @@ ekleyeyim.
 
 ## Reels / video üretimi
 
-Şu an bağlı bir video üretim servisi yok. Seçenekler (karar senin):
+**Şimdilik tamamen devre dışı** (kullanıcı talebiyle, 2026-08-31). Sistem
+sadece ücretsiz üretilebilen IMAGE feed gönderileri oluşturuyor;
+`weekly_content_plan.json`'da hiç `"reels"` slotu yok. Video üretim servisine
+karar verilirse seçenekler:
 - **Kısa video üretim API'si** (ör. Runway, Kling, Pika, Luma) — gerçek AI
-  video, ek maliyetli ve ayrı bir API key gerektirir.
+  video, ücretli ve ayrı bir API key gerektirir.
 - **Görsel + statik slayt** (AI görsellerden basit bir slideshow, müziksiz,
   sadece görsel geçişleri) — düşük maliyetli ama "Reels" formatının asıl
   gücü olan hareketli video hissini vermez.
-- Müzik eklenen slideshow'lar **otomatik devreye alınmıyor** çünkü telif
+- Müzik eklenen slideshow'lar **otomatik devreye alınmayacak** çünkü telif
   riski taşıyor (Instagram'ın kendi telifsiz müzik kütüphanesi API ile
   otomatik seçilemiyor).
-
-Karar verilene kadar reels slotları `needs_generation` durumunda bekliyor;
-`content_queue.json`'da hazır caption/hashtag'leriyle görülebilir.
 
 ## Kurulum
 
