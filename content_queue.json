@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "id": "23fdd1d1-c6ee-45d4-9f85-40dece255196",
+    "media_type": "IMAGE",
+    "media_url": "https://raw.githubusercontent.com/celikercan816-a11y/instagram-auto-publisher/master/media/ercan-test-post.jpeg",
+    "caption": "Gün batımı, biraz sessizlik, biraz manzara.\n\n#günbatımı #manzara #doğa #huzur #anlar #sunset #türkiye #dağlar",
+    "scheduled_at": "2026-08-31T15:57:00+03:00",
+    "status": "pending",
+    "published_at": null,
+    "instagram_media_id": null,
+    "error": null
+  }
+]
