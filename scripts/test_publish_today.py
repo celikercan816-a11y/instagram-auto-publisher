@@ -138,14 +138,17 @@ def push_media_to_github(rel_path, timeout_s: int = 60) -> None:
     paths = rel_path if isinstance(rel_path, list) else [rel_path]
     config = Config.load(require_token=False)
 
-    subprocess.run(["git", "add", *paths], cwd=PROJECT_ROOT, check=True)
-    diff = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=PROJECT_ROOT)
+    import os
+    git_env = {**os.environ, "GIT_TERMINAL_PROMPT": "0"}
+    branch = os.environ.get("GH_BRANCH", "master")
+
+    subprocess.run(["git", "add", *paths], cwd=PROJECT_ROOT, check=True, env=git_env)
+    diff = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=PROJECT_ROOT, env=git_env)
     if diff.returncode != 0:  # there is something staged
         subprocess.run(["git", "commit", "-q", "-m", "test: media for today's live test publish"],
-                        cwd=PROJECT_ROOT, check=True)
-        subprocess.run(["git", "pull", "--rebase", "-q", "origin", "master"], cwd=PROJECT_ROOT, check=True)
-        subprocess.run(["git", "push", "-q"], cwd=PROJECT_ROOT, check=True,
-                        env={"GIT_TERMINAL_PROMPT": "0"})
+                        cwd=PROJECT_ROOT, check=True, env=git_env)
+        subprocess.run(["git", "pull", "--rebase", "-q", "origin", branch], cwd=PROJECT_ROOT, check=True, env=git_env)
+        subprocess.run(["git", "push", "-q", "origin", branch], cwd=PROJECT_ROOT, check=True, env=git_env)
 
     deadline = time.time() + timeout_s
     for path in paths:
@@ -157,6 +160,23 @@ def push_media_to_github(rel_path, timeout_s: int = 60) -> None:
             time.sleep(3)
         else:
             raise RuntimeError(f"{url} {timeout_s}s içinde erişilebilir olmadı")
+
+
+def commit_state(message: str) -> None:
+    """Commits+pushes the queue/plan/history/log state files. Called after
+    every slot so progress survives even if the job is interrupted or a
+    later slot fails."""
+    import os
+    git_env = {**os.environ, "GIT_TERMINAL_PROMPT": "0"}
+    branch = os.environ.get("GH_BRANCH", "master")
+    paths = ["content_queue.json", "content_history.json", "weekly_content_plan.json",
+             "logs/test_publish_log.jsonl", "logs/image_generation_log.jsonl"]
+    subprocess.run(["git", "add", "--ignore-errors", *paths], cwd=PROJECT_ROOT, env=git_env)
+    diff = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=PROJECT_ROOT, env=git_env)
+    if diff.returncode != 0:
+        subprocess.run(["git", "commit", "-q", "-m", message], cwd=PROJECT_ROOT, check=True, env=git_env)
+        subprocess.run(["git", "pull", "--rebase", "-q", "origin", branch], cwd=PROJECT_ROOT, check=True, env=git_env)
+        subprocess.run(["git", "push", "-q", "origin", branch], cwd=PROJECT_ROOT, check=True, env=git_env)
 
 
 def verify_media(config: Config, media_id: str) -> dict | None:
@@ -233,3 +253,55 @@ def pending_slots() -> list[dict]:
     slots = [s for s in plan["items"] if s["status"] == "planned"]
     slots.sort(key=_slot_datetime)
     return slots
+
+
+def main() -> int:
+    """Cloud-runnable entry point (see .github/workflows/test-publish-remaining.yml):
+    publishes every still-"planned" slot of the current week, spaced
+    GAP_SECONDS apart, verifying each one before moving on. Never falls back
+    to a paid image provider if the free HF quota runs out mid-run -- the
+    remaining slots are left as needs_generation for the normal daily job to
+    pick up once quota resets."""
+    import os
+
+    gap_seconds = int(os.environ.get("TEST_PUBLISH_GAP_SECONDS", "420"))
+    config = Config.load(require_token=True)
+    client = InstagramClient(config)
+    history = load_history()
+
+    slots = pending_slots()
+    log({"level": "info", "message": f"{len(slots)} planlanmış slot bulundu (cloud run)."})
+
+    for idx, slot in enumerate(slots):
+        is_last = idx == len(slots) - 1
+        try:
+            item = prepare_slot(slot, config, history)
+        except QuotaExhaustedError as e:
+            make_placeholder(slot)
+            slot["status"] = "needs_generation"
+            _save_plan_safe()
+            log({"level": "warning", "slot_id": slot["id"], "message": f"Kota tükendi, kalanlar needs_generation: {e}"})
+            commit_state(f"test: slot {slot['id']} needs_generation (kota tükendi)")
+            break
+
+        if item["status"] != "pending":
+            slot["status"] = "needs_review"
+            _save_plan_safe()
+            log({"level": "warning", "slot_id": slot["id"], "message": "Kalite kontrolünden geçemedi, atlandı."})
+            commit_state(f"test: slot {slot['id']} needs_review (kalite < 70)")
+            if not is_last:
+                time.sleep(10)
+            continue
+
+        result = publish_prepared_item(item, slot, config, client, history)
+        log({"level": "info", "slot_id": slot["id"], **result})
+        commit_state(f"test: slot {slot['id']} -> {result['result']}")
+
+        if not is_last:
+            time.sleep(gap_seconds)
+
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
