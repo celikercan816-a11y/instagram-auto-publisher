@@ -53,8 +53,8 @@ HF_MODEL = os.environ.get("HF_IMAGE_MODEL", "black-forest-labs/FLUX.1-schnell")
 OPENAI_IMAGE_MODEL = "gpt-image-2"
 OPENAI_IMAGE_QUALITY = os.environ.get("IMAGE_GEN_QUALITY", "medium")  # low/medium/high
 
-FEED_SIZE = (1024, 1024)
-REELS_SIZE = (1080, 1920)
+FEED_SIZE = (1088, 1088)   # >=1080px short side (content_quality.MIN_SHORT_SIDE_PX), multiple of 16 for the diffusion backend
+REELS_SIZE = (1088, 1920)  # 9:16-ish, short side >=1080px, both dims multiples of 16
 
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 
