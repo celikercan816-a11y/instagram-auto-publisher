@@ -70,9 +70,11 @@ desteği `src/image_generator.py` ve `src/instagram_api.py`'de zaten duruyor.
   öğrenmesi buradan besleniyor.
 - `strategy_weights.json` — `scripts/update_performance.py` en az 5 örnek
   biriken tema/saat/içerik-türü gruplarının ortalama performansını buraya
-  yazar. Şu an sadece raporlama amaçlı; planlayıcıya otomatik geri
-  beslenmesi (yeterli veri birikince) ayrı bir adım olarak bırakıldı --
-  tek bir gönderiye göre stratejiyi agresif değiştirmemek için.
+  yazar. `src/content_bank._effective_weights()` bunu okuyup temaların
+  ağırlığını **her yönde en fazla ±%20 (temanın kendi tabanına göre)**
+  kaydırır ve yeniden normalize eder -- iyi performans gösteren tema biraz
+  daha sık, kötü gösteren biraz daha az seçilir ama hiçbir tema tek başına
+  hesaba hakim olamaz (2026-08-31'de kullanıcı talebiyle aktifleştirildi).
 - Caption/hashtag üretimi **yerel bir şablon+rotasyon bankası**
   (`src/content_bank.py`), bir LLM API çağrısı değil -- headless GitHub
   Actions job'ının ek bir ücretli anahtara bağımlı olmaması için bilinçli bir
@@ -80,6 +82,41 @@ desteği `src/image_generator.py` ve `src/instagram_api.py`'de zaten duruyor.
   tekrarını `content_history.json`'a bakarak engelliyor.
 - Reels şimdilik tamamen devre dışı (bkz. "Reels / video üretimi" bölümü) --
   telif riskli slideshow+müzik gibi bir yöntem otomatik devreye girmiyor.
+
+## İçerik stratejisi (2026-08-31)
+
+Hedef: rastgele AI görseli paylaşan bir hesap değil, tutarlı/premium/gerçek
+hissi veren bir lifestyle hesabı. 5 tema, haftalık *ortalama* hedef dağılım
+(`src/content_bank.THEME_WEIGHTS`, performans verisiyle hafifçe nudge'lanır):
+
+| Tema | Hedef ağırlık | İçerik |
+|---|---|---|
+| `travel_landscape` | %35 | seyahat / şehir / manzara |
+| `style_fashion` | %25 | erkek stil / kombin / saat / aksesuar |
+| `lifestyle` | %20 | kahve / mekan / günlük yaşam |
+| `automotive` | %10 | otomobil / yolculuk atmosferi |
+| `creative_concept` | %10 | özel yaratıcı konsept kareler |
+
+Bu bir *ağırlık*, garanti değil -- `pick_theme_for_slot` aynı temayı art arda
+seçmiyor, bu yüzden tek bir haftanın dağılımı hedeften sapabilir (örn. bir
+hafta hiç `automotive` çıkmayabilir); zaman içindeki ortalama hedefe yakınsar.
+
+Diğer kurallar (`src/content_bank.py` + `src/content_quality.py`'de uygulanıyor):
+- Caption uzunluğu değişken: bankada hem tek cümlelik hem 2-3 cümlelik
+  girdiler var, rastgele seçiliyor.
+- Hashtag sayısı her gönderide **4-8 arası rastgele** (sabit değil), `#viral`
+  `#fyp` gibi engagement-bait etiketler hiç havuzda yok, ayrıca
+  `content_quality.check_hashtags` bunları görürse reddediyor.
+- Her image prompt'a ortak bir "gerçekçilik" son eki ekleniyor (doğal
+  doku/tane, kamera-gerçekçi renk, CGI/render/sürreal görünümden kaçınma, "AI
+  klişesi" aşırı kusursuzluktan kaçınma) -- `src/content_bank._REALISM_SUFFIX`.
+- Hesap sahibinin kendisini taklit eden bir AI görseli **hiçbir zaman**
+  üretilmiyor: sistem hiçbir prompt'a "bu hesabın sahibi" gibi bir referans
+  vermiyor ve kullanıcının gerçek fotoğrafını image-to-image/yüz-tutarlılığı
+  için kullanan hiçbir kod yolu yok. Kullanıcının kendi gerçek fotoğrafları
+  sadece `media/library/<tema>/`'ye elle konursa (aynı `ercan-test-post.jpeg`
+  gibi) kullanılıyor -- bu, sistemin `find_local_media` önceliği sayesinde
+  AI üretiminden önce otomatik tercih ediliyor.
 
 ## Klasör yapısı
 

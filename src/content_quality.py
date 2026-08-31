@@ -6,7 +6,7 @@ bar even after a light auto-fix attempt).
 import difflib
 from pathlib import Path
 
-from src.content_bank import CLICHE_PHRASES, generate_caption, generate_hashtags
+from src.content_bank import CLICHE_PHRASES, SPAM_HASHTAGS, generate_caption, generate_hashtags
 from src.content_history import recent
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -73,10 +73,13 @@ def check_caption(caption: str, history_entries: list[dict]) -> list[str]:
 def check_hashtags(hashtags: list[str], history_entries: list[dict]) -> list[str]:
     issues = []
     n = len(hashtags or [])
-    if n < 5 or n > 10:
-        issues.append(f"Hashtag sayısı uygun değil ({n}, beklenen 5-10)")
+    if n < 4 or n > 8:
+        issues.append(f"Hashtag sayısı uygun değil ({n}, beklenen 4-8)")
     if len(set(hashtags)) != n:
         issues.append("Aynı hashtag birden fazla kez kullanılmış")
+    spam = set(hashtags or []) & SPAM_HASHTAGS
+    if spam:
+        issues.append(f"Spam/engagement-bait hashtag kullanılmış: {sorted(spam)}")
 
     for entry in history_entries:
         prev = set(entry.get("hashtags") or [])
