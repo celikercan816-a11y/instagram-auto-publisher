@@ -43,23 +43,25 @@
     "media_source": "ai_generated",
     "media_path": "media/generated/e8a777f2-6b71-49e9-9dee-82ada615426a.jpg",
     "media_url": "https://raw.githubusercontent.com/celikercan816-a11y/instagram-auto-publisher/master/media/generated/e8a777f2-6b71-49e9-9dee-82ada615426a.jpg",
-    "image_prompt": "Candid lifestyle detail shot: a desk with a notebook, a cup of tea and sunlight coming through a window, cozy home interior, natural shadows, no visible faces, natural imperfections and realistic texture, subtle film-like grain, true-to-camera color grading (not oversaturated), realistic amateur or prosumer photography look, NOT a glossy CGI/3D render, NOT surreal or fantastical, no perfectly symmetrical composition, no text or lettering baked into the image, no watermark, no logo",
-    "caption": "Elimde kahve, kafamda hiçbir şey yok -- tam da istediğim gibi.\n\n#mekan #sadelik #huzur #anlar #yavaşyaşam #günlükhayat",
+    "image_prompt": "Candid lifestyle photo, over-the-shoulder or hands-only framing (no clearly visible identifiable face), person holding a coffee cup at a wooden cafe table by a window, soft natural daylight, shallow depth of field, warm color grading, natural imperfections and realistic texture, subtle film-like grain, true-to-camera color grading (not oversaturated), realistic amateur or prosumer photography look, NOT a glossy CGI/3D render, NOT surreal or fantastical, no perfectly symmetrical composition, absolutely no visible readable text, no handwriting, no illegible scribbles, no signage with text, no logos, no watermark -- if a notebook/page/sign appears in frame it must be blank or out of focus, not carry any lettering",
+    "caption": "Bu mekana bir işim için uğramıştım, kahvesi o kadar iyiydi ki fotoğrafını çekmeden duramadım.\n\n#gündelik #bugün #kahvekeyfi #huzur #sadelik #günlükhayat #yavaşyaşam #anlar",
     "hashtags": [
-      "#mekan",
-      "#sadelik",
+      "#gündelik",
+      "#bugün",
+      "#kahvekeyfi",
       "#huzur",
-      "#anlar",
+      "#sadelik",
+      "#günlükhayat",
       "#yavaşyaşam",
-      "#günlükhayat"
+      "#anlar"
     ],
-    "scheduled_at": "2026-08-31T14:16:26.498256+00:00",
-    "status": "failed",
-    "created_at": "2026-08-31T14:16:26.498256+00:00",
+    "scheduled_at": "2026-08-31T14:21:49.227813+00:00",
+    "status": "pending",
+    "created_at": "2026-08-31T14:21:49.227813+00:00",
     "published_at": null,
     "instagram_media_id": null,
     "quality_score": 100,
     "performance_score": null,
-    "error": "POST 17841472089310101/media failed (HTTP 400, code=9004, subcode=2207052): Medya şu URI'den alınamadı: https://raw.githubusercontent.com/celikercan816-a11y/instagram-auto-publisher/master/media/generated/e8a777f2-6b71-49e9-9dee-82ada615426a.jpg.Daha fazla bilgi için lütfen geliştirme belgelerimizdeki kısıtlamalar kısmını kontrol edin: https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media#creating"
+    "error": null
   }
 ]
