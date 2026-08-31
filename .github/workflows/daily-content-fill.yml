@@ -28,7 +28,7 @@ jobs:
 
       - name: Ensure at least 3 ready items in the queue
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
           GH_REPO: ${{ github.repository }}
           GH_BRANCH: ${{ github.ref_name }}
         run: python -m scripts.fill_queue

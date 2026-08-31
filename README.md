@@ -45,7 +45,7 @@ her Pazar (weekly-plan.yml)
 her gün (daily-content-fill.yml)
   -> src/content_planner.ensure_queue_filled()
      -> onumuzdeki 7 gunde < 3 hazir icerik varsa:
-        -> src/image_generator: once media/library/<tema>/, yoksa OpenAI ile uret
+        -> src/image_generator: once media/library/<tema>/, yoksa Hugging Face (ucretsiz) ile uret
         -> src/content_bank: caption + hashtag (yerel sablon+rotasyon, LLM cagrisi yok)
         -> src/content_quality.run_quality_control(): 0-100 puan
            >=70 -> status=pending (publish.yml normal sekilde alir)
@@ -95,33 +95,37 @@ her gün (daily-content-fill.yml)
 
 ## AI görsel üretimi
 
-Servis: **OpenAI Images API, model `gpt-image-2`** (2026-08-31 itibarıyla
-güncel dokümantasyon doğrulandı, deprecated değil). Tercih sebebi: tek basit
-REST çağrısı + tek API key, ticari kullanım serbest, dahili moderasyon gerçek
-kişi taklidi riskini azaltıyor. Yaklaşık maliyet: `medium` kalite ayarında
-görsel başına **~$0.02-0.07** (bkz. `IMAGE_GEN_QUALITY` env değişkeni,
-`low`/`medium`/`high`).
+Servis: **Hugging Face Inference Providers, model `black-forest-labs/FLUX.1-schnell`**
+(2026-08-31 itibarıyla güncel dokümantasyon doğrulandı:
+https://huggingface.co/docs/inference-providers/en/index ,
+https://huggingface.co/docs/inference-providers/en/pricing). **Ücretsiz, kredi
+kartı gerektirmiyor**: her ücretsiz HF hesabı ayda ~$0.10 Inference Providers
+kredisi alıyor, kart bilgisi istenmiyor. Kota bitince istek HTTP 402 ile
+başarısız oluyor (otomatik ücretlendirme yok) -- sistem bunu yakalayıp o
+slotu sessizce `needs_generation` yapıyor, **hiçbir koşulda ücretli bir
+servise otomatik geçmiyor** (`src/image_generator.py`, `QuotaExhaustedError`).
+
+OpenAI entegrasyonu koda opsiyonel olarak bırakıldı (`IMAGE_PROVIDER=openai`
++ `OPENAI_API_KEY` ile elle açılabilir) ama **varsayılan ve aktif olan
+sağlayıcı değil** -- hiçbir otomatik çağrı OpenAI'a gitmiyor.
 
 Üretim önceliği (`src/image_generator.get_media_for_theme`): önce
 `media/library/<tema>/`'daki kullanılmamış gerçek fotoğraf, yoksa AI üretimi.
 Rastgele internet görseli hiçbir koşulda kullanılmıyor.
 
-Her üretilen görsel iki aşamalı kontrolden geçiyor:
-1. `content_quality.check_image` — bozuk dosya, düşük çözünürlük, yanlış en-boy oranı
-2. `image_generator._vision_qc` — aynı OpenAI anahtarıyla bir vision modeline
-   (`gpt-5-mini`) görseli gösterip bozuk el/yüz/nesne veya tanınabilir gerçek
-   yüz riski sorup REJECT/OK cevabı alıyor
+Her üretilen görsel `content_quality.check_image` ile kontrol ediliyor (bozuk
+dosya, düşük çözünürlük, yanlış en-boy oranı); başarısız olursa max 3 kez
+yeniden denenir. **Not:** OpenAI kaldırıldığı için şu an bozuk el/yüz/nesne
+gibi anatomik hataları otomatik tespit eden ayrı bir vision-QC adımı yok --
+sadece yapısal kontrol (çözünürlük/oran/bozuk dosya) otomatik. Bu bilinen bir
+sınırlama; yeni bir prompt şablonunu ilk kez kullanmadan önce üretilen
+görseli bir kez elle gözden geçirmek hâlâ faydalı.
 
-Reddedilen görsel otomatik olarak yeniden denenir (max 3), hepsi başarısız
-olursa slot `needs_review`/hata olarak işaretlenir, asla sessizce kötü bir
-görsel yayına girmez.
-
-**Gerekli manuel adım:** `OPENAI_API_KEY` -- https://platform.openai.com/api-keys
-üzerinden oluşturulur (organizasyon için faturalandırma/ödeme yöntemi
-eklenmiş olması gerekir, bu OpenAI tarafında ödeme onayı gerektiren bir
-adımdır). Oluşturunca `.env` dosyana kendin ekle, haber ver --
-`scripts/push_secrets_via_gh.py` ile GitHub Secrets'a ekleyeyim (`OPENAI_API_KEY`
-adıyla; script'e bu ismi de eklemem gerekiyor).
+**Gerekli manuel adım:** `HF_TOKEN` -- https://huggingface.co/settings/tokens/new
+üzerinden **"Make calls to Inference Providers"** izniyle bir fine-grained
+token oluştur (kart bilgisi istenmez). Oluşturunca `.env` dosyana kendin
+ekle, haber ver -- `scripts/push_secrets_via_gh.py` ile GitHub Secrets'a
+ekleyeyim.
 
 ## Reels / video üretimi
 

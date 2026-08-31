@@ -1,35 +1,59 @@
 {
   "week_start": "2026-08-31",
   "week_end": "2026-09-06",
-  "generated_at": "2026-08-31T16:19:54.771778",
+  "generated_at": "2026-08-31T16:29:33.312786",
   "items": [
     {
-      "id": "8c71d271-85d1-49ee-9648-efbd3c88e50d",
+      "id": "ef53658a-9573-4a26-ac95-16468790686e",
       "day": "2026-08-31",
       "time": "12:00",
       "content_type": "post",
-      "theme": "style_fashion",
-      "media_source_plan": "local_if_available_else_ai",
-      "caption_idea": "'style_fashion' temasında doğal, kısa bir caption",
-      "hashtag_strategy": "style_fashion hashtag havuzundan 5-10 tanesi, son kullanılanla düşük örtüşme",
-      "status": "planned",
-      "queue_item_id": null
-    },
-    {
-      "id": "929f6a6c-b500-4445-8bda-cd7c10356a7a",
-      "day": "2026-09-01",
-      "time": "19:30",
-      "content_type": "reels",
       "theme": "travel_landscape",
-      "media_source_plan": "needs_video_solution",
+      "media_source_plan": "local_if_available_else_ai",
       "caption_idea": "'travel_landscape' temasında doğal, kısa bir caption",
       "hashtag_strategy": "travel_landscape hashtag havuzundan 5-10 tanesi, son kullanılanla düşük örtüşme",
       "status": "planned",
       "queue_item_id": null
     },
     {
-      "id": "c1b8ba79-8425-46d1-b7fd-896780e04993",
+      "id": "221b0566-174b-48d4-9817-9a5acc2f5abd",
+      "day": "2026-09-01",
+      "time": "19:30",
+      "content_type": "reels",
+      "theme": "motivation",
+      "media_source_plan": "needs_video_solution",
+      "caption_idea": "'motivation' temasında doğal, kısa bir caption",
+      "hashtag_strategy": "motivation hashtag havuzundan 5-10 tanesi, son kullanılanla düşük örtüşme",
+      "status": "planned",
+      "queue_item_id": null
+    },
+    {
+      "id": "7781e12b-7387-402f-b47d-499b5333818b",
       "day": "2026-09-03",
+      "time": "19:30",
+      "content_type": "post",
+      "theme": "travel_landscape",
+      "media_source_plan": "local_if_available_else_ai",
+      "caption_idea": "'travel_landscape' temasında doğal, kısa bir caption",
+      "hashtag_strategy": "travel_landscape hashtag havuzundan 5-10 tanesi, son kullanılanla düşük örtüşme",
+      "status": "planned",
+      "queue_item_id": null
+    },
+    {
+      "id": "8c53dea5-78d6-48ef-91d3-e68205ebe375",
+      "day": "2026-09-04",
+      "time": "12:00",
+      "content_type": "post",
+      "theme": "lifestyle",
+      "media_source_plan": "local_if_available_else_ai",
+      "caption_idea": "'lifestyle' temasında doğal, kısa bir caption",
+      "hashtag_strategy": "lifestyle hashtag havuzundan 5-10 tanesi, son kullanılanla düşük örtüşme",
+      "status": "planned",
+      "queue_item_id": null
+    },
+    {
+      "id": "e773e391-ede6-47b2-a145-aa7ab0b2b597",
+      "day": "2026-09-05",
       "time": "19:30",
       "content_type": "post",
       "theme": "motivation",
@@ -40,31 +64,7 @@
       "queue_item_id": null
     },
     {
-      "id": "779fb420-b5c9-4fb3-abf7-55083d1800c4",
-      "day": "2026-09-04",
-      "time": "12:00",
-      "content_type": "post",
-      "theme": "style_fashion",
-      "media_source_plan": "local_if_available_else_ai",
-      "caption_idea": "'style_fashion' temasında doğal, kısa bir caption",
-      "hashtag_strategy": "style_fashion hashtag havuzundan 5-10 tanesi, son kullanılanla düşük örtüşme",
-      "status": "planned",
-      "queue_item_id": null
-    },
-    {
-      "id": "8894810a-c121-4552-a0a5-f2e9564d14cc",
-      "day": "2026-09-05",
-      "time": "19:30",
-      "content_type": "post",
-      "theme": "travel_landscape",
-      "media_source_plan": "local_if_available_else_ai",
-      "caption_idea": "'travel_landscape' temasında doğal, kısa bir caption",
-      "hashtag_strategy": "travel_landscape hashtag havuzundan 5-10 tanesi, son kullanılanla düşük örtüşme",
-      "status": "planned",
-      "queue_item_id": null
-    },
-    {
-      "id": "66a61653-3ed7-48b9-ab20-bee528bd21b4",
+      "id": "c0120592-ade2-4d54-8e16-3ed20f8c07d9",
       "day": "2026-09-06",
       "time": "18:00",
       "content_type": "reels",
