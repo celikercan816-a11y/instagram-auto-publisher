@@ -130,8 +130,10 @@ _REALISM_SUFFIX = (
     ", natural imperfections and realistic texture, subtle film-like grain, "
     "true-to-camera color grading (not oversaturated), realistic amateur or "
     "prosumer photography look, NOT a glossy CGI/3D render, NOT surreal or "
-    "fantastical, no perfectly symmetrical composition, no text or lettering "
-    "baked into the image, no watermark, no logo"
+    "fantastical, no perfectly symmetrical composition, absolutely no visible "
+    "readable text, no handwriting, no illegible scribbles, no signage with "
+    "text, no logos, no watermark -- if a notebook/page/sign appears in "
+    "frame it must be blank or out of focus, not carry any lettering"
 )
 
 IMAGE_PROMPT_TEMPLATES = {
@@ -140,9 +142,9 @@ IMAGE_PROMPT_TEMPLATES = {
         "clearly visible identifiable face), person holding a coffee cup at a "
         "wooden cafe table by a window, soft natural daylight, shallow depth "
         "of field, warm color grading" + _REALISM_SUFFIX,
-        "Candid lifestyle detail shot: a desk with a notebook, a cup of tea and "
-        "sunlight coming through a window, cozy home interior, natural "
-        "shadows, no visible faces" + _REALISM_SUFFIX,
+        "Candid lifestyle detail shot: a wooden desk with a closed notebook, a "
+        "cup of tea and sunlight coming through a window, cozy home interior, "
+        "natural shadows, no visible faces" + _REALISM_SUFFIX,
     ],
     "travel_landscape": [
         "Realistic landscape photograph of a calm lake surrounded by forested "

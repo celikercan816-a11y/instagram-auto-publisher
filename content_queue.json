@@ -9,5 +9,57 @@
     "published_at": "2026-08-31T12:58:42.868483+00:00",
     "instagram_media_id": "17981907231080233",
     "error": null
+  },
+  {
+    "id": "3f163485-4ad4-4689-ba83-9318e1910303",
+    "content_type": "post",
+    "theme": "travel_landscape",
+    "media_type": "IMAGE",
+    "media_source": "ai_generated",
+    "media_path": "media/generated/3f163485-4ad4-4689-ba83-9318e1910303.jpg",
+    "media_url": "https://raw.githubusercontent.com/celikercan816-a11y/instagram-auto-publisher/master/media/generated/3f163485-4ad4-4689-ba83-9318e1910303.jpg",
+    "image_prompt": "Realistic candid street photo of a quiet old-town alley in early morning light, warm stone buildings, no people, believable travel snapshot, natural imperfections and realistic texture, subtle film-like grain, true-to-camera color grading (not oversaturated), realistic amateur or prosumer photography look, NOT a glossy CGI/3D render, NOT surreal or fantastical, no perfectly symmetrical composition, no text or lettering baked into the image, no watermark, no logo",
+    "caption": "Bazı yerler fotoğrafta bile eksik kalıyor, burası öyle.\n\n#doğa #şehir #doğayla #günbatımı",
+    "hashtags": [
+      "#doğa",
+      "#şehir",
+      "#doğayla",
+      "#günbatımı"
+    ],
+    "scheduled_at": "2026-08-31T14:16:09.574697+00:00",
+    "status": "failed",
+    "created_at": "2026-08-31T14:16:09.574697+00:00",
+    "published_at": null,
+    "instagram_media_id": null,
+    "quality_score": 100,
+    "performance_score": null,
+    "error": "POST 17841472089310101/media failed (HTTP 400, code=9004, subcode=2207052): Medya şu URI'den alınamadı: https://raw.githubusercontent.com/celikercan816-a11y/instagram-auto-publisher/master/media/generated/3f163485-4ad4-4689-ba83-9318e1910303.jpg.Daha fazla bilgi için lütfen geliştirme belgelerimizdeki kısıtlamalar kısmını kontrol edin: https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media#creating"
+  },
+  {
+    "id": "e8a777f2-6b71-49e9-9dee-82ada615426a",
+    "content_type": "post",
+    "theme": "lifestyle",
+    "media_type": "IMAGE",
+    "media_source": "ai_generated",
+    "media_path": "media/generated/e8a777f2-6b71-49e9-9dee-82ada615426a.jpg",
+    "media_url": "https://raw.githubusercontent.com/celikercan816-a11y/instagram-auto-publisher/master/media/generated/e8a777f2-6b71-49e9-9dee-82ada615426a.jpg",
+    "image_prompt": "Candid lifestyle detail shot: a desk with a notebook, a cup of tea and sunlight coming through a window, cozy home interior, natural shadows, no visible faces, natural imperfections and realistic texture, subtle film-like grain, true-to-camera color grading (not oversaturated), realistic amateur or prosumer photography look, NOT a glossy CGI/3D render, NOT surreal or fantastical, no perfectly symmetrical composition, no text or lettering baked into the image, no watermark, no logo",
+    "caption": "Elimde kahve, kafamda hiçbir şey yok -- tam da istediğim gibi.\n\n#mekan #sadelik #huzur #anlar #yavaşyaşam #günlükhayat",
+    "hashtags": [
+      "#mekan",
+      "#sadelik",
+      "#huzur",
+      "#anlar",
+      "#yavaşyaşam",
+      "#günlükhayat"
+    ],
+    "scheduled_at": "2026-08-31T14:16:26.498256+00:00",
+    "status": "failed",
+    "created_at": "2026-08-31T14:16:26.498256+00:00",
+    "published_at": null,
+    "instagram_media_id": null,
+    "quality_score": 100,
+    "performance_score": null,
+    "error": "POST 17841472089310101/media failed (HTTP 400, code=9004, subcode=2207052): Medya şu URI'den alınamadı: https://raw.githubusercontent.com/celikercan816-a11y/instagram-auto-publisher/master/media/generated/e8a777f2-6b71-49e9-9dee-82ada615426a.jpg.Daha fazla bilgi için lütfen geliştirme belgelerimizdeki kısıtlamalar kısmını kontrol edin: https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media#creating"
   }
 ]

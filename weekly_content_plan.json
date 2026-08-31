@@ -12,7 +12,7 @@
       "media_source_plan": "local_if_available_else_ai",
       "caption_idea": "'travel_landscape' temasında doğal, kısa bir caption",
       "hashtag_strategy": "travel_landscape hashtag havuzundan 5-10 tanesi, son kullanılanla düşük örtüşme",
-      "status": "planned",
+      "status": "failed",
       "queue_item_id": null
     },
     {
@@ -24,7 +24,7 @@
       "media_source_plan": "local_if_available_else_ai",
       "caption_idea": "'lifestyle' temasında doğal, kısa bir caption",
       "hashtag_strategy": "lifestyle hashtag havuzundan 5-10 tanesi, son kullanılanla düşük örtüşme",
-      "status": "planned",
+      "status": "failed",
       "queue_item_id": null
     },
     {
