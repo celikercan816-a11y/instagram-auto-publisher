@@ -36,8 +36,8 @@
       "media_source_plan": "local_if_available_else_ai",
       "caption_idea": "'travel_landscape' temasında doğal, kısa bir caption",
       "hashtag_strategy": "travel_landscape hashtag havuzundan 5-10 tanesi, son kullanılanla düşük örtüşme",
-      "status": "planned",
-      "queue_item_id": null
+      "status": "queued",
+      "queue_item_id": "54aea56f-ebff-4c77-8093-866399951005"
     },
     {
       "id": "2427eac9-b900-4e97-9202-3b597c68945c",
@@ -48,8 +48,8 @@
       "media_source_plan": "local_if_available_else_ai",
       "caption_idea": "'style_fashion' temasında doğal, kısa bir caption",
       "hashtag_strategy": "style_fashion hashtag havuzundan 5-10 tanesi, son kullanılanla düşük örtüşme",
-      "status": "planned",
-      "queue_item_id": null
+      "status": "queued",
+      "queue_item_id": "2427eac9-b900-4e97-9202-3b597c68945c"
     },
     {
       "id": "594a6723-4330-49dc-a94e-668eb28010fd",
@@ -60,8 +60,8 @@
       "media_source_plan": "local_if_available_else_ai",
       "caption_idea": "'lifestyle' temasında doğal, kısa bir caption",
       "hashtag_strategy": "lifestyle hashtag havuzundan 5-10 tanesi, son kullanılanla düşük örtüşme",
-      "status": "planned",
-      "queue_item_id": null
+      "status": "queued",
+      "queue_item_id": "594a6723-4330-49dc-a94e-668eb28010fd"
     },
     {
       "id": "ff9e8cbc-40cd-459a-a02a-85a23f7184a2",
