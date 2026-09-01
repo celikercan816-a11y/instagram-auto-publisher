@@ -58,5 +58,31 @@
     "instagram_media_id": "18111308309017456",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "9d89d5be-64af-462e-8e97-ee9c07049cfb",
+    "theme": "hayat tespiti",
+    "content_type": "post",
+    "caption_summary": "Akşamdan kalan.\n\n#şiir #sakinlik #huzur",
+    "hashtags": [
+      "#şiir",
+      "#sakinlik",
+      "#huzur"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "78529dc8c90dc0b9",
+      "quote_text": "İnsan, ailesinin fotoğraflarını değil, kaç tanesinde gerçekten gülümsediğini fark edince büyür.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "hayat tespiti",
+      "zone": "top_right"
+    },
+    "image_fingerprint": "69beb2f121cea0b8cea09481b25c9ff150ed23779ef4762d8fe198d323b48da7",
+    "published_at": "2026-09-01T22:01:06.673364+00:00",
+    "instagram_media_id": "18121869893484729",
+    "insights": null,
+    "performance_score": null
   }
 ]
