@@ -56,12 +56,12 @@
       "#anlar"
     ],
     "scheduled_at": "2026-08-31T14:21:49.227813+00:00",
-    "status": "pending",
+    "status": "failed",
     "created_at": "2026-08-31T14:21:49.227813+00:00",
     "published_at": null,
     "instagram_media_id": null,
     "quality_score": 100,
     "performance_score": null,
-    "error": null
+    "error": "Superseded by the 2026-09-01 content strategy pivot (quote+manzara). Pre-pivot lifestyle/cafe content with a fabricated real-life claim in the caption ('bu mekana bir işim için uğramıştım') -- violates the new no-fabricated-claims caption policy. Neutralized before enabling full automation to prevent this stale due item from auto-publishing."
   }
 ]
