@@ -26,7 +26,14 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Generate weekly plan
+      # DISABLED 2026-09-01: generated old-style lifestyle/travel/style
+      # weekly slots (content_planner.py) -- superseded by the quote+manzara
+      # pivot. src/content_planner.py's generate_weekly_plan() itself now
+      # refuses to run (ALLOW_LEGACY_PIPELINE guard) even if this step is
+      # ever re-enabled by mistake. Re-enable only once this calls a
+      # quote_v1 weekly/daily planner.
+      - name: "[DISABLED] Legacy weekly plan (pre-pivot pipeline)"
+        if: false
         run: python -m scripts.generate_weekly_plan
 
       - name: Commit plan

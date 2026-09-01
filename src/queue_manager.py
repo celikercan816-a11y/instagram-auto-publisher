@@ -20,14 +20,23 @@ to a neutral value so every pre-existing item and every pre-existing caller of
 add_item() keeps working unmodified):
 {
   "content_type": "post" | "reels",
-  "theme": "lifestyle" | "travel_landscape" | "style_fashion" | "motivation" | "reels" | null,
-  "media_source": "local" | "ai_generated" | "manual" | null,
+  "theme": "sehir_istanbul" | "seyahat" | "gunluk_hayat" | "stil" | "spor_futbol" |
+           "otomobil_yol" | "sosyal_yasam" | "detay_estetik" | "reels" | null
+           (or a pre-2026-09-01 name -- see src/content_bank.THEME_ALIASES),
+  "media_source": "local" | "ai_generated" | "manual" | "composite" | null,
+  # "composite" = src/person_composite.py: a real reference_photos/ photo,
+  # segmented locally, composited onto an AI-generated (text-only, no photo
+  # sent) background. Always arrives via scripts/approve_preview.py, never
+  # generated directly into content_queue.json.
   "media_path": "media/xxx.jpg" (repo-relative) or [str, ...] | null,
   "image_prompt": "the prompt used for AI generation" | null,
   "hashtags": ["#tag1", "#tag2", ...],
   "quality_score": 0-100 | null,
   "created_at": ISO 8601,
-  "performance_score": 0-100 | null (filled in later by src/performance.py)
+  "performance_score": 0-100 | null (filled in later by src/performance.py),
+  "attributes": {"theme", "shot_type", "location", "outfit", "pose",
+                 "camera_angle", "time_of_day", "caption_style"} | {} --
+                 see src/content_bank.generate_content_attributes()
 }
 """
 import hashlib
@@ -88,7 +97,14 @@ def add_item(
     quality_score: int | None = None,
     status: str = "pending",
     item_id: str | None = None,
+    attributes: dict | None = None,
+    pipeline_version: str | None = None,
 ) -> dict:
+    """pipeline_version: MUST be PIPELINE_VERSION ("quote_v1") for anything
+    meant to actually publish -- get_due_items() hard-guards on this field.
+    Left as None by default (rather than silently defaulting to "quote_v1")
+    so an old call site that doesn't pass it explicitly produces an item
+    that can never auto-publish, instead of accidentally opting in."""
     dup = None if (allow_duplicate or not media_url) else find_duplicate(items, media_type, media_url, caption)
     if dup:
         raise ValueError(
@@ -114,9 +130,25 @@ def add_item(
         "quality_score": quality_score,
         "performance_score": None,
         "error": None,
+        "attributes": attributes or {},
+        "pipeline_version": pipeline_version,
     }
     items.append(item)
     return item
+
+
+# HARD GUARD (2026-09-01, added after the pre-pivot legacy pipeline was
+# found still auto-queueing/publishing old-style lifestyle/travel/style
+# content with fabricated-claim captions -- daily-content-fill.yml and
+# weekly-plan.yml were still calling content_planner.py unnoticed for days
+# after the quote+manzara pivot). PIPELINE_VERSION is the only value that
+# lets an item actually publish. Every item created by the new quote
+# pipeline must be stamped pipeline_version="quote_v1"; every pre-existing
+# item (and anything the disabled legacy pipeline might ever produce again)
+# is stamped/treated as "legacy" and can NEVER be picked up here, no matter
+# what its status says -- this is deliberately checked in the single choke
+# point every publish path goes through, not just at content-creation time.
+PIPELINE_VERSION = "quote_v1"
 
 
 def get_due_items(items: list[dict], now: datetime | None = None) -> list[dict]:
@@ -125,6 +157,8 @@ def get_due_items(items: list[dict], now: datetime | None = None) -> list[dict]:
     for item in items:
         if item.get("status") != "pending":
             continue
+        if item.get("pipeline_version") != PIPELINE_VERSION:
+            continue  # HARD GUARD -- legacy/unmarked content can never auto-publish
         scheduled = datetime.fromisoformat(item["scheduled_at"])
         if scheduled.tzinfo is None:
             scheduled = scheduled.replace(tzinfo=timezone.utc)
