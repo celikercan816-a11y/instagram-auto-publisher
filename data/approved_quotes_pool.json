@@ -2,19 +2,6 @@
   "engine_version": "1.0",
   "quotes": [
     {
-      "id": "9c3adec7-b3dd-4cfe-8fb8-86d627b1a9dc",
-      "text": "İnsan, ailesinin fotoğraflarını değil, kaç tanesinde gerçekten gülümsediğini fark edince büyür.",
-      "author": null,
-      "category": "ORIGINAL",
-      "theme": "hayat tespiti",
-      "mood": "melankoli",
-      "score": 89,
-      "hash": "78529dc8c90dc0b9",
-      "pattern_tags": [
-        "X_DEGIL_Y"
-      ]
-    },
-    {
       "id": "d3be2173-73fc-4d27-b4c2-7f8d7ced523e",
       "text": "Bir insanın karakteri, hesap hatası kendi lehine çıktığında ne yaptığında ortaya çıkar.",
       "author": null,
@@ -54,32 +41,6 @@
       ]
     },
     {
-      "id": "637ec98a-2e33-458a-9516-c3220654c72d",
-      "text": "Anne-baba kavgası unutulur ama sofrada kimin kime bakmadığı hep hatırlanır.",
-      "author": null,
-      "category": "ORIGINAL",
-      "theme": "aile",
-      "mood": "melankoli",
-      "score": 87,
-      "hash": "1727e05689c20059",
-      "pattern_tags": [
-        "OPENER_ANNE"
-      ]
-    },
-    {
-      "id": "b393c39d-3c59-4fe1-879d-1c9fb3e046fb",
-      "text": "Sana söylemediğim onca cümle, şimdi bir çekmecede kelimesiz duruyor.",
-      "author": null,
-      "category": "ORIGINAL",
-      "theme": "ayrılık/özlem",
-      "mood": "melankoli",
-      "score": 87,
-      "hash": "7697144926d48488",
-      "pattern_tags": [
-        "OPENER_SANA"
-      ]
-    },
-    {
       "id": "1544a22c-0044-4c27-93b4-c93273acaa9c",
       "text": "Yıllar sonra bir arkadaşla buluşup hâlâ aynı yerden devam edebiliyorsan, o dostluk gerçektir.",
       "author": null,
@@ -90,19 +51,6 @@
       "hash": "b566215d33300698",
       "pattern_tags": [
         "OPENER_YILLAR"
-      ]
-    },
-    {
-      "id": "8982eac0-525c-465a-91db-0bc6a912db2b",
-      "text": "Maaşın yattığı gün hissettiğin rahatlık, ay sonuna kalan üç güne kadar sürer.",
-      "author": null,
-      "category": "ORIGINAL",
-      "theme": "para",
-      "mood": "zaman",
-      "score": 86,
-      "hash": "ceb939058668bec8",
-      "pattern_tags": [
-        "OPENER_MAAŞIN"
       ]
     },
     {
@@ -171,32 +119,6 @@
       ]
     },
     {
-      "id": "c828cff1-96b8-4ef9-8334-6dfd556a50ff",
-      "text": "Okulda beni bekleyen o araba artık yok ama o sokaktan geçerken hâlâ yavaşlıyorum.",
-      "author": null,
-      "category": "ORIGINAL",
-      "theme": "çocukluk",
-      "mood": "zaman",
-      "score": 87,
-      "hash": "a60f593d550d7cd2",
-      "pattern_tags": [
-        "OPENER_OKULDA"
-      ]
-    },
-    {
-      "id": "ccd257ef-c03d-4810-8fa0-20b41af296bf",
-      "text": "Yıllar sonra aynı kafede oturup artık kimin ne içtiğini unutmuş olmak, ayrılığın en sessiz hâlidir.",
-      "author": null,
-      "category": "ORIGINAL",
-      "theme": "ayrılık/özlem",
-      "mood": "melankoli",
-      "score": 87,
-      "hash": "3e1505f976498a44",
-      "pattern_tags": [
-        "OPENER_YILLAR"
-      ]
-    },
-    {
       "id": "4a05f17d-2ca5-4f5a-89d0-6439f6ded06d",
       "text": "Bir garsona nasıl davrandığın, yöneticine nasıl davrandığından daha çok şey söyler.",
       "author": null,
@@ -207,19 +129,6 @@
       "hash": "4f6745e2220da773",
       "pattern_tags": [
         "OPENER_BIR"
-      ]
-    },
-    {
-      "id": "6ccff895-a161-416e-bec3-f7737161e9e2",
-      "text": "Annem telefonda 'nasılsın' diye sorduğunda gerçekten cevap bekler, çoğu kişi sormaz.",
-      "author": null,
-      "category": "ORIGINAL",
-      "theme": "aile",
-      "mood": "huzur",
-      "score": 86,
-      "hash": "32d75e74b4b06d09",
-      "pattern_tags": [
-        "OPENER_ANNEM"
       ]
     },
     {
@@ -262,19 +171,6 @@
       ]
     },
     {
-      "id": "86bab1d7-4b2f-4e0a-8ec7-e2770cb33f1d",
-      "text": "Babamın cüzdanındaki fotoğraf hiç değişmedi, değişen sadece kaç kez ona baktığı oldu.",
-      "author": null,
-      "category": "ORIGINAL",
-      "theme": "aile",
-      "mood": "melankoli",
-      "score": 85,
-      "hash": "d145077ab2176132",
-      "pattern_tags": [
-        "OPENER_BABAMIN"
-      ]
-    },
-    {
       "id": "0510a07c-9048-4b33-b6d7-e7f8d640af11",
       "text": "Param olmadığı dönemlerde yanımda kalanları, param olduğunda unutmamaya çalışıyorum.",
       "author": null,
@@ -298,19 +194,6 @@
       "hash": "cbd050d6c37ab171",
       "pattern_tags": [
         "OPENER_ESKIDEN"
-      ]
-    },
-    {
-      "id": "6e641aea-1371-408c-bd44-cfeb88a22c0d",
-      "text": "Annesiyle her gün konuşan biri bile bazı günler sadece 'iyiyim' der, gerçeği anlatmak yorar.",
-      "author": null,
-      "category": "ORIGINAL",
-      "theme": "aile",
-      "mood": "melankoli",
-      "score": 85,
-      "hash": "8cc677d7b77feccd",
-      "pattern_tags": [
-        "OPENER_ANNESIYLE"
       ]
     },
     {
