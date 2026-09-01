@@ -21,12 +21,26 @@ quality_score < APPROVAL_SCORE_THRESHOLD -> never auto-approved.
 Honest limitation (documented, not hidden -- same policy as
 image_generator.py's own documented gap): there is no free/local OCR or
 watermark-detector wired in, so "arka planda anlamsız AI yazısı var mı" and
-"watermark var mı" are NOT automatically verifiable here. The scene prompts
-(src/quote_scenes.py) explicitly forbid both, and this module flags it as a
-standing note for the human reviewer in scripts/approve_preview.py-style
-flows -- it does not claim to verify it.
+"watermark var mı" are NOT fully/reliably verifiable here. The scene prompts
+(src/quote_scenes.py) explicitly forbid both and are the primary defense.
+check_possible_text_artifact() below adds a SECOND, best-effort layer -- a
+pure edge-density heuristic (no OCR, no ML model, nothing installed) that
+looks for a compact region of unusually dense, high-contrast detail typical
+of a block of text/signage against a comparatively plain background. A real
+2026-09-01 test proved its limits directly: it correctly stayed quiet on 9
+genuinely clean real-account images, but MISSED a large, obvious fake cafe
+sign because the whole scene (brick, windows, shutters) was already busy
+enough that the sign wasn't a strong statistical outlier. It reliably
+matters most for otherwise-plain scenes (open sky/water/mountain) where a
+stray text artifact stands out sharply -- which is exactly where the
+original incidents this session were found. Treat a positive as "worth a
+second look" (forces needs_review, never a silent pass), and a negative as
+"nothing obvious found", never as "confirmed clean".
 """
 import re
+
+import numpy as np
+from PIL import Image
 
 from src.content_history import last_n
 from src.content_quality import check_image
@@ -160,6 +174,53 @@ def check_prominent_people(image_path: str) -> list[str]:
     return []
 
 
+# Calibrated 2026-09-01 against the account's own real generated images (9
+# genuinely clean images -> 0 false positives) -- see module docstring for
+# the honest false-negative caveat on busy/architectural scenes.
+_TEXT_ARTIFACT_TILE_PX = 90
+_TEXT_ARTIFACT_CLUSTER_TILES = 3
+_TEXT_ARTIFACT_Z_THRESHOLD = 2.2
+_TEXT_ARTIFACT_ABS_THRESHOLD = 22.0
+
+
+def check_possible_text_artifact(image_path: str) -> list[str]:
+    """Best-effort, NOT OCR (see module docstring for the calibration/limits
+    story). Flags a compact region of edge density that's both a strong
+    outlier relative to the rest of THIS image and high in absolute terms --
+    the signature of a dense block of small high-contrast shapes (text,
+    signage) sitting on a comparatively plain backdrop. Returns an issue
+    (never a hard fail) if found; evaluate_quote_post() treats a hit as
+    disqualifying for pending_approval, same tier as low placement_score."""
+    try:
+        img = Image.open(image_path).convert("L")
+    except Exception:
+        return []
+    arr = np.asarray(img).astype(np.float64)
+    h, w = arr.shape
+    tile = _TEXT_ARTIFACT_TILE_PX
+    rows, cols = h // tile, w // tile
+    if rows < _TEXT_ARTIFACT_CLUSTER_TILES or cols < _TEXT_ARTIFACT_CLUSTER_TILES:
+        return []
+    gy, gx = np.gradient(arr)
+    mag = np.sqrt(gx**2 + gy**2)
+    grid = np.zeros((rows, cols))
+    for r in range(rows):
+        for c in range(cols):
+            grid[r, c] = mag[r*tile:(r+1)*tile, c*tile:(c+1)*tile].mean()
+    mean, std = grid.mean(), grid.std() + 1e-6
+    n = _TEXT_ARTIFACT_CLUSTER_TILES
+    for r in range(rows - n + 1):
+        for c in range(cols - n + 1):
+            block_mean = grid[r:r+n, c:c+n].mean()
+            z = (block_mean - mean) / std
+            if block_mean >= _TEXT_ARTIFACT_ABS_THRESHOLD and z >= _TEXT_ARTIFACT_Z_THRESHOLD:
+                return [
+                    f"Arka planda olağandışı yoğun/kontrastlı bir bölge tespit edildi "
+                    f"(muhtemel yazı/tabela, kesin OCR değil -- görsel olarak kontrol edilmeli)"
+                ]
+    return []
+
+
 def check_quote_repetition(quote_hash_value: str, mood: str, template: str, history: list[dict], window: int = 50) -> list[str]:
     """Point 15: son 50 gönderide aynı söz/çok benzer tasarım tekrarını
     engelle. Exact-hash repetition of the quote text is a hard signal;
@@ -249,6 +310,13 @@ def evaluate_quote_post(image_path: str, quote: dict, render_result, history: li
     grid_crop_issues = check_grid_crop_safety(render_result) if content_format == "feed" else []
     soft_issues += grid_crop_issues
 
+    # Point 1 (2026-09-01 post-launch fix): best-effort, non-OCR text-artifact
+    # heuristic (see module docstring) -- a hit forces needs_review, same
+    # tier as low placement_score/grid-crop issues, never a hard fail (too
+    # unreliable for that) and never silently ignored either.
+    text_artifact_issues = check_possible_text_artifact(image_path)
+    soft_issues += text_artifact_issues
+
     # -- Repetition/originality (10).
     rep_issues = check_quote_repetition(quote["hash"], quote["mood"], template, history)
     soft_issues += rep_issues
@@ -291,6 +359,11 @@ def evaluate_quote_post(image_path: str, quote: dict, render_result, history: li
         status = "needs_review"
     elif grid_crop_issues:
         # Point 5: "Grid crop'ta metin kesiliyorsa: PENDING_APPROVAL verme."
+        status = "needs_review"
+    elif text_artifact_issues:
+        # Point 1 (2026-09-01): "Şüpheli görsel: needs_review olsun." --
+        # never auto-approve on a total score alone if the heuristic found
+        # something worth a human look.
         status = "needs_review"
     elif score >= APPROVAL_SCORE_THRESHOLD:
         status = "pending_approval"

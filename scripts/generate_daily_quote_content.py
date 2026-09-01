@@ -1,11 +1,17 @@
 """Run daily (see .github/workflows/daily-content-fill.yml) to generate the
 day's quote_v1 FEED+STORY content -- see src/daily_planner.py for the full
 flow. Never calls a paid provider; never force-fills below quality just to
-hit the daily target counts."""
+hit the daily target counts. Checks/replenishes the quote pool first (point
+2) so a long-running unattended schedule doesn't quietly run out of quotes."""
 from src.daily_planner import run_daily_content_generation
+from src.quote_pool_manager import check_and_replenish_pool
 
 
 def main() -> int:
+    pool_report = check_and_replenish_pool()
+    print(f"Söz havuzu: {pool_report['pool_before']} -> {pool_report['pool_after']} "
+          f"({pool_report['note']})")
+
     report = run_daily_content_generation()
     if report.get("status") == "no_pool":
         print(report["note"])

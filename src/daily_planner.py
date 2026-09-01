@@ -102,8 +102,14 @@ def pick_quote(pool: list[dict], used_ids: set[str], history: list[dict], recent
     published history (content_history.json) only grows on an actual
     publish, so a single run picking e.g. 24 quotes back-to-back would
     otherwise never see its own earlier picks -- this closes that gap."""
+    from src.quote_pool_manager import all_known_quote_texts  # local import: avoids a module-load-order dependency
+
     recent_attrs = _recent_quote_v1_attributes(history)
-    recent_texts = [a.get("quote_text", "") for a in recent_attrs if a.get("quote_text")] + list(session_texts or [])
+    recent_texts = (
+        [a.get("quote_text", "") for a in recent_attrs if a.get("quote_text")]
+        + list(session_texts or [])
+        + list(all_known_quote_texts())  # point 3: gold_quotes + reserve, not just published history
+    )
     candidates = [q for q in pool if q["id"] not in used_ids]
     candidates.sort(key=lambda q: -q["score"])  # prefer the strongest first, ties broken by diversity checks below
     for q in candidates:
@@ -253,8 +259,39 @@ def _slot_datetime_today(time_str: str, today: date) -> datetime:
     return datetime(today.year, today.month, today.day, hh, mm, tzinfo=TZ)
 
 
-def compute_feed_slots(now: datetime) -> tuple[list[str], list[str]]:
-    """Returns (remaining_today, skipped_past_time) as "HH:MM" strings, Europe/Istanbul."""
+def _todays_scheduled_count(queue: list[dict], media_type: str, today: date) -> int:
+    """Point 16 (duplicate protection): how many real quote_v1 items are
+    already sitting in the queue for today (pending or published), of this
+    media type -- used to shrink how many MORE should be scheduled today if
+    this run happens twice in one day (a manual re-trigger, a workflow
+    re-run), without touching the PAST-time filtering (a separate concern:
+    a slot already gone is gone whether or not it got filled)."""
+    count = 0
+    for item in queue:
+        if item.get("pipeline_version") != PIPELINE_VERSION or item.get("media_type") != media_type:
+            continue
+        if item.get("status") not in ("pending", "published"):
+            continue
+        try:
+            sched = datetime.fromisoformat(item["scheduled_at"])
+        except (KeyError, ValueError):
+            continue
+        if sched.tzinfo is None:
+            sched = sched.replace(tzinfo=timezone.utc)
+        if sched.astimezone(TZ).date() == today:
+            count += 1
+    return count
+
+
+def compute_feed_slots(now: datetime, queue: list[dict] | None = None) -> tuple[list[str], list[str]]:
+    """Returns (remaining_today, skipped_past_time) as "HH:MM" strings,
+    Europe/Istanbul. If `queue` is given, caps how many of the remaining
+    (still-future) slots get used by the number ALREADY scheduled today for
+    this media type having been subtracted from the day's overall target
+    upstream (see run_daily_content_generation) -- this function itself
+    only ever removes slots whose time has passed, never a future slot,
+    so a same-day re-run can't accidentally shrink capacity for a slot
+    that's still perfectly usable."""
     today = now.astimezone(TZ).date()
     remaining, skipped = [], []
     for t in FEED_TIMES:
@@ -262,7 +299,7 @@ def compute_feed_slots(now: datetime) -> tuple[list[str], list[str]]:
     return remaining, skipped
 
 
-def compute_story_slots(now: datetime) -> tuple[list[datetime], list[str]]:
+def compute_story_slots(now: datetime, queue: list[dict] | None = None) -> tuple[list[datetime], list[str]]:
     """Returns (remaining_datetimes, skipped_block_labels). Spreads each
     remaining block's story count evenly across whatever's left of that
     block (point 12: natural 1-3-story bursts with gaps, not all at once)."""
@@ -300,6 +337,27 @@ def _load_reserve(directory: Path) -> list[tuple[Path, dict]]:
         with open(p, "r", encoding="utf-8") as f:
             out.append((p, json.load(f)))
     return out
+
+
+def promote_one_reserve_item(content_type: str) -> dict | None:
+    """Point 4 (reserve swap, 2026-09-01): called from src/publisher.py when
+    a scheduled slot's primary content fails to publish after retries.
+    Pulls ONE item from content_reserve/{feed,story}/, deletes its source
+    file BEFORE returning (so it can never be offered twice, even if this
+    promotion attempt itself later fails), and returns an add_item()-ready
+    kwargs dict scheduled for right now so it's picked up in the same
+    publisher.py run. Returns None if no reserve item of this type exists --
+    the caller marks the original slot "skipped" in that case."""
+    directory = RESERVE_FEED_DIR if content_type == "feed" else RESERVE_STORY_DIR
+    files = sorted(directory.glob("*.json"))
+    if not files:
+        return None
+    path = files[0]
+    with open(path, "r", encoding="utf-8") as f:
+        entry = json.load(f)
+    path.unlink(missing_ok=True)
+    media_type = "IMAGE" if content_type == "feed" else "STORIES"
+    return _queue_from_reserve_or_fresh_entry(entry, datetime.now(timezone.utc), media_type)
 
 
 def _queue_from_reserve_or_fresh_entry(entry: dict, scheduled_at: datetime, media_type: str) -> dict:
@@ -358,8 +416,16 @@ def run_daily_content_generation() -> dict:
     recent_scene_ids: list[str] = []
     session_texts: list[str] = []  # quotes picked earlier in THIS run -- see pick_quote()'s docstring
 
-    feed_slots, feed_skipped = compute_feed_slots(now)
-    story_slots, story_skipped_blocks = compute_story_slots(now)
+    feed_slots, feed_skipped = compute_feed_slots(now, queue)
+    story_slots, story_skipped_blocks = compute_story_slots(now, queue)
+
+    # Point 16 (duplicate protection): if today's target is already partly
+    # (or fully) met by a previous run today, only aim for the remainder --
+    # never re-derive a fresh slot list, which is what would double-book an
+    # already-filled time.
+    today_date = now.astimezone(TZ).date()
+    feed_target_today = max(0, DAILY_FEED_TARGET - _todays_scheduled_count(queue, "IMAGE", today_date))
+    story_target_today = max(0, DAILY_STORY_TARGET - _todays_scheduled_count(queue, "STORIES", today_date))
 
     report = {
         "date": now.astimezone(TZ).date().isoformat(), "generated_at": now.isoformat(),
@@ -407,9 +473,10 @@ def run_daily_content_generation() -> dict:
         }
         feed_entries.append(("fresh", entry, None))
 
+    feed_slots_usable = min(len(feed_slots), feed_target_today)
     for i, entry_tuple in enumerate(feed_entries):
         source, entry, reserve_path = entry_tuple
-        if i < len(feed_slots):
+        if i < feed_slots_usable:
             scheduled_at = _slot_datetime_today(feed_slots[i], now.astimezone(TZ).date())
             queue_item = _queue_from_reserve_or_fresh_entry(entry, scheduled_at, "IMAGE")
             add_item(queue, **queue_item)
@@ -457,9 +524,10 @@ def run_daily_content_generation() -> dict:
         }
         story_entries.append(("fresh", entry, None))
 
+    story_slots_usable = min(len(story_slots), story_target_today)
     for i, entry_tuple in enumerate(story_entries):
         source, entry, reserve_path = entry_tuple
-        if i < len(story_slots):
+        if i < story_slots_usable:
             queue_item = _queue_from_reserve_or_fresh_entry(entry, story_slots[i], "STORIES")
             add_item(queue, **queue_item)
             report["story_scheduled_today"].append({"content_id": entry["content_id"], "scheduled_at": story_slots[i].isoformat(), "theme": entry["theme"]})

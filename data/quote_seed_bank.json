@@ -1,0 +1,54 @@
+{
+  "engine_version": "1.0",
+  "generated_at": "2026-09-01T19:06:49.690868+00:00",
+  "quotes": [
+    {
+      "text": "Yaşlandığımızı, hastanede beklerken artık kendimiz için değil, ebeveynimiz için beklediğimizde anlıyoruz.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "hayat tespiti",
+      "mood": "melankoli",
+      "score": 89,
+      "pattern_tags": [
+        "X_DEGIL_Y"
+      ],
+      "hash": "fd6a6f1b52ba0e4c"
+    },
+    {
+      "text": "Bir hayalin bedelini genelde kişi değil, onu hâlâ destekleyen ama sormaya çekinen ebeveyni öder.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "başarı/emek/hayal",
+      "mood": "melankoli",
+      "score": 89,
+      "pattern_tags": [
+        "X_DEGIL_Y"
+      ],
+      "hash": "81548760a6d5bdef"
+    },
+    {
+      "text": "Bir çocuğun büyüdüğünü anlaman için tek işaret, artık kapıyı kapatarak konuşmasıdır.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "aile",
+      "mood": "melankoli",
+      "score": 87,
+      "pattern_tags": [
+        "OPENER_BIR"
+      ],
+      "hash": "014e68da2c2f9101"
+    },
+    {
+      "text": "Annemin telefonu üç kere çaldığında kapatması, aslında 'seni düşünüyorum ama rahatsız etmek istemiyorum' demektir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "aile",
+      "mood": "huzur",
+      "score": 87,
+      "pattern_tags": [
+        "OPENER_ANNEMIN"
+      ],
+      "hash": "c482e0d4ec401735"
+    }
+  ]
+}
