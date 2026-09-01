@@ -1,0 +1,25 @@
+{
+  "content_id": "9afd5f61-001b-446e-9a61-b8e9a6c52b9a",
+  "type": "feed",
+  "quote": {
+    "id": "8982eac0-525c-465a-91db-0bc6a912db2b",
+    "text": "Maaşın yattığı gün hissettiğin rahatlık, ay sonuna kalan üç güne kadar sürer.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "para",
+    "mood": "zaman",
+    "score": 86,
+    "hash": "ceb939058668bec8",
+    "pattern_tags": [
+      "OPENER_MAAŞIN"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "para",
+  "image_path": "media/generated/9afd5f61-001b-446e-9a61-b8e9a6c52b9a_feed.jpg",
+  "quote_score": 86,
+  "visual_score": 97,
+  "overall_score": 97,
+  "zone": "top_left",
+  "generated_at": "2026-09-01T18:21:32.105266+00:00"
+}

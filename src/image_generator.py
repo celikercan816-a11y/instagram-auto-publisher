@@ -9,14 +9,21 @@ image):
      OpenAI's paid Images API
   3. neither available -> caller must set the queue item to "needs_generation"
 
-Provider selection: IMAGE_PROVIDER env var, default "huggingface". The user
-explicitly does not want to spend money on this, so "huggingface" is the only
-provider used unless IMAGE_PROVIDER=openai is set by hand later -- there is no
-automatic fallback from the free provider to the paid one for any reason
-(quota exhaustion included). If the free provider fails for any reason
-(missing HF_TOKEN, exhausted $0.10/month free credit, transient error), the
-caller gets a RuntimeError and marks the slot needs_generation instead of ever
-reaching for a paid API.
+Provider selection: IMAGE_PROVIDER env var, default "huggingface" (unchanged
+-- the existing automated pipeline's behavior is not altered by adding
+Cloudflare support until this default is deliberately changed). Recognized
+values:
+  "huggingface" (default) -- only Hugging Face, exactly as before.
+  "cloudflare"             -- only Cloudflare Workers AI.
+  "auto"                   -- Cloudflare first (10,000 free Neurons/day, much
+                               more headroom than HF's $0.10/month), falling
+                               back to Hugging Face if Cloudflare errors,
+                               rate-limits, or hits its daily free quota.
+  "openai"                 -- opt-in, paid, unchanged from before.
+No mode EVER falls back to a paid provider automatically -- if every free
+option in the chosen mode fails, the caller gets a RuntimeError/
+QuotaExhaustedError-family exception and must mark the slot
+needs_generation, exactly as before.
 
 Hugging Face Inference Providers (verified 2026-08-31,
 https://huggingface.co/docs/inference-providers/en/index and .../pricing):
@@ -26,6 +33,17 @@ credit. Once it's used up, requests fail (HTTP 402) rather than silently
 charging a card -- there's no card on file at all for a free account. Model
 used: black-forest-labs/FLUX.1-schnell, a fast/cheap open model chosen to
 stretch that $0.10 as far as possible.
+
+Cloudflare Workers AI (verified 2026-09-01 against developers.cloudflare.com):
+10,000 free Neurons/day, no card required for the free "Workers Free" plan.
+flux-1-schnell costs 4.80 Neurons/512x512 tile + 9.60 Neurons/step (4 steps
+default) = ~43.2 Neurons/image, i.e. roughly 230 free images/day -- far more
+headroom than HF. Exceeding the daily allocation fails with HTTP/error code
+4006 (request rejected, confirmed NOT auto-billed) unless the account is
+explicitly upgraded to Workers Paid, which this project never does. The
+model has no width/height parameter -- it always generates at a fixed
+~512x512 tile; generate_image() resizes/crops locally afterward same as any
+other provider whose native resolution differs from the target size.
 
 There is currently no automated vision-based QC step (that used a paid vision
 model before OpenAI was dropped per the user's instruction) -- only the
@@ -39,7 +57,9 @@ import os
 import time
 from pathlib import Path
 
-from src.content_bank import generate_image_prompt
+from PIL import Image
+
+from src.content_bank import generate_image_prompt, resolve_theme
 from src.content_history import file_fingerprint, load_history
 from src.content_quality import check_image
 
@@ -48,7 +68,7 @@ LIBRARY_DIR = PROJECT_ROOT / "media" / "library"
 GENERATED_DIR = PROJECT_ROOT / "media" / "generated"
 GEN_LOG_PATH = PROJECT_ROOT / "logs" / "image_generation_log.jsonl"
 
-IMAGE_PROVIDER = os.environ.get("IMAGE_PROVIDER", "huggingface")  # "huggingface" (free, default) or "openai" (opt-in, paid)
+IMAGE_PROVIDER = os.environ.get("IMAGE_PROVIDER", "huggingface")  # "huggingface" (free, default) / "cloudflare" (free) / "auto" (cloudflare->huggingface) / "openai" (opt-in, paid)
 HF_MODEL = os.environ.get("HF_IMAGE_MODEL", "black-forest-labs/FLUX.1-schnell")
 OPENAI_IMAGE_MODEL = "gpt-image-2"
 OPENAI_IMAGE_QUALITY = os.environ.get("IMAGE_GEN_QUALITY", "medium")  # low/medium/high
@@ -71,7 +91,7 @@ def _log(event: dict) -> None:
 
 def find_local_media(theme: str) -> Path | None:
     """Returns an unused image from media/library/<theme>/, or None."""
-    theme_dir = LIBRARY_DIR / theme
+    theme_dir = LIBRARY_DIR / resolve_theme(theme)
     if not theme_dir.exists():
         return None
     used_fingerprints = {e.get("image_fingerprint") for e in load_history()}
@@ -120,6 +140,86 @@ def _call_huggingface_image_api(prompt: str, size: tuple[int, int]):
         raise RuntimeError(f"Hugging Face Inference API hatası (HTTP {status}): {e}") from e
 
 
+CLOUDFLARE_MODEL = os.environ.get("CLOUDFLARE_IMAGE_MODEL", "@cf/black-forest-labs/flux-1-schnell")
+CLOUDFLARE_NATIVE_SIZE = (512, 512)  # fixed -- this model takes no width/height param
+
+
+class CloudflareQuotaExhaustedError(RuntimeError):
+    """Raised when Cloudflare Workers AI reports the daily free-Neuron
+    allocation (10,000/day, Workers Free plan) is exhausted, or the request
+    is otherwise rate-limited. In "auto" mode this triggers a fallback to
+    Hugging Face; in standalone "cloudflare" mode it must be treated like
+    QuotaExhaustedError -- never react to it by paying."""
+
+
+class CloudflareConfigError(RuntimeError):
+    """CLOUDFLARE_ACCOUNT_ID or CLOUDFLARE_API_TOKEN missing/blank."""
+
+
+def _cloudflare_credentials() -> tuple[str, str]:
+    account_id = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "").strip()
+    token = os.environ.get("CLOUDFLARE_API_TOKEN", "").strip()
+    if not account_id or not token:
+        raise CloudflareConfigError("CLOUDFLARE_ACCOUNT_ID / CLOUDFLARE_API_TOKEN ayarlı değil")
+    return account_id, token
+
+
+def _call_cloudflare_image_api(prompt: str, size: tuple[int, int]):
+    """Returns a PIL.Image from Cloudflare Workers AI (@cf/black-forest-labs/
+    flux-1-schnell). This model has no width/height parameter -- it always
+    generates at a fixed native tile (CLOUDFLARE_NATIVE_SIZE); generate_image()
+    resizes/crops locally afterward, same as it would for any provider whose
+    native output doesn't match the target size. Raises
+    CloudflareQuotaExhaustedError on daily free-quota exhaustion/rate-limit
+    (HTTP 429 or Cloudflare error code 4006), CloudflareConfigError if
+    credentials aren't set, RuntimeError on any other failure. Never falls
+    back to a paid Cloudflare plan -- this account stays on Workers Free."""
+    import base64
+    import io
+
+    import requests
+
+    account_id, token = _cloudflare_credentials()
+    prompt = prompt[:2048]  # documented request limit
+    url = f"https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/{CLOUDFLARE_MODEL}"
+    try:
+        resp = requests.post(
+            url,
+            headers={"Authorization": f"Bearer {token}"},
+            json={"prompt": prompt, "steps": 4},
+            timeout=60,
+        )
+    except requests.RequestException as e:
+        raise RuntimeError(f"Cloudflare Workers AI'a bağlanılamadı: {e}") from e
+
+    if resp.status_code == 429 or "4006" in resp.text:
+        raise CloudflareQuotaExhaustedError(
+            "Cloudflare Workers AI günlük ücretsiz Neuron kotası (10.000/gün) tükendi "
+            "veya istek geçici olarak sınırlandı. Otomatik olarak ücretli plana geçilmiyor."
+        )
+    if resp.status_code >= 400:
+        raise RuntimeError(f"Cloudflare Workers AI hatası (HTTP {resp.status_code}): {resp.text[:300]}")
+
+    from PIL import Image
+
+    content_type = resp.headers.get("content-type", "")
+    if content_type.startswith("image/"):
+        return Image.open(io.BytesIO(resp.content))
+
+    data = resp.json()
+    if data.get("success") is False:
+        errors = data.get("errors") or []
+        codes = [e.get("code") for e in errors]
+        if 4006 in codes:
+            raise CloudflareQuotaExhaustedError("Cloudflare Workers AI günlük ücretsiz Neuron kotası tükendi.")
+        raise RuntimeError(f"Cloudflare Workers AI hata döndürdü: {errors}")
+    result = data.get("result", data)
+    b64 = result.get("image") if isinstance(result, dict) else None
+    if not b64:
+        raise RuntimeError(f"Cloudflare Workers AI beklenmeyen yanıt formatı: {list(data.keys())}")
+    return Image.open(io.BytesIO(base64.b64decode(b64)))
+
+
 def _call_openai_image_api(prompt: str, size: tuple[int, int]):
     """Opt-in only (IMAGE_PROVIDER=openai). Not used by default. Returns a PIL.Image."""
     import base64
@@ -146,22 +246,39 @@ def _call_openai_image_api(prompt: str, size: tuple[int, int]):
     return Image.open(io.BytesIO(base64.b64decode(b64)))
 
 
-def _generate_raw_image(prompt: str, size: tuple[int, int]):
+def _generate_raw_image(prompt: str, size: tuple[int, int]) -> tuple:
+    """Returns (PIL.Image, provider_used, model_used)."""
     if IMAGE_PROVIDER == "openai":
-        return _call_openai_image_api(prompt, size)
-    return _call_huggingface_image_api(prompt, size)
+        return _call_openai_image_api(prompt, size), "openai", OPENAI_IMAGE_MODEL
+    if IMAGE_PROVIDER == "cloudflare":
+        return _call_cloudflare_image_api(prompt, size), "cloudflare", CLOUDFLARE_MODEL
+    if IMAGE_PROVIDER == "auto":
+        try:
+            return _call_cloudflare_image_api(prompt, size), "cloudflare", CLOUDFLARE_MODEL
+        except (CloudflareQuotaExhaustedError, CloudflareConfigError, RuntimeError) as e:
+            _log({"level": "warning", "message": f"Cloudflare kullanılamadı, Hugging Face'e düşülüyor: {e}"})
+            return _call_huggingface_image_api(prompt, size), "huggingface", HF_MODEL
+    return _call_huggingface_image_api(prompt, size), "huggingface", HF_MODEL
 
 
 def generate_image(theme: str, item_id: str, is_reels: bool = False, max_retries: int = 3,
-                    prompt: str | None = None) -> Path:
+                    prompt: str | None = None, meta_out: dict | None = None) -> Path:
     """Generates and saves an image to media/generated/{item_id}.jpg, retrying
     on transient failure or a structural defect (resolution/aspect ratio).
-    Raises RuntimeError (or QuotaExhaustedError) if all attempts fail --
-    callers must treat that as "no image available", never as a signal to
-    try a different (paid) provider."""
+    Raises RuntimeError (or QuotaExhaustedError/CloudflareQuotaExhaustedError)
+    if all attempts fail -- callers must treat that as "no image available",
+    never as a signal to try a different (paid) provider.
+
+    meta_out, if given a dict, is filled in-place with provider/model/
+    resolution/duration info about the successful attempt -- purely additive,
+    existing callers that don't pass it see no behavior change."""
     if IMAGE_PROVIDER == "openai":
         if not os.environ.get("OPENAI_API_KEY", "").strip():
             raise RuntimeError("OPENAI_API_KEY ayarlı değil")
+    elif IMAGE_PROVIDER == "cloudflare":
+        _cloudflare_credentials()  # fail fast if not configured
+    elif IMAGE_PROVIDER == "auto":
+        pass  # each branch inside _generate_raw_image checks its own credentials
     else:
         _hf_token()  # fail fast (no retries) if the free provider's token just isn't configured
 
@@ -173,8 +290,14 @@ def generate_image(theme: str, item_id: str, is_reels: bool = False, max_retries
     last_error = "bilinmeyen hata"
     for attempt in range(1, max_retries + 1):
         try:
-            image = _generate_raw_image(prompt, size)
-            image.convert("RGB").save(out_path, format="JPEG", quality=92)
+            t0 = time.monotonic()
+            image, provider_used, model_used = _generate_raw_image(prompt, size)
+            native_size = image.size
+            elapsed = time.monotonic() - t0
+            final_image = image.convert("RGB")
+            if final_image.size != size:
+                final_image = final_image.resize(size, Image.LANCZOS)
+            final_image.save(out_path, format="JPEG", quality=92)
 
             structural_issues = check_image(str(out_path), is_reels=is_reels)
             if structural_issues:
@@ -183,12 +306,22 @@ def generate_image(theme: str, item_id: str, is_reels: bool = False, max_retries
                 continue
 
             _log({"level": "success", "item_id": item_id, "attempt": attempt, "path": str(out_path),
-                  "provider": IMAGE_PROVIDER, "prompt": prompt})
+                  "provider": provider_used, "model": model_used, "native_size": native_size,
+                  "duration_s": round(elapsed, 2), "prompt": prompt})
+            if meta_out is not None:
+                meta_out.update({
+                    "image_provider": provider_used, "image_model": model_used,
+                    "generation_status": "ok", "generation_error": None,
+                    "native_resolution": native_size, "final_resolution": size,
+                    "generation_time_s": round(elapsed, 2),
+                })
             return out_path
 
-        except QuotaExhaustedError as e:
+        except (QuotaExhaustedError, CloudflareQuotaExhaustedError) as e:
             _log({"level": "error", "item_id": item_id, "attempt": attempt, "message": str(e)})
             out_path.unlink(missing_ok=True)
+            if meta_out is not None:
+                meta_out.update({"generation_status": "needs_generation", "generation_error": str(e)})
             raise  # no point retrying -- the quota won't refill mid-run
 
         except Exception as e:
@@ -197,6 +330,8 @@ def generate_image(theme: str, item_id: str, is_reels: bool = False, max_retries
             time.sleep(2)
 
     out_path.unlink(missing_ok=True)
+    if meta_out is not None:
+        meta_out.update({"generation_status": "needs_generation", "generation_error": last_error})
     raise RuntimeError(f"Görsel üretimi {max_retries} denemede başarısız oldu: {last_error}")
 
 

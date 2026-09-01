@@ -1,0 +1,25 @@
+{
+  "content_id": "cdeb30b3-0770-41e1-a77b-928c71123d46",
+  "type": "feed",
+  "quote": {
+    "id": "ccd257ef-c03d-4810-8fa0-20b41af296bf",
+    "text": "Yıllar sonra aynı kafede oturup artık kimin ne içtiğini unutmuş olmak, ayrılığın en sessiz hâlidir.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "ayrılık/özlem",
+    "mood": "melankoli",
+    "score": 87,
+    "hash": "3e1505f976498a44",
+    "pattern_tags": [
+      "OPENER_YILLAR"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "ayrılık/özlem",
+  "image_path": "media/generated/cdeb30b3-0770-41e1-a77b-928c71123d46_feed.jpg",
+  "quote_score": 87,
+  "visual_score": 95,
+  "overall_score": 95,
+  "zone": "top_right",
+  "generated_at": "2026-09-01T18:21:32.105266+00:00"
+}

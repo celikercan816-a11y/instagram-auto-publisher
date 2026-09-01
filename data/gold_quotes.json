@@ -1,0 +1,15 @@
+{
+  "_comment": "QUALITY REFERENCE ONLY (2026-09-01). These are quotes the user judged with their own eyes to be the account's real quality bar, across quote-engine test rounds 2-3. They are NOT published, NOT in content_history.json, and NOT eligible for content_queue.json until explicitly approved through the normal flow. Purpose: calibrate future editorial scoring, never to be copied as a template (see point 8 -- 'Gold library kalite referansı, template library DEĞİL'). Do not auto-generate new quotes by pattern-matching these entries' sentence structure.",
+  "quotes": [
+    {"text": "Annemin telefonunda beni değil, çocukluğumu arıyor.", "theme": "aile", "family": "A", "round": 2, "score": 93},
+    {"text": "Bayramda sofraya oturan aynı insanlar; ama her yıl bir sandalye daha boş kalıyor.", "theme": "aile", "family": "A", "round": 2, "score": 88},
+    {"text": "Sosyal medyada 500 arkadaşın olabilir; gece 3'te arayacağın biri varsa asıl zenginlik odur.", "theme": "dostluk/insan ilişkileri", "family": "A", "round": 2, "score": 91},
+    {"text": "Hayatta gerçekten büyüdüğünü, ailenin seni değil, senin aileni korumaya başladığın gün anlarsın.", "theme": "hayat tespiti", "family": "A", "round": 2, "score": 90},
+    {"text": "Bir insanın en dürüst hâli, sosyal medya paylaşımında değil, telefonunun galerisinde saklıdır.", "theme": "hayat tespiti", "family": "A", "round": 2, "score": 88},
+    {"text": "Kredi kartı ekstresi, bir insanın söylediklerinden çok neye değer verdiğini anlatır.", "theme": "karakter/vicdan", "family": "A", "round": 2, "score": 92},
+    {"text": "Çocukluk evinin kapı ziliyle şimdiki evinkinin sesi bile aynı değil; ama ikisini duyunca da için cız eder.", "theme": "çocukluk", "family": "A", "round": 2, "score": 90},
+    {"text": "İnsanın gerçekten kimin yanında olduğunu anladığı an, iyi haberi değil, kötü haberi ilk kime söylediğidir.", "theme": "serbest tema", "family": "A", "round": 2, "score": 88},
+    {"text": "Ebeveynlerin yaşlandığını, sesleri değişince değil, artık senden bir şey istemeye çekindiklerinde fark edersin.", "theme": "aile", "family": "A", "round": 3, "score": 92},
+    {"text": "Anneler seni özlediğini söylemez; sadece hiç ihtiyacın olmayan bir şeyi kargoyla gönderir.", "theme": "aile", "family": "A", "round": 3, "score": 88}
+  ]
+}

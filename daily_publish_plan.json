@@ -1,0 +1,158 @@
+{
+  "date": "2026-09-01",
+  "generated_at": "2026-09-01T18:21:32.105266+00:00",
+  "feed": [
+    {
+      "content_id": "9d89d5be-64af-462e-8e97-ee9c07049cfb",
+      "scheduled_at": "2026-09-01T22:00:00+03:00",
+      "theme": "hayat tespiti"
+    }
+  ],
+  "story": [
+    {
+      "content_id": "ef5b23cf-f5f4-4160-8151-7a7f0b88006d",
+      "scheduled_at": "2026-09-01T18:32:06.754388+00:00",
+      "theme": "aile"
+    },
+    {
+      "content_id": "7344ddf9-913a-45a8-844c-0d0a64b81182",
+      "scheduled_at": "2026-09-01T18:43:16.052633+00:00",
+      "theme": "aile"
+    }
+  ],
+  "manual_visual_qc_rejections": [
+    {
+      "content_id": "383b0e42-b7be-41ae-9072-d5a17b8e8cfd", "type": "feed", "was_scheduled_for": "2026-09-01T23:30:00+03:00",
+      "reason": "AI_GIBBERISH: Cloudflare background contains a readable fake illuminated sign ('KSTAN...FRETABTFERTC...') that the quote text partially overlaps. No automated OCR/text-detection exists yet -- caught by human visual review, not by QC."
+    },
+    {
+      "content_id": "882a4633-ed53-4224-a7ab-eae1d9aeb17d", "type": "story", "was_scheduled_for": "2026-09-01T18:54:25+03:00",
+      "reason": "AI_GIBBERISH: Cloudflare background contains large, prominent fake readable graffiti-style text ('WAD.../TWLS.../PhiToe...') across the top of the frame. Same undetected gap as above."
+    },
+    {
+      "content_id": "77d46dd2-4659-4457-b652-71bec673eddc", "type": "feed_reserve",
+      "reason": "AI_GIBBERISH: readable fake street sign ('Vamind Crest Gallcs') in the background. Removed from content_reserve/feed/ before it could be scheduled on a future day."
+    }
+  ],
+  "feed_skipped_past_time": [
+    "08:30",
+    "10:30",
+    "12:30",
+    "14:30",
+    "16:30",
+    "18:30",
+    "20:30"
+  ],
+  "story_skipped_blocks": [
+    "07:30-10:30",
+    "10:30-14:00",
+    "14:00-18:00"
+  ],
+  "feed_reserved": [
+    "6f39e8c9-c263-4946-bf19-1b87f9deea64",
+    "7ff9aced-a28a-411c-946d-627d1c40c05c",
+    "bb5dbed3-cc4d-49ce-8e7d-f286343788be",
+    "cdeb30b3-0770-41e1-a77b-928c71123d46",
+    "9afd5f61-001b-446e-9a61-b8e9a6c52b9a",
+    "52845295-5319-4075-82b1-1803c6057d45"
+  ],
+  "story_reserved": [],
+  "needs_review": [
+    {
+      "content_id": "149c6697-4af5-408f-944b-9c4956281e4a",
+      "type": "feed",
+      "quote": "Bir insanın karakteri, hesap hatası kendi lehine çıktığında ne yaptığında ortaya çıkar.",
+      "reason": "QC geçemedi: score=90, placement=0.51"
+    },
+    {
+      "content_id": "c3240377-9091-4ba6-9bc5-c9b36f705f9c",
+      "type": "feed",
+      "quote": "İnsanın en çok pişman olduğu şeyler, yaptıkları değil, korkudan yapmadıklarıdır.",
+      "reason": "QC geçemedi: score=90, placement=0.57"
+    },
+    {
+      "content_id": "76812535-8280-42c6-9408-9c3dce9dba35",
+      "type": "feed",
+      "quote": "Annem hâlâ eve geldiğimde koridor lambasını benim için açık bırakır, otuz yaşında olsam da.",
+      "reason": "QC geçemedi: score=89, placement=0.59"
+    },
+    {
+      "content_id": "e4245793-7906-4b44-ad3f-e4898f0e9de8",
+      "type": "feed",
+      "quote": "Yıllar sonra bir arkadaşla buluşup hâlâ aynı yerden devam edebiliyorsan, o dostluk gerçektir.",
+      "reason": "QC geçemedi: score=90, placement=0.59"
+    },
+    {
+      "content_id": "63278b1f-2d0a-4c84-9149-7e0f8d793dad",
+      "type": "feed",
+      "quote": "Kibir, aslında güvensizliğin en gürültülü hâlidir.",
+      "reason": "QC geçemedi: score=90, placement=0.58"
+    },
+    {
+      "content_id": "8bc8b297-cd8c-4afb-9237-513e14c970e7",
+      "type": "feed",
+      "quote": "Sen gittin,\nodadaki eşyalar\nyerlerini hâlâ değiştirmiyor.",
+      "reason": "QC geçemedi: score=88, placement=0.53"
+    },
+    {
+      "content_id": "57b5725c-7200-4c02-a302-394d056e114a",
+      "type": "feed",
+      "quote": "Seni sevmek, hiç öğrenmediğim bir dilde konuşmak gibiydi; yine de anlaşıldım.",
+      "reason": "QC geçemedi: score=87, placement=0.53"
+    },
+    {
+      "content_id": "9b204976-aaf2-48cc-b7ea-1a02a32fd40d",
+      "type": "story",
+      "quote": "Kaybettiğin bir arkadaşlığın en tuhaf tarafı, hâlâ ona anlatmak istediğin şeyler olması.",
+      "reason": "QC geçemedi: score=92, placement=0.59"
+    },
+    {
+      "content_id": "b578f5e5-0126-4415-a732-779a1a14990e",
+      "type": "story",
+      "quote": "Bir çiftin ne kadar mutlu olduğunu, tartışırken bile birbirlerine nasıl seslendiklerine bakarak anlarsın.",
+      "reason": "QC geçemedi: score=91, placement=0.55"
+    },
+    {
+      "content_id": "cc4a2061-145f-43bf-b301-ddbefc3811f8",
+      "type": "story",
+      "quote": "Annemin elleri, söylemediği bütün fedakarlıkların kanıtıdır.",
+      "reason": "QC geçemedi: score=90, placement=0.54"
+    },
+    {
+      "content_id": "75ab53f3-ccf3-4471-8f0f-c565c785ef44",
+      "type": "story",
+      "quote": "Param olmadığı dönemlerde yanımda kalanları, param olduğunda unutmamaya çalışıyorum.",
+      "reason": "QC geçemedi: score=85, placement=0.53"
+    },
+    {
+      "content_id": "81083dd0-fd13-46d8-96d2-06552b8e7607",
+      "type": "story",
+      "quote": "Sende sevdiğim, mükemmelliğin değil, çabalamayı hiç bırakmamandı.",
+      "reason": "QC geçemedi: score=90, placement=0.51"
+    },
+    {
+      "content_id": "20db6d3d-5036-427e-8b4b-5774e2493ba0",
+      "type": "story",
+      "quote": "Eskiden hayal ettiğim hayatla şimdi yaşadığım hayat aynı şehirde bile geçmiyor.",
+      "reason": "QC geçemedi: score=86, placement=0.39"
+    },
+    {
+      "content_id": "b479d60c-543b-40c1-8fbe-bd48dcb87b2b",
+      "type": "story",
+      "quote": "Sana söylemediğim sözler, şimdi bir mektup gibi katlanıp bir kenarda duruyor.",
+      "reason": "QC geçemedi: score=91, placement=0.60"
+    },
+    {
+      "content_id": "1f5befda-4a82-43ec-985d-fee164a35db5",
+      "type": "story",
+      "quote": "İşten çıkıp hemen eve gitmeyip arabada birkaç dakika oturmak, kimsenin bilmediği küçük bir moladır.",
+      "reason": "QC geçemedi: score=91, placement=0.57"
+    },
+    {
+      "content_id": "0c30674f-4878-41e8-a03e-0abbd038a52a",
+      "type": "story",
+      "quote": "Evlilik yıl dönümünde çekilen fotoğraflar değil, sıradan bir salı akşamı gülüşü asıl aşkı gösterir.",
+      "reason": "QC geçemedi: score=89, placement=0.45"
+    }
+  ]
+}

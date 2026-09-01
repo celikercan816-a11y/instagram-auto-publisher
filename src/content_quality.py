@@ -6,8 +6,17 @@ bar even after a light auto-fix attempt).
 import difflib
 from pathlib import Path
 
-from src.content_bank import CLICHE_PHRASES, SPAM_HASHTAGS, generate_caption, generate_hashtags
-from src.content_history import recent
+from src.content_bank import (
+    ATTRIBUTE_FIELDS,
+    CLICHE_PHRASES,
+    SPAM_HASHTAGS,
+    THEME_ALIASES,
+    compose_caption,
+    generate_caption,
+    generate_hashtags,
+    resolve_theme,
+)
+from src.content_history import last_n, recent
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
@@ -18,6 +27,32 @@ MAX_CAPTION_LEN = 2200
 CAPTION_SIMILARITY_THRESHOLD = 0.85
 HASHTAG_OVERLAP_THRESHOLD = 0.7
 THEME_REPETITION_MAX_IN_30D = 6
+ATTRIBUTE_OVERLAP_MAX = 3  # >=4 of 6 matching fields vs. a recent post is flagged
+
+# Defense-in-depth for the "gerçek hayat iddiası" caution: content_bank's own
+# caption/hashtag/location text never names a real club or claims attendance
+# at a specific real match (spor_futbol content stays generic/atmosphere-only
+# by design -- see content_bank.LOCATIONS["spor_futbol"]), but this catches it
+# if a future edit to the bank -- or a hand-added item via scripts/add_to_queue.py
+# -- ever slips one in.
+REAL_CLUB_NAME_MARKERS = ["fenerbahçe", "fenerbahce", "galatasaray", "beşiktaş", "besiktas", "trabzonspor"]
+
+# Shot types where NO person/body part at all should be visible in frame.
+#
+# lifestyle_detail_no_face/style_accessory_detail were RE-DEFINED 2026-09-01
+# as OBJECT_LIFESTYLE: a coverage-based check previously couldn't tell
+# "expected hand/arm closeup" apart from "unwanted face" for them (a
+# legitimate hand+coffee-cup shot measured 60% coverage, since hands/arms
+# ARE a person by pixel area) -- so the category itself was changed to ban
+# every body part, not just the face (see content_bank.SHOT_TYPE_FRAMING).
+# That makes this same coverage heuristic usable again: a pure object/
+# still-life shot should measure ~0% person coverage.
+NO_PROMINENT_PERSON_SHOT_TYPES = {"location_landscape_no_person", "lifestyle_detail_no_face", "style_accessory_detail"}
+NO_PROMINENT_PERSON_THRESHOLDS = {
+    "location_landscape_no_person": 0.02,
+    "lifestyle_detail_no_face": 0.008,
+    "style_accessory_detail": 0.008,
+}
 
 
 def check_image(path_str: str, is_reels: bool = False) -> list[str]:
@@ -57,6 +92,9 @@ def check_caption(caption: str, history_entries: list[dict]) -> list[str]:
     for phrase in CLICHE_PHRASES:
         if phrase in lower:
             issues.append(f"Klişe motivasyon ifadesi içeriyor: '{phrase}'")
+    for marker in REAL_CLUB_NAME_MARKERS:
+        if marker in lower:
+            issues.append(f"Gerçek kulüp/marka adı içeriyor (üretilen içerik gerçek bir etkinliğe katılımı ima etmemeli): '{marker}'")
 
     for entry in history_entries:
         prev = entry.get("caption_summary") or ""
@@ -105,12 +143,72 @@ def check_media_reuse(media_fingerprint: str | None, history_entries: list[dict]
 def check_theme_repetition(theme: str | None, history: list[dict]) -> list[str]:
     if not theme:
         return []
+    theme = resolve_theme(theme)
     last_30d = recent(history, days=30)
-    count = sum(1 for e in last_30d if e.get("theme") == theme)
+
+    def norm(t):
+        return THEME_ALIASES.get(t, t)
+
+    count = sum(1 for e in last_30d if norm(e.get("theme")) == theme)
     if count >= THEME_REPETITION_MAX_IN_30D:
         return [f"'{theme}' teması son 30 günde zaten {count} kez kullanıldı"]
-    if last_30d and last_30d[-1].get("theme") == theme:
+    if last_30d and norm(last_30d[-1].get("theme")) == theme:
         return [f"Bir önceki paylaşım da '{theme}' temasıydı (art arda aynı tür)"]
+    return []
+
+
+def check_attribute_repetition(attributes: dict | None, history: list[dict]) -> list[str]:
+    """Flags a post whose theme/location/outfit/pose/camera_angle/time_of_day
+    combination overlaps too closely (>=4 of 6 fields) with one of the last 10
+    published posts -- e.g. catches 'Boğaz + siyah tişört + yan profil + gece'
+    coming back right after it was just used. Safety net alongside
+    content_bank.generate_content_attributes's own resampling -- this also
+    catches hand-added items (e.g. via scripts/add_to_queue.py) that bypassed
+    that resampling entirely."""
+    if not attributes:
+        return []
+    recent10 = last_n(history, 10)
+    worst = 0
+    for entry in recent10:
+        other = entry.get("attributes") or {}
+        overlap = sum(
+            1 for f in ATTRIBUTE_FIELDS
+            if attributes.get(f) is not None and attributes.get(f) == other.get(f)
+        )
+        worst = max(worst, overlap)
+    if worst > ATTRIBUTE_OVERLAP_MAX:
+        fields = ", ".join(f"{f}={attributes.get(f)}" for f in ATTRIBUTE_FIELDS if attributes.get(f))
+        return [f"İçerik kombinasyonu son 10 paylaşımdan biriyle çok örtüşüyor ({fields}, örtüşen alan sayısı {worst})"]
+    return []
+
+
+def check_unexpected_person(media_path, shot_type: str | None) -> list[str]:
+    """Best-effort, local-only safety net: flags a generated image whose main
+    subject is a prominent person when shot_type says there shouldn't be one
+    (location_landscape_no_person) or shouldn't show a face
+    (lifestyle_detail_no_face/style_accessory_detail). Reuses the same
+    rembg-based person-coverage heuristic src/person_composite.py already
+    uses to retry a background generation. Silently returns [] if rembg
+    isn't installed (e.g. in GitHub Actions, which never has the
+    requirements-local-composite.txt extras) or the file doesn't exist --
+    this is a nice-to-have extra check, never a hard dependency of the core
+    pipeline."""
+    if shot_type not in NO_PROMINENT_PERSON_SHOT_TYPES or not media_path:
+        return []
+    path_str = media_path[0] if isinstance(media_path, list) else media_path
+    path = PROJECT_ROOT / path_str if not Path(path_str).is_absolute() else Path(path_str)
+    if not path.exists():
+        return []
+    try:
+        from PIL import Image
+
+        from src.person_composite import _background_person_coverage
+        coverage = _background_person_coverage(Image.open(path).convert("RGB"))
+    except ImportError:
+        return []
+    threshold = NO_PROMINENT_PERSON_THRESHOLDS[shot_type]
+    if coverage > threshold:
+        return [f"'{shot_type}' için beklenmeyen büyüklükte insan/yüz figürü tespit edildi (kapsama={coverage:.3f} > {threshold})"]
     return []
 
 
@@ -143,6 +241,14 @@ def score_content(item: dict, history: list[dict], media_fingerprint: str | None
     issues += theme_issues
     penalties += 15 * len(theme_issues)
 
+    attr_issues = check_attribute_repetition(item.get("attributes"), history)
+    issues += attr_issues
+    penalties += 20 * len(attr_issues)
+
+    person_issues = check_unexpected_person(item.get("media_path"), (item.get("attributes") or {}).get("shot_type"))
+    issues += person_issues
+    penalties += 60 * len(person_issues)
+
     score = max(0, min(100, 100 - penalties))
     return score, issues
 
@@ -161,8 +267,10 @@ def run_quality_control(item: dict, history: list[dict], media_fingerprint: str 
             recent_sets = [e.get("hashtags") or [] for e in recent(history, days=30) if e.get("theme") == theme]
             item["hashtags"] = generate_hashtags(theme, recent_sets)
         if any("Caption" in i or "caption" in i for i in issues if "Klişe" in i or "benziyor" in i):
-            item["caption_text"] = generate_caption(theme, used_captions)
-            item["caption"] = item["caption_text"] + "\n\n" + " ".join(item["hashtags"])
+            caption_text, caption_style = generate_caption(theme, used_captions, history=history, media_source=item.get("media_source"))
+            item["caption_text"] = caption_text
+            item.setdefault("attributes", {})["caption_style"] = caption_style
+            item["caption"] = compose_caption(caption_text, item["hashtags"])
         score, issues = score_content(item, history, media_fingerprint)
 
     item["quality_score"] = score

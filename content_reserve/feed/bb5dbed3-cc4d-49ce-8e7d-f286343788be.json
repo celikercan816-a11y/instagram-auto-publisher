@@ -1,0 +1,25 @@
+{
+  "content_id": "bb5dbed3-cc4d-49ce-8e7d-f286343788be",
+  "type": "feed",
+  "quote": {
+    "id": "c828cff1-96b8-4ef9-8334-6dfd556a50ff",
+    "text": "Okulda beni bekleyen o araba artık yok ama o sokaktan geçerken hâlâ yavaşlıyorum.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "çocukluk",
+    "mood": "zaman",
+    "score": 87,
+    "hash": "a60f593d550d7cd2",
+    "pattern_tags": [
+      "OPENER_OKULDA"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "çocukluk",
+  "image_path": "media/generated/bb5dbed3-cc4d-49ce-8e7d-f286343788be_feed.jpg",
+  "quote_score": 87,
+  "visual_score": 91,
+  "overall_score": 91,
+  "zone": "top_left",
+  "generated_at": "2026-09-01T18:21:32.105266+00:00"
+}

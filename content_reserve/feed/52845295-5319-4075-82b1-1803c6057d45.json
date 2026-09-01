@@ -1,0 +1,25 @@
+{
+  "content_id": "52845295-5319-4075-82b1-1803c6057d45",
+  "type": "feed",
+  "quote": {
+    "id": "6ccff895-a161-416e-bec3-f7737161e9e2",
+    "text": "Annem telefonda 'nasılsın' diye sorduğunda gerçekten cevap bekler, çoğu kişi sormaz.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "aile",
+    "mood": "huzur",
+    "score": 86,
+    "hash": "32d75e74b4b06d09",
+    "pattern_tags": [
+      "OPENER_ANNEM"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "aile",
+  "image_path": "media/generated/52845295-5319-4075-82b1-1803c6057d45_feed.jpg",
+  "quote_score": 86,
+  "visual_score": 88,
+  "overall_score": 88,
+  "zone": "bottom_right",
+  "generated_at": "2026-09-01T18:21:32.105266+00:00"
+}

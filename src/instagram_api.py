@@ -87,6 +87,13 @@ class InstagramClient:
         data = self._post(f"{self.config.ig_user_id}/media", params)
         return data["id"]
 
+    def create_story_container(self, image_url: str) -> str:
+        """Photo story (point 6 of the 2026-09-01 automation build). Per the
+        Content Publishing API docs, stories take no caption -- Instagram
+        doesn't render one on a story regardless."""
+        data = self._post(f"{self.config.ig_user_id}/media", {"image_url": image_url, "media_type": "STORIES"})
+        return data["id"]
+
     def create_carousel_container(self, children_ids: list[str], caption: str | None = None) -> str:
         params = {
             "media_type": "CAROUSEL",

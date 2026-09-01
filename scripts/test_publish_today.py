@@ -37,7 +37,15 @@ import requests
 
 from src.config import Config
 from src.content_history import file_fingerprint, load_history, record_published, recent
-from src.content_bank import generate_caption, generate_hashtags, generate_image_prompt
+from src.content_bank import (
+    compose_caption,
+    generate_caption,
+    generate_content_attributes,
+    generate_hashtags,
+    generate_image_prompt,
+    pick_shot_type_for_slot,
+    resolve_theme,
+)
 from src.content_planner import PROJECT_ROOT, _load_plan, _save_plan, _slot_datetime
 from src.content_quality import run_quality_control
 from src.image_generator import QuotaExhaustedError, find_local_media, generate_image
@@ -68,16 +76,17 @@ def _existing_item_for_slot(slot_id: str) -> dict | None:
 
 
 def make_placeholder(slot: dict) -> dict:
-    theme = slot["theme"]
-    caption_text = generate_caption(theme, set())
+    theme = resolve_theme(slot["theme"])
+    caption_text, caption_style = generate_caption(theme, set())
     hashtags = generate_hashtags(theme, [])
-    caption = caption_text + "\n\n" + " ".join(hashtags)
+    caption = compose_caption(caption_text, hashtags)
     items = load_queue()
     item = add_item(
         items, media_type="IMAGE", media_url=None, caption=caption,
         scheduled_at=datetime.now(timezone.utc).isoformat(), allow_duplicate=True,
         content_type="post", theme=theme, media_source=None, media_path=None,
         hashtags=hashtags, status="needs_generation", item_id=slot["id"],
+        attributes={"theme": theme, "caption_style": caption_style},
     )
     save_queue(items)
     return item
@@ -87,7 +96,7 @@ def prepare_slot(slot: dict, config: Config, history: list[dict], force_regenera
     """Returns the queue item dict. item['status'] is 'pending' if it cleared
     QC, 'needs_review' if not. Raises QuotaExhaustedError if generation was
     needed and the free quota is exhausted."""
-    theme = slot["theme"]
+    theme = resolve_theme(slot["theme"])
     item_id = slot["id"]
 
     if not force_regenerate:
@@ -100,9 +109,12 @@ def prepare_slot(slot: dict, config: Config, history: list[dict], force_regenera
     media_path = find_local_media(theme)
     if media_path:
         media_source, image_prompt = "local", None
+        attributes = {"theme": theme}
         rel_path = str(media_path.relative_to(PROJECT_ROOT)).replace("\\", "/")
     else:
-        image_prompt = generate_image_prompt(theme)
+        shot_type = pick_shot_type_for_slot([])
+        attributes = generate_content_attributes(theme, shot_type, history)
+        image_prompt = generate_image_prompt(theme, shot_type=shot_type, attributes=attributes)
         generated = generate_image(theme, item_id, is_reels=False, prompt=image_prompt)
         media_source = "ai_generated"
         rel_path = str(generated.relative_to(PROJECT_ROOT)).replace("\\", "/")
@@ -110,9 +122,10 @@ def prepare_slot(slot: dict, config: Config, history: list[dict], force_regenera
 
     used_captions = {e.get("caption_summary", "") for e in history}
     recent_sets = [e.get("hashtags") or [] for e in recent(history, days=30) if e.get("theme") == theme]
-    caption_text = generate_caption(theme, used_captions)
+    caption_text, caption_style = generate_caption(theme, used_captions, history=history, media_source=media_source)
+    attributes["caption_style"] = caption_style
     hashtags = generate_hashtags(theme, recent_sets)
-    caption = caption_text + "\n\n" + " ".join(hashtags)
+    caption = compose_caption(caption_text, hashtags)
 
     items = load_queue()
     items = [i for i in items if i.get("id") != item_id]  # drop a previous failed/rejected attempt for this slot
@@ -121,6 +134,7 @@ def prepare_slot(slot: dict, config: Config, history: list[dict], force_regenera
         scheduled_at=datetime.now(timezone.utc).isoformat(), allow_duplicate=True,
         content_type="post", theme=theme, media_source=media_source, media_path=rel_path,
         image_prompt=image_prompt, hashtags=hashtags, item_id=item_id,
+        attributes=attributes,
     )
     fingerprint = file_fingerprint(PROJECT_ROOT / rel_path)
     run_quality_control(item, history, media_fingerprint=fingerprint)

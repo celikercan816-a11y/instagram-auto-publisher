@@ -1,5 +1,15 @@
 requests>=2.31.0
 python-dotenv>=1.0.0
+tzdata>=2024.1  # zoneinfo's IANA tz database -- ubuntu-latest ships it, but pin it for reliability across environments
 PyNaCl>=1.5.0
 Pillow>=10.0.0
 huggingface_hub>=0.26.0
+# rembg/pymatting: local person-pixel-coverage check for OBJECT_LIFESTYLE/
+# LANDSCAPE hard-fail (content_quality.check_unexpected_person) and the
+# REAL_PERSON_COMPOSITE/PERSON_HIDDEN segmentation pipeline
+# (src/person_composite.py). Added 2026-09-01 (user-confirmed trade-off:
+# ~150-200MB + ~20-40s extra install time per GitHub Actions run, no
+# monetary cost) so these hard-fail checks actually run in the daily
+# automated workflow, not just locally.
+rembg[cpu]>=2.0.81
+pymatting>=1.1.14

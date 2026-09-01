@@ -1,0 +1,25 @@
+{
+  "content_id": "6f39e8c9-c263-4946-bf19-1b87f9deea64",
+  "type": "feed",
+  "quote": {
+    "id": "637ec98a-2e33-458a-9516-c3220654c72d",
+    "text": "Anne-baba kavgası unutulur ama sofrada kimin kime bakmadığı hep hatırlanır.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "aile",
+    "mood": "melankoli",
+    "score": 87,
+    "hash": "1727e05689c20059",
+    "pattern_tags": [
+      "OPENER_ANNE"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "aile",
+  "image_path": "media/generated/6f39e8c9-c263-4946-bf19-1b87f9deea64_feed.jpg",
+  "quote_score": 87,
+  "visual_score": 98,
+  "overall_score": 98,
+  "zone": "bottom_right",
+  "generated_at": "2026-09-01T18:21:32.105266+00:00"
+}

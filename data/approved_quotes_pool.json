@@ -1,0 +1,369 @@
+{
+  "engine_version": "1.0",
+  "quotes": [
+    {
+      "id": "9c3adec7-b3dd-4cfe-8fb8-86d627b1a9dc",
+      "text": "İnsan, ailesinin fotoğraflarını değil, kaç tanesinde gerçekten gülümsediğini fark edince büyür.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "hayat tespiti",
+      "mood": "melankoli",
+      "score": 89,
+      "hash": "78529dc8c90dc0b9",
+      "pattern_tags": [
+        "X_DEGIL_Y"
+      ]
+    },
+    {
+      "id": "d3be2173-73fc-4d27-b4c2-7f8d7ced523e",
+      "text": "Bir insanın karakteri, hesap hatası kendi lehine çıktığında ne yaptığında ortaya çıkar.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "karakter",
+      "mood": "huzur",
+      "score": 89,
+      "hash": "8470eee7e20a365b",
+      "pattern_tags": [
+        "BIR_INSAN"
+      ]
+    },
+    {
+      "id": "599bb0db-9c4e-4075-950a-d8a27587c401",
+      "text": "İnsanın en çok pişman olduğu şeyler, yaptıkları değil, korkudan yapmadıklarıdır.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "hayat tespiti",
+      "mood": "melankoli",
+      "score": 88,
+      "hash": "88542cca273879ff",
+      "pattern_tags": [
+        "X_DEGIL_Y"
+      ]
+    },
+    {
+      "id": "94774d13-aef8-42a4-a641-999fa7785c4d",
+      "text": "Biriyle geçirdiğin son günün 'son' olduğunu bilmemen, aslında en acımasız kısmıdır.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "ayrılık/özlem",
+      "mood": "melankoli",
+      "score": 87,
+      "hash": "c49659874ad35f77",
+      "pattern_tags": [
+        "OPENER_BIRIYLE"
+      ]
+    },
+    {
+      "id": "637ec98a-2e33-458a-9516-c3220654c72d",
+      "text": "Anne-baba kavgası unutulur ama sofrada kimin kime bakmadığı hep hatırlanır.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "aile",
+      "mood": "melankoli",
+      "score": 87,
+      "hash": "1727e05689c20059",
+      "pattern_tags": [
+        "OPENER_ANNE"
+      ]
+    },
+    {
+      "id": "b393c39d-3c59-4fe1-879d-1c9fb3e046fb",
+      "text": "Sana söylemediğim onca cümle, şimdi bir çekmecede kelimesiz duruyor.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "ayrılık/özlem",
+      "mood": "melankoli",
+      "score": 87,
+      "hash": "7697144926d48488",
+      "pattern_tags": [
+        "OPENER_SANA"
+      ]
+    },
+    {
+      "id": "1544a22c-0044-4c27-93b4-c93273acaa9c",
+      "text": "Yıllar sonra bir arkadaşla buluşup hâlâ aynı yerden devam edebiliyorsan, o dostluk gerçektir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "dostluk",
+      "mood": "huzur",
+      "score": 86,
+      "hash": "b566215d33300698",
+      "pattern_tags": [
+        "OPENER_YILLAR"
+      ]
+    },
+    {
+      "id": "8982eac0-525c-465a-91db-0bc6a912db2b",
+      "text": "Maaşın yattığı gün hissettiğin rahatlık, ay sonuna kalan üç güne kadar sürer.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "para",
+      "mood": "zaman",
+      "score": 86,
+      "hash": "ceb939058668bec8",
+      "pattern_tags": [
+        "OPENER_MAAŞIN"
+      ]
+    },
+    {
+      "id": "17604f43-c613-482d-9e45-b9568d010d69",
+      "text": "Kibir, aslında güvensizliğin en gürültülü hâlidir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "karakter/vicdan",
+      "mood": "huzur",
+      "score": 86,
+      "hash": "fe7542273cdc237c",
+      "pattern_tags": [
+        "OPENER_KIBIR"
+      ]
+    },
+    {
+      "id": "10ecb872-5682-40e2-aeaf-6108d60c9889",
+      "text": "Sen gittin,\nodadaki eşyalar\nyerlerini hâlâ değiştirmiyor.",
+      "author": null,
+      "category": "SHORT_POEM",
+      "theme": "ayrılık/özlem",
+      "mood": "melankoli",
+      "score": 86,
+      "hash": "fce07f015a72d1d1",
+      "pattern_tags": [
+        "OPENER_SEN"
+      ]
+    },
+    {
+      "id": "7e69795c-5e0a-4513-a9a0-4b7801124da7",
+      "text": "Seni sevmek, hiç öğrenmediğim bir dilde konuşmak gibiydi; yine de anlaşıldım.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "aşk",
+      "mood": "melankoli",
+      "score": 86,
+      "hash": "15883e109c1f0fa9",
+      "pattern_tags": [
+        "SEVMEK"
+      ]
+    },
+    {
+      "id": "2980fa19-e1e3-4735-af59-491d451b83d6",
+      "text": "Annemin elleri, söylemediği bütün fedakarlıkların kanıtıdır.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "aile",
+      "mood": "huzur",
+      "score": 85,
+      "hash": "ab200cf013023d55",
+      "pattern_tags": [
+        "OPENER_ANNEMIN"
+      ]
+    },
+    {
+      "id": "00116c81-2857-4c91-a5c0-070cac3b977f",
+      "text": "Annem hâlâ eve geldiğimde koridor lambasını benim için açık bırakır, otuz yaşında olsam da.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "aile",
+      "mood": "huzur",
+      "score": 88,
+      "hash": "dcbdfe065e0bd5f2",
+      "pattern_tags": [
+        "OPENER_ANNEM"
+      ]
+    },
+    {
+      "id": "c828cff1-96b8-4ef9-8334-6dfd556a50ff",
+      "text": "Okulda beni bekleyen o araba artık yok ama o sokaktan geçerken hâlâ yavaşlıyorum.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "çocukluk",
+      "mood": "zaman",
+      "score": 87,
+      "hash": "a60f593d550d7cd2",
+      "pattern_tags": [
+        "OPENER_OKULDA"
+      ]
+    },
+    {
+      "id": "ccd257ef-c03d-4810-8fa0-20b41af296bf",
+      "text": "Yıllar sonra aynı kafede oturup artık kimin ne içtiğini unutmuş olmak, ayrılığın en sessiz hâlidir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "ayrılık/özlem",
+      "mood": "melankoli",
+      "score": 87,
+      "hash": "3e1505f976498a44",
+      "pattern_tags": [
+        "OPENER_YILLAR"
+      ]
+    },
+    {
+      "id": "4a05f17d-2ca5-4f5a-89d0-6439f6ded06d",
+      "text": "Bir garsona nasıl davrandığın, yöneticine nasıl davrandığından daha çok şey söyler.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "karakter",
+      "mood": "huzur",
+      "score": 87,
+      "hash": "4f6745e2220da773",
+      "pattern_tags": [
+        "OPENER_BIR"
+      ]
+    },
+    {
+      "id": "6ccff895-a161-416e-bec3-f7737161e9e2",
+      "text": "Annem telefonda 'nasılsın' diye sorduğunda gerçekten cevap bekler, çoğu kişi sormaz.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "aile",
+      "mood": "huzur",
+      "score": 86,
+      "hash": "32d75e74b4b06d09",
+      "pattern_tags": [
+        "OPENER_ANNEM"
+      ]
+    },
+    {
+      "id": "b9b57b02-6205-4a15-90aa-8d8598093908",
+      "text": "Kaybettiğin bir arkadaşlığın en tuhaf tarafı, hâlâ ona anlatmak istediğin şeyler olması.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "dostluk",
+      "mood": "melankoli",
+      "score": 86,
+      "hash": "06b7b74fc4488b7b",
+      "pattern_tags": [
+        "OPENER_KAYBETTIĞIN"
+      ]
+    },
+    {
+      "id": "5a79aa1c-2087-44e1-bc25-1f9874c027e1",
+      "text": "Sende sevdiğim, mükemmelliğin değil, çabalamayı hiç bırakmamandı.",
+      "author": null,
+      "category": "SHORT_POEM",
+      "theme": "aşk",
+      "mood": "melankoli",
+      "score": 86,
+      "hash": "226e8a7db7e79ceb",
+      "pattern_tags": [
+        "X_DEGIL_Y"
+      ]
+    },
+    {
+      "id": "6091089e-9f4b-404f-8b5b-41fda686b873",
+      "text": "Bir çiftin ne kadar mutlu olduğunu, tartışırken bile birbirlerine nasıl seslendiklerine bakarak anlarsın.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "aşk",
+      "mood": "huzur",
+      "score": 86,
+      "hash": "88bf4b53c0fa04f6",
+      "pattern_tags": [
+        "OPENER_BIR"
+      ]
+    },
+    {
+      "id": "86bab1d7-4b2f-4e0a-8ec7-e2770cb33f1d",
+      "text": "Babamın cüzdanındaki fotoğraf hiç değişmedi, değişen sadece kaç kez ona baktığı oldu.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "aile",
+      "mood": "melankoli",
+      "score": 85,
+      "hash": "d145077ab2176132",
+      "pattern_tags": [
+        "OPENER_BABAMIN"
+      ]
+    },
+    {
+      "id": "0510a07c-9048-4b33-b6d7-e7f8d640af11",
+      "text": "Param olmadığı dönemlerde yanımda kalanları, param olduğunda unutmamaya çalışıyorum.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "para",
+      "mood": "zaman",
+      "score": 85,
+      "hash": "a3d1c9ddb7bc5757",
+      "pattern_tags": [
+        "OPENER_PARAM"
+      ]
+    },
+    {
+      "id": "b1df8dc0-0982-4681-af33-ab9dfc5eb6a1",
+      "text": "Eskiden hayal ettiğim hayatla şimdi yaşadığım hayat aynı şehirde bile geçmiyor.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "hayaller",
+      "mood": "zaman",
+      "score": 85,
+      "hash": "cbd050d6c37ab171",
+      "pattern_tags": [
+        "OPENER_ESKIDEN"
+      ]
+    },
+    {
+      "id": "6e641aea-1371-408c-bd44-cfeb88a22c0d",
+      "text": "Annesiyle her gün konuşan biri bile bazı günler sadece 'iyiyim' der, gerçeği anlatmak yorar.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "aile",
+      "mood": "melankoli",
+      "score": 85,
+      "hash": "8cc677d7b77feccd",
+      "pattern_tags": [
+        "OPENER_ANNESIYLE"
+      ]
+    },
+    {
+      "id": "9bacf355-dc19-4266-8ef4-eec218de933b",
+      "text": "Sana söylemediğim sözler, şimdi bir mektup gibi katlanıp bir kenarda duruyor.",
+      "author": null,
+      "category": "SHORT_POEM",
+      "theme": "ayrılık/özlem",
+      "mood": "melankoli",
+      "score": 85,
+      "hash": "f8f4ddc770a02674",
+      "pattern_tags": [
+        "OPENER_SANA"
+      ]
+    },
+    {
+      "id": "6b791d67-e445-40f2-be19-780887abb139",
+      "text": "Aşk ilk günlerde her şeyi konuşmaktır, yıllar sonra hiçbir şey konuşmadan anlaşabilmektir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "aşk",
+      "mood": "huzur",
+      "score": 85,
+      "hash": "345fc272e1f856e5",
+      "pattern_tags": [
+        "OPENER_AŞK"
+      ]
+    },
+    {
+      "id": "ee9977d5-33c4-43a9-9beb-2205a488667e",
+      "text": "Evlilik yıl dönümünde çekilen fotoğraflar değil, sıradan bir salı akşamı gülüşü asıl aşkı gösterir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "aşk",
+      "mood": "huzur",
+      "score": 85,
+      "hash": "dbde05b2aca46d08",
+      "pattern_tags": [
+        "X_DEGIL_Y"
+      ]
+    },
+    {
+      "id": "7dd18be9-3301-433f-9e95-25b9a2e10562",
+      "text": "İşten çıkıp hemen eve gitmeyip arabada birkaç dakika oturmak, kimsenin bilmediği küçük bir moladır.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "başarı/emek",
+      "mood": "yalnizlik",
+      "score": 85,
+      "hash": "da358ac26ff851d1",
+      "pattern_tags": [
+        "OPENER_I"
+      ]
+    }
+  ]
+}

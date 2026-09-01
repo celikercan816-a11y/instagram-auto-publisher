@@ -34,6 +34,9 @@ def publish_item(client: InstagramClient, item: dict) -> str:
     if media_type == "IMAGE":
         container_id = client.create_image_container(media_url, caption=caption)
 
+    elif media_type == "STORIES":
+        container_id = client.create_story_container(media_url)
+
     elif media_type in ("VIDEO", "REELS"):
         container_id = client.create_video_container(media_url, media_type=media_type, caption=caption)
         client.wait_until_ready(container_id)

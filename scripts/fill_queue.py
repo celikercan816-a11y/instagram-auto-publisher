@@ -13,6 +13,8 @@ def main() -> int:
         print(f"Yeni hazir icerik: {len(report['created'])}")
     if report.get("needs_review"):
         print(f"Kalite kontrolden gecemedi, needs_review: {report['needs_review']}")
+    if report.get("deferred_person_visible"):
+        print(f"Kisi-gorunur slotlar ertelendi (local composite onayi gerekiyor, bkz. scripts/prepare_person_previews.py): {report['deferred_person_visible']}")
     if report.get("quota_stopped"):
         print("Ucretsiz Hugging Face kotasi tukendi, bu calistirmada durduruldu (yarin tekrar denenecek).")
     if report.get("errors"):
