@@ -36,5 +36,27 @@
     "instagram_media_id": "18340592806283811",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "ef5b23cf-f5f4-4160-8151-7a7f0b88006d",
+    "theme": "aile",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "d145077ab2176132",
+      "quote_text": "Babamın cüzdanındaki fotoğraf hiç değişmedi, değişen sadece kaç kez ona baktığı oldu.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aile",
+      "zone": "lower"
+    },
+    "image_fingerprint": "0b6a86853af50b3b782654938168aa61c2e92614a6e502f5a48a7edde0073020",
+    "published_at": "2026-09-01T18:41:07.126848+00:00",
+    "instagram_media_id": "18111308309017456",
+    "insights": null,
+    "performance_score": null
   }
 ]
