@@ -268,13 +268,13 @@
       "#anlar"
     ],
     "scheduled_at": "2026-09-03T18:30:00+03:00",
-    "status": "pending",
+    "status": "failed",
     "created_at": "2026-09-03T15:26:24.063267+00:00",
     "published_at": null,
     "instagram_media_id": null,
     "quality_score": 88,
     "performance_score": null,
-    "error": null,
+    "error": "POST 17841472089310101/media_publish failed (HTTP 400, code=9007, subcode=2207027): The media is not ready for publishing, please wait for a moment",
     "attributes": {
       "pipeline_version": "quote_v1",
       "quote_hash": "32d75e74b4b06d09",
@@ -393,5 +393,44 @@
       "zone": "top_left"
     },
     "pipeline_version": "quote_v1"
+  },
+  {
+    "id": "bb5dbed3-cc4d-49ce-8e7d-f286343788be",
+    "content_type": "post",
+    "theme": "çocukluk",
+    "media_type": "IMAGE",
+    "media_source": "ai_generated",
+    "media_path": "media/generated/bb5dbed3-cc4d-49ce-8e7d-f286343788be_feed.jpg",
+    "media_url": "https://raw.githubusercontent.com/celikercan816-a11y/instagram-auto-publisher/master/media/generated/bb5dbed3-cc4d-49ce-8e7d-f286343788be_feed.jpg",
+    "image_prompt": null,
+    "caption": "Burada saat başka işliyor.\n\n#zaman #manzara #sakinlik #huzur #şehir #gece",
+    "hashtags": [
+      "#zaman",
+      "#manzara",
+      "#sakinlik",
+      "#huzur",
+      "#şehir",
+      "#gece"
+    ],
+    "scheduled_at": "2026-09-03T15:31:36.578161+00:00",
+    "status": "skipped",
+    "created_at": "2026-09-03T15:31:36.578321+00:00",
+    "published_at": null,
+    "instagram_media_id": null,
+    "quality_score": 91,
+    "performance_score": null,
+    "error": "POST 17841472089310101/media_publish failed (HTTP 400, code=9007, subcode=2207027): The media is not ready for publishing, please wait for a moment",
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "a60f593d550d7cd2",
+      "quote_text": "Okulda beni bekleyen o araba artık yok ama o sokaktan geçerken hâlâ yavaşlıyorum.",
+      "mood": "zaman",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "çocukluk",
+      "zone": "top_left"
+    },
+    "pipeline_version": "quote_v1",
+    "_is_reserve_substitute": true
   }
 ]
