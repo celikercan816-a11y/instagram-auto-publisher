@@ -63,10 +63,13 @@ jobs:
         run: |
           git config user.name "instagram-auto-publisher-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add --ignore-errors content_queue.json content_history.json weekly_content_plan.json \
-                  media/generated strategy_weights.json logs/image_generation_log.jsonl \
-                  daily_publish_plan.json data/approved_quotes_pool.json data/quote_seed_bank.json \
-                  logs/daily_planner_log.jsonl content_reserve || true
+          for f in content_queue.json content_history.json weekly_content_plan.json \
+                   strategy_weights.json logs/image_generation_log.jsonl \
+                   daily_publish_plan.json data/approved_quotes_pool.json data/quote_seed_bank.json \
+                   logs/daily_planner_log.jsonl; do
+            [ -e "$f" ] && git add -- "$f"
+          done
+          git add --ignore-errors media/generated content_reserve || true
           if ! git diff --cached --quiet; then
             git commit -m "chore: daily content fill [skip ci]"
             git pull --rebase origin "${{ github.ref_name }}"
