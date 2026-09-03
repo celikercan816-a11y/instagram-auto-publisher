@@ -153,5 +153,49 @@
     "instagram_media_id": "18144083071520615",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "16323d34-71ec-4f54-a449-98f100583d89",
+    "theme": "anı/nostalji",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "ba83678dcbf044b9",
+      "quote_text": "Bir fotoğrafa yıllar sonra bakıp gülümsemek, o anın ne kadar sıradan geçtiğini unutmandandır.",
+      "mood": "zaman",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "anı/nostalji",
+      "zone": "lower"
+    },
+    "image_fingerprint": "deb8ae1c981fd32c57caaae03e2ec7f82f26c93028ddae539190e3badd9fe5a5",
+    "published_at": "2026-09-03T18:54:32.810094+00:00",
+    "instagram_media_id": "18117090073881153",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "63c67950-e1bf-499f-9694-67d0a4fd4f12",
+    "theme": "aile/anı",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "e6adcf003adc7fea",
+      "quote_text": "Çocukluk evinin artık başkasına ait olduğunu bilmek, oraya hiç gitmemekten daha ağırdır.",
+      "mood": "zaman",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aile/anı",
+      "zone": "lower"
+    },
+    "image_fingerprint": "c511eaf4239b2dc8596bc8965ceff5d1032e81ca0d8f8ef410a6ae81b3ab0a0e",
+    "published_at": "2026-09-03T18:54:44.254855+00:00",
+    "instagram_media_id": "18030956291670628",
+    "insights": null,
+    "performance_score": null
   }
 ]

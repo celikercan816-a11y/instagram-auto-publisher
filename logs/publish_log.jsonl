@@ -57,3 +57,5 @@
 {"timestamp": "2026-09-03T15:31:57.921698+00:00", "level": "warning", "item_id": "bb5dbed3-cc4d-49ce-8e7d-f286343788be", "message": "Reserve substitute also failed -- SKIPPED, no further swap (one-shot)."}
 {"timestamp": "2026-09-03T16:11:24.776395+00:00", "level": "success", "item_id": "6f39e8c9-c263-4946-bf19-1b87f9deea64", "instagram_media_id": "18154331722509608", "message": "Published IMAGE scheduled for 2026-09-03T19:10:00+03:00"}
 {"timestamp": "2026-09-03T16:11:35.404177+00:00", "level": "success", "item_id": "f747abf7-a3d6-417b-98d5-86ad7caf150d", "instagram_media_id": "18144083071520615", "message": "Published STORIES scheduled for 2026-09-03T19:10:00+03:00"}
+{"timestamp": "2026-09-03T18:54:32.811451+00:00", "level": "success", "item_id": "16323d34-71ec-4f54-a449-98f100583d89", "instagram_media_id": "18117090073881153", "message": "Published STORIES scheduled for 2026-09-03T17:27:55.428728+00:00"}
+{"timestamp": "2026-09-03T18:54:44.256166+00:00", "level": "success", "item_id": "63c67950-e1bf-499f-9694-67d0a4fd4f12", "instagram_media_id": "18030956291670628", "message": "Published STORIES scheduled for 2026-09-03T18:29:18.476243+00:00"}
