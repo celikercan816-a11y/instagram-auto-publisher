@@ -13,8 +13,15 @@
     "image_fingerprint": "d94fdab65daa6c5caa77ce2edadac94a40c7619835f8cd412e1a6daeda09ca56",
     "published_at": "2026-08-31T14:21:03.549528+00:00",
     "instagram_media_id": "17983084169882551",
-    "insights": null,
-    "performance_score": null
+    "insights": {
+      "reach": 3,
+      "likes": 0,
+      "comments": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 0
+    },
+    "performance_score": 0.0
   },
   {
     "id": "e8a777f2-6b71-49e9-9dee-82ada615426a",
@@ -34,8 +41,15 @@
     "image_fingerprint": "23b88b9376774973ebd88a3ae9cb9b266639597c4904d9a9011e2f7285c8328f",
     "published_at": "2026-08-31T14:32:08.957192+00:00",
     "instagram_media_id": "18340592806283811",
-    "insights": null,
-    "performance_score": null
+    "insights": {
+      "reach": 4,
+      "likes": 0,
+      "comments": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 0
+    },
+    "performance_score": 0.0
   },
   {
     "id": "ef5b23cf-f5f4-4160-8151-7a7f0b88006d",
@@ -56,8 +70,8 @@
     "image_fingerprint": "0b6a86853af50b3b782654938168aa61c2e92614a6e502f5a48a7edde0073020",
     "published_at": "2026-09-01T18:41:07.126848+00:00",
     "instagram_media_id": "18111308309017456",
-    "insights": null,
-    "performance_score": null
+    "insights": {},
+    "performance_score": 0.0
   },
   {
     "id": "9d89d5be-64af-462e-8e97-ee9c07049cfb",
@@ -82,7 +96,14 @@
     "image_fingerprint": "69beb2f121cea0b8cea09481b25c9ff150ed23779ef4762d8fe198d323b48da7",
     "published_at": "2026-09-01T22:01:06.673364+00:00",
     "instagram_media_id": "18121869893484729",
-    "insights": null,
-    "performance_score": null
+    "insights": {
+      "reach": 3,
+      "likes": 0,
+      "comments": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 0
+    },
+    "performance_score": 0.0
   }
 ]
