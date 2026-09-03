@@ -2,8 +2,10 @@ name: Fill content queue and update performance
 
 on:
   schedule:
-    # 05:00 UTC daily (08:00 Istanbul), well before the weekly-plan job runs
-    - cron: "0 5 * * *"
+    # ~05:00 UTC daily (08:00 Istanbul), well before the weekly-plan job runs.
+    # Offset 7 minutes past the hour (2026-09-03) -- GitHub's scheduler is
+    # documented to be more congested right at the top of the hour.
+    - cron: "7 5 * * *"
   workflow_dispatch: {}
 
 concurrency:

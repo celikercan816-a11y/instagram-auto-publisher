@@ -2,9 +2,16 @@ name: Publish scheduled Instagram content
 
 on:
   schedule:
-    # every 15 minutes. GitHub may delay this by a few minutes under load --
-    # posts are not guaranteed to go out at the exact second scheduled.
-    - cron: "*/15 * * * *"
+    # Every 15 minutes, offset to :07/:22/:37/:52 instead of the exact
+    # quarter-hour (2026-09-03): GitHub explicitly documents that the top of
+    # every hour (and, empirically, other round minutes like :15/:30/:45) is
+    # high-load for Actions' scheduler and scheduled runs there are more
+    # likely to be delayed or dropped outright -- an off-peak minute is
+    # serviced more reliably. Even so, GitHub does not guarantee a schedule
+    # fires on time or at all every tick; a late/skipped tick is not data
+    # loss here -- get_due_items() (src/queue_manager.py) picks up anything
+    # overdue on whatever run does eventually fire.
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch: {}
 
 concurrency:
