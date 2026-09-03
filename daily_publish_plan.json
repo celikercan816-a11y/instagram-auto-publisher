@@ -1,35 +1,62 @@
 {
   "date": "2026-09-03",
-  "generated_at": "2026-09-03T15:26:23.973111+00:00",
+  "generated_at": "2026-09-03T15:50:50.857456+00:00",
   "feed": [
     {
-      "content_id": "52845295-5319-4075-82b1-1803c6057d45",
-      "scheduled_at": "2026-09-03T18:30:00+03:00",
-      "theme": "aile"
-    },
-    {
-      "content_id": "6f39e8c9-c263-4946-bf19-1b87f9deea64",
+      "content_id": "cdeb30b3-0770-41e1-a77b-928c71123d46",
       "scheduled_at": "2026-09-03T20:30:00+03:00",
-      "theme": "aile"
+      "theme": "ayrılık/özlem"
     },
     {
-      "content_id": "7ff9aced-a28a-411c-946d-627d1c40c05c",
+      "content_id": "205d84fc-991e-45ad-8f1f-b0389fde778b",
       "scheduled_at": "2026-09-03T22:00:00+03:00",
       "theme": "ayrılık/özlem"
     },
     {
-      "content_id": "9afd5f61-001b-446e-9a61-b8e9a6c52b9a",
+      "content_id": "d4f6a3bd-5181-4159-884f-4436ad3f9dfe",
       "scheduled_at": "2026-09-03T23:30:00+03:00",
-      "theme": "para"
+      "theme": "hayat tespiti"
     }
   ],
-  "story": [],
+  "story": [
+    {
+      "content_id": "f747abf7-a3d6-417b-98d5-86ad7caf150d",
+      "scheduled_at": "2026-09-03T16:26:32.381213+00:00",
+      "theme": "dostluk"
+    },
+    {
+      "content_id": "16323d34-71ec-4f54-a449-98f100583d89",
+      "scheduled_at": "2026-09-03T17:27:55.428728+00:00",
+      "theme": "anı/nostalji"
+    },
+    {
+      "content_id": "63c67950-e1bf-499f-9694-67d0a4fd4f12",
+      "scheduled_at": "2026-09-03T18:29:18.476243+00:00",
+      "theme": "aile/anı"
+    },
+    {
+      "content_id": "77829869-6b9d-41ad-b21f-e56f0c2cd77b",
+      "scheduled_at": "2026-09-03T22:19:50+03:00",
+      "theme": "para/mizahi"
+    },
+    {
+      "content_id": "91af7b37-3ea1-4c4d-8e65-e20381c66944",
+      "scheduled_at": "2026-09-03T22:59:30+03:00",
+      "theme": "ayrılık/özlem"
+    },
+    {
+      "content_id": "1f40107a-2639-44cc-91a6-803c6e5a08f5",
+      "scheduled_at": "2026-09-03T23:39:10+03:00",
+      "theme": "karakter"
+    }
+  ],
   "feed_skipped_past_time": [
     "08:30",
     "10:30",
     "12:30",
     "14:30",
-    "16:30"
+    "16:30",
+    "18:30"
   ],
   "story_skipped_blocks": [
     "07:30-10:30",
@@ -37,9 +64,72 @@
     "14:00-18:00"
   ],
   "feed_reserved": [
-    "bb5dbed3-cc4d-49ce-8e7d-f286343788be",
-    "cdeb30b3-0770-41e1-a77b-928c71123d46"
+    "b35a7a32-8364-4ef4-a89f-c558131d7016",
+    "ec9d6079-ff50-418d-bd74-197875a381fd",
+    "9e2b6a4c-f128-4c2f-8ba6-b124d0483ff8",
+    "81d48a18-302f-4e4f-a59c-eb02e65c480b",
+    "ba8b1e63-1205-4ae8-b2b3-f5576dfb38b6",
+    "a98b1252-6a3d-42ee-97f1-e0566f349306"
   ],
-  "story_reserved": [],
-  "needs_review": []
+  "story_reserved": [
+    "ec490f19-9391-4bbc-b9dc-49419ed37e89",
+    "277037e3-68c4-47de-8dca-ce5508927d9d",
+    "f0fd7996-f1a3-4842-a80b-928f76fbe681",
+    "3acb3a1a-5fe6-4e25-aea8-3528590a958c",
+    "b32be45f-938f-45d9-99d1-5dd3b7435d93",
+    "5e741c9d-98ff-4939-a036-16a0f03784e3",
+    "9e299a10-30bc-4cdf-b40e-3f5fb09ebffa",
+    "102bddeb-4cdf-4341-9250-8fd9621b950d",
+    "e0488e3d-b418-49b9-8025-ae85b5643cc5"
+  ],
+  "needs_review": [
+    {
+      "content_id": "c2ad210e-2880-415b-ace2-fcfe16922b37",
+      "type": "feed",
+      "quote": "Bir insanın karakteri, hesap hatası kendi lehine çıktığında ne yaptığında ortaya çıkar.",
+      "reason": "QC geçemedi: score=87, placement=0.46"
+    },
+    {
+      "content_id": "2cd3b470-aabc-4c6b-8f61-af58cfb0dfcf",
+      "type": "feed",
+      "quote": "Annemin buzdolabına not bırakma alışkanlığı, ben evden ayrılalı yıllar oldu ama hâlâ bitmedi.",
+      "reason": "QC geçemedi: score=90, placement=0.51"
+    },
+    {
+      "content_id": "23c6b8b1-6b0a-486b-b6d2-87f37408e34d",
+      "type": "feed",
+      "quote": "Annem hastalandığında ilk fark ettiğim şey, sesinin telefonda ne kadar küçüldüğüydü.",
+      "reason": "Cloudflare background üretilemedi (3 deneme)."
+    },
+    {
+      "content_id": "87a097cd-b3b5-42c8-acca-26459dfdc777",
+      "type": "feed",
+      "quote": "Annem hâlâ eve geldiğimde koridor lambasını benim için açık bırakır, otuz yaşında olsam da.",
+      "reason": "QC geçemedi: score=87, placement=0.48"
+    },
+    {
+      "content_id": "98579deb-923a-4c73-b16d-7fb58ecb2c0a",
+      "type": "story",
+      "quote": "Bir insanın yalnız kalmaktan korkması, aslında kendisiyle baş başa kalmaktan korkmasıdır.",
+      "reason": "QC geçemedi: score=91, placement=0.59"
+    },
+    {
+      "content_id": "812f1fa4-7ef2-44f4-ac2b-c03196df8e7e",
+      "type": "story",
+      "quote": "İşten çıkışta omuzların ne kadar düştüğü, günün nasıl geçtiğinin en dürüst özetidir.",
+      "reason": "QC geçemedi: score=89, placement=0.44"
+    },
+    {
+      "content_id": "da17b88d-5822-4a74-a79b-ed436ba0b786",
+      "type": "story",
+      "quote": "Ayrılık, mesaj kutusundaki son 'görüldü' yazısında donup kalmaktır.",
+      "reason": "QC geçemedi: score=90, placement=0.57"
+    },
+    {
+      "content_id": "30e266d0-de8f-42b2-8ad7-81b38496f25a",
+      "type": "story",
+      "quote": "Vicdan, kimseye anlatmayacağın halde gece telefonunun ışığında yazıp sildiğin mesajlarda saklıdır.",
+      "reason": "QC geçemedi: score=87, placement=0.47"
+    }
+  ]
 }

@@ -1,0 +1,25 @@
+{
+  "content_id": "9e299a10-30bc-4cdf-b40e-3f5fb09ebffa",
+  "type": "story",
+  "quote": {
+    "id": "1039dc14-a59e-4bd1-8b61-7fdfe547177a",
+    "text": "Adres sormaktan çekinmek, aslında yolunu kaybettiğini kabul etmekten çekinmektir.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "özgüven",
+    "mood": "yol",
+    "score": 87,
+    "hash": "ec09a2cc13ec0ae8",
+    "pattern_tags": [
+      "OPENER_ADRES"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "özgüven",
+  "image_path": "media/generated/9e299a10-30bc-4cdf-b40e-3f5fb09ebffa_story.jpg",
+  "quote_score": 87,
+  "visual_score": 98,
+  "overall_score": 98,
+  "zone": "lower",
+  "generated_at": "2026-09-03T15:50:50.857456+00:00"
+}

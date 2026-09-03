@@ -1,0 +1,25 @@
+{
+  "content_id": "e0488e3d-b418-49b9-8025-ae85b5643cc5",
+  "type": "story",
+  "quote": {
+    "id": "84bd15c1-0aa6-4e56-83a0-79368b6ca003",
+    "text": "Telefonunu sessize alıp bir akşam kimseye cevap vermemek, kabalık değil kendine zamandır.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "sınır koymak",
+    "mood": "yalnizlik",
+    "score": 87,
+    "hash": "b6169788d7b8a485",
+    "pattern_tags": [
+      "OPENER_TELEFONUNU"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "sınır koymak",
+  "image_path": "media/generated/e0488e3d-b418-49b9-8025-ae85b5643cc5_story.jpg",
+  "quote_score": 87,
+  "visual_score": 93,
+  "overall_score": 93,
+  "zone": "lower",
+  "generated_at": "2026-09-03T15:50:50.857456+00:00"
+}

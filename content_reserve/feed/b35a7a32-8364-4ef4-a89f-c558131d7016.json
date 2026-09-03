@@ -1,0 +1,25 @@
+{
+  "content_id": "b35a7a32-8364-4ef4-a89f-c558131d7016",
+  "type": "feed",
+  "quote": {
+    "id": "b1eb4869-6deb-46d2-ac83-d98a6b9570ac",
+    "text": "Bazı insanlarla son konuşmanın son olduğunu, aylar sonra fark edersin.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "ayrılık/özlem",
+    "mood": "melankoli",
+    "score": 89,
+    "hash": "d669d4cbe3cfcd7c",
+    "pattern_tags": [
+      "OPENER_BAZI"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "ayrılık/özlem",
+  "image_path": "media/generated/b35a7a32-8364-4ef4-a89f-c558131d7016_feed.jpg",
+  "quote_score": 89,
+  "visual_score": 98,
+  "overall_score": 98,
+  "zone": "top_right",
+  "generated_at": "2026-09-03T15:50:50.857456+00:00"
+}

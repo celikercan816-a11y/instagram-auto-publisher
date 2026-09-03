@@ -1,0 +1,25 @@
+{
+  "content_id": "f0fd7996-f1a3-4842-a80b-928f76fbe681",
+  "type": "story",
+  "quote": {
+    "id": "bed54a05-f8d5-44f0-b797-06ce17d0c92f",
+    "text": "Vicdan, kimsenin bilmediği bir gece telefonun ışığında yazıp sildiğin mesajlarda saklıdır.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "karakter/vicdan",
+    "mood": "huzur",
+    "score": 87,
+    "hash": "2227bb3b704fa185",
+    "pattern_tags": [
+      "OPENER_VICDAN"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "karakter/vicdan",
+  "image_path": "media/generated/f0fd7996-f1a3-4842-a80b-928f76fbe681_story.jpg",
+  "quote_score": 87,
+  "visual_score": 95,
+  "overall_score": 95,
+  "zone": "lower",
+  "generated_at": "2026-09-03T15:50:50.857456+00:00"
+}

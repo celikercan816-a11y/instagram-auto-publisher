@@ -1,0 +1,25 @@
+{
+  "content_id": "a98b1252-6a3d-42ee-97f1-e0566f349306",
+  "type": "feed",
+  "quote": {
+    "id": "bd11a377-444f-4a9e-8f3f-7976cb7d0fa3",
+    "text": "Babamın en sevdiği koltuğu hâlâ boş dururken doldurulmuyor, ailede kimse bunu konuşmuyor.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "aile",
+    "mood": "melankoli",
+    "score": 88,
+    "hash": "8cd782b5bfcf40ee",
+    "pattern_tags": [
+      "OPENER_BABAMIN"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "aile",
+  "image_path": "media/generated/a98b1252-6a3d-42ee-97f1-e0566f349306_feed.jpg",
+  "quote_score": 88,
+  "visual_score": 94,
+  "overall_score": 94,
+  "zone": "bottom_left",
+  "generated_at": "2026-09-03T15:50:50.857456+00:00"
+}

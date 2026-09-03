@@ -1,0 +1,25 @@
+{
+  "content_id": "ec490f19-9391-4bbc-b9dc-49419ed37e89",
+  "type": "story",
+  "quote": {
+    "id": "ff98b523-b030-46a5-958f-09b64bef0e13",
+    "text": "Seni en çok, hastayken bana nasıl baktığını hatırlayınca özlüyorum.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "aşk",
+    "mood": "melankoli",
+    "score": 87,
+    "hash": "3e9cc777d6c700a3",
+    "pattern_tags": [
+      "OPENER_SENI"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "aşk",
+  "image_path": "media/generated/ec490f19-9391-4bbc-b9dc-49419ed37e89_story.jpg",
+  "quote_score": 87,
+  "visual_score": 94,
+  "overall_score": 94,
+  "zone": "lower",
+  "generated_at": "2026-09-03T15:50:50.857456+00:00"
+}

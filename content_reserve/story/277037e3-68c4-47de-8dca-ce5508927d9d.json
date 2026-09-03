@@ -1,0 +1,25 @@
+{
+  "content_id": "277037e3-68c4-47de-8dca-ce5508927d9d",
+  "type": "story",
+  "quote": {
+    "id": "b38607f3-dcb8-4784-9e4f-bc218c57e1bc",
+    "text": "Bir insanın en dürüst hâli, telefon galerisinde, sosyal medya hesabında değil.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "hayat tespiti",
+    "mood": "huzur",
+    "score": 87,
+    "hash": "5f20e65781ab18f5",
+    "pattern_tags": [
+      "BIR_INSAN"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "hayat tespiti",
+  "image_path": "media/generated/277037e3-68c4-47de-8dca-ce5508927d9d_story.jpg",
+  "quote_score": 87,
+  "visual_score": 92,
+  "overall_score": 92,
+  "zone": "upper",
+  "generated_at": "2026-09-03T15:50:50.857456+00:00"
+}

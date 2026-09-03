@@ -1,0 +1,25 @@
+{
+  "content_id": "9e2b6a4c-f128-4c2f-8ba6-b124d0483ff8",
+  "type": "feed",
+  "quote": {
+    "id": "44810411-0cf2-4e9f-afb5-15678770ab02",
+    "text": "Onu özlediğimi en çok, iyi bir haber alıp kimseyi arayacak halim kalmayınca anlıyorum.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "ayrılık/özlem",
+    "mood": "melankoli",
+    "score": 88,
+    "hash": "3bf2924c2cd8bf64",
+    "pattern_tags": [
+      "OPENER_ONU"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "ayrılık/özlem",
+  "image_path": "media/generated/9e2b6a4c-f128-4c2f-8ba6-b124d0483ff8_feed.jpg",
+  "quote_score": 88,
+  "visual_score": 93,
+  "overall_score": 93,
+  "zone": "bottom_right",
+  "generated_at": "2026-09-03T15:50:50.857456+00:00"
+}
