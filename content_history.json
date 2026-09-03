@@ -197,5 +197,125 @@
     "instagram_media_id": "18030956291670628",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "7ff9aced-a28a-411c-946d-627d1c40c05c",
+    "theme": "ayrılık/özlem",
+    "content_type": "post",
+    "caption_summary": "Biraz hüzün.\n\n#sözler #anlar #doğa #atasözü #düşünce",
+    "hashtags": [
+      "#sözler",
+      "#anlar",
+      "#doğa",
+      "#atasözü",
+      "#düşünce"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "7697144926d48488",
+      "quote_text": "Sana söylemediğim onca cümle, şimdi bir çekmecede kelimesiz duruyor.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "ayrılık/özlem",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "364e65e4244f45ed5edc8043524bbc3b59c87c88f39182a378bfd793caee39a9",
+    "published_at": "2026-09-03T21:40:45.377330+00:00",
+    "instagram_media_id": "18101857541204630",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "77829869-6b9d-41ad-b21f-e56f0c2cd77b",
+    "theme": "para/mizahi",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "a95d3b8f565dd034",
+      "quote_text": "Maaşın yattığı gün hissettiğin rahatlık, üç gün sonra faturalarla birlikte biter.",
+      "mood": "zaman",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "para/mizahi",
+      "zone": "lower"
+    },
+    "image_fingerprint": "495b9cd368904c369810b0d989dc19d6d3951b72a9258f79d21ae0ae88aacadd",
+    "published_at": "2026-09-03T21:40:56.828313+00:00",
+    "instagram_media_id": "18390225046204462",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "91af7b37-3ea1-4c4d-8e65-e20381c66944",
+    "theme": "ayrılık/özlem",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "c49659874ad35f77",
+      "quote_text": "Biriyle geçirdiğin son günün 'son' olduğunu bilmemen, aslında en acımasız kısmıdır.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "ayrılık/özlem",
+      "zone": "upper"
+    },
+    "image_fingerprint": "e2d87f7daebafac49c5959ebc719bfd07e52de08338e31ecae100447ee6275b5",
+    "published_at": "2026-09-03T21:41:07.577378+00:00",
+    "instagram_media_id": "17994961691824452",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "9afd5f61-001b-446e-9a61-b8e9a6c52b9a",
+    "theme": "para",
+    "content_type": "post",
+    "caption_summary": "Bazı yerler zamanı unutturuyor.\n\n#yalnızlık #deniz #yol",
+    "hashtags": [
+      "#yalnızlık",
+      "#deniz",
+      "#yol"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "ceb939058668bec8",
+      "quote_text": "Maaşın yattığı gün hissettiğin rahatlık, ay sonuna kalan üç güne kadar sürer.",
+      "mood": "zaman",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "para",
+      "zone": "top_left"
+    },
+    "image_fingerprint": "ef1f5a6cbccb9ae613b1530ef62d120acc48105b4b315dcb07e55668409b6d5e",
+    "published_at": "2026-09-03T21:41:21.271819+00:00",
+    "instagram_media_id": "18125855473862838",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "1f40107a-2639-44cc-91a6-803c6e5a08f5",
+    "theme": "karakter",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "4f6745e2220da773",
+      "quote_text": "Bir garsona nasıl davrandığın, yöneticine nasıl davrandığından daha çok şey söyler.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "karakter",
+      "zone": "lower"
+    },
+    "image_fingerprint": "52495567daa8de893da4a36fb3466c104e6c1f794b31cb5a18b98352b950f7d2",
+    "published_at": "2026-09-03T21:41:33.986381+00:00",
+    "instagram_media_id": "17979764429898859",
+    "insights": null,
+    "performance_score": null
   }
 ]
