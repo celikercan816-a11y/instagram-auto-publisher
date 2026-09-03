@@ -27,9 +27,18 @@ def main() -> int:
         print(f"QC geçemeyen/needs_review: {len(report['needs_review'])}")
         for r in report["needs_review"]:
             print(f"  - [{r['type']}] {r['quote'][:50]}... -> {r['reason']}")
+    produced_anything = any([
+        report["feed_scheduled_today"], report["feed_reserved"],
+        report["story_scheduled_today"], report["story_reserved"],
+    ])
     if report["errors"]:
         print(f"Hatalar/uyarılar: {report['errors']}")
-        return 1
+        # Bir kısım hedefin doldurulamaması (çeşitlilik/kota kısıtı) kısmi
+        # başarıdır, ürettiği içerik yine de commit/push edilmeli -- workflow'u
+        # tamamen "failed" işaretlemek (ve o günün üretimini push edilmeden
+        # kaybettirmek) yalnızca hiçbir şey üretilemediğinde doğru.
+        if not produced_anything:
+            return 1
     return 0
 
 
