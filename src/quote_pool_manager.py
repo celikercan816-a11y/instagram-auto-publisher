@@ -42,13 +42,26 @@ def _load_json_list(path: Path, key: str) -> list:
         return json.load(f).get(key, [])
 
 
-def all_known_quote_texts() -> set[str]:
+def all_known_quote_texts(include_pool: bool = True) -> set[str]:
     """Point 3 dedup surface: gold_quotes + published history + reserve +
-    the current live pool + today's daily_publish_plan.json (its
-    schedule entries only carry a content_id/theme, but its
-    needs_review entries do carry the quote text)."""
+    (optionally) the current live pool + today's daily_publish_plan.json
+    (its schedule entries only carry a content_id/theme, but its
+    needs_review entries do carry the quote text).
+
+    include_pool=False for daily_planner.pick_quote()'s call site: every
+    pick_quote() candidate IS a member of the live pool by construction, so
+    including the pool here made check_semantic_duplicate() compare each
+    candidate against its own exact text (ratio=1.0) and reject it as a
+    "duplicate of itself" -- a real bug found 2026-09-04 that made pick_quote()
+    return None on its very first call, every single run, regardless of pool
+    size or diversity (the actual cause of "yeterli çeşitlilikte söz kalmadı"
+    on 2026-09-02/03, not pool exhaustion as first assumed). check_and_
+    replenish_pool() below still needs include_pool=True (its default) --
+    it genuinely must know what's already IN the pool to avoid re-adding a
+    seed-bank quote that's already there."""
     texts = {q["text"] for q in _load_json_list(GOLD_PATH, "quotes")}
-    texts |= {q["text"] for q in _load_json_list(POOL_PATH, "quotes")}
+    if include_pool:
+        texts |= {q["text"] for q in _load_json_list(POOL_PATH, "quotes")}
     if HISTORY_PATH.exists():
         with open(HISTORY_PATH, "r", encoding="utf-8") as f:
             history = json.load(f)

@@ -676,6 +676,760 @@
       "pattern_tags": [
         "OPENER_DEDEMIN"
       ]
+    },
+    {
+      "id": "fbcb66b3-c8f8-4adc-9a39-92c2cee26fe4",
+      "text": "Tanımadığın bir şehirde kaybolmak, tanıdığın şehirde yerinde saymaktan daha az korkutucudur.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "keşif",
+      "mood": "yol",
+      "score": 85,
+      "hash": "8fd2c9633de062e7",
+      "pattern_tags": [
+        "OPENER_TANIMADIĞIN"
+      ]
+    },
+    {
+      "id": "ba2786b2-20f3-4838-9c16-0ba78108b9d2",
+      "text": "Durakta saatine üç kere bakman, gitmekten değil kalmaktan korktuğunun işaretidir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "kararsızlık",
+      "mood": "yol",
+      "score": 87,
+      "hash": "912c3f310088c13d",
+      "pattern_tags": [
+        "OPENER_DURAKTA"
+      ]
+    },
+    {
+      "id": "a04f759a-4b9d-479b-9c21-63e9838ccd1d",
+      "text": "Vapurun güvertesinde durup hiçbir yere bakmamak da bir tür varış sayılır.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "huzur/yol",
+      "mood": "yol",
+      "score": 86,
+      "hash": "93758b596b12069f",
+      "pattern_tags": [
+        "OPENER_VAPURUN"
+      ]
+    },
+    {
+      "id": "325917a1-2f23-49e5-b879-989a6fb40338",
+      "text": "Herkes sana kestirmeyi tarif eder, kimse seninle yürümeyi teklif etmez.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "dostluk",
+      "mood": "yol",
+      "score": 88,
+      "hash": "5de19540e714ea4a",
+      "pattern_tags": [
+        "OPENER_HERKES"
+      ]
+    },
+    {
+      "id": "4b65b5a7-749d-4c55-b54a-70bb2e37a1b1",
+      "text": "Bir şehri sevmek için oraya taşınman gerekmez, sadece bir kez amaçsızca yürümen yeter.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "keşif",
+      "mood": "yol",
+      "score": 85,
+      "hash": "0d1ad5a2a1406a86",
+      "pattern_tags": [
+        "OPENER_BIR"
+      ]
+    },
+    {
+      "id": "700ae131-13c8-47db-ada7-50c152a286de",
+      "text": "Otobanda hiç tanımadığın bir arabayı el sallayarak geçmek, günün en anlamsız iyiliğidir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "mizahi",
+      "mood": "yol",
+      "score": 86,
+      "hash": "f162948d26a828d0",
+      "pattern_tags": [
+        "OPENER_OTOBANDA"
+      ]
+    },
+    {
+      "id": "1039dc14-a59e-4bd1-8b61-7fdfe547177a",
+      "text": "Adres sormaktan çekinmek, aslında yolunu kaybettiğini kabul etmekten çekinmektir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "özgüven",
+      "mood": "yol",
+      "score": 87,
+      "hash": "ec09a2cc13ec0ae8",
+      "pattern_tags": [
+        "OPENER_ADRES"
+      ]
+    },
+    {
+      "id": "fec97b19-379b-4cc1-97bb-8e0ea82bfe5a",
+      "text": "Yeni yıla girerken tuttuğun sözlerden çok, ocak ayında hâlâ hatırladığın söz önemlidir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "yeni başlangıç",
+      "mood": "umut",
+      "score": 86,
+      "hash": "dfc6f323a648cef8",
+      "pattern_tags": [
+        "OPENER_YENI"
+      ]
+    },
+    {
+      "id": "774f5742-f246-4320-afac-bf7cd4becdf9",
+      "text": "Bir işe yeniden başlamak, ilk defa başlamaktan daha çok cesaret ister.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "cesaret/başarı",
+      "mood": "umut",
+      "score": 87,
+      "hash": "180ffb21bb0a5621",
+      "pattern_tags": [
+        "OPENER_BIR"
+      ]
+    },
+    {
+      "id": "4f121c16-160f-427e-ab2f-584eb4579307",
+      "text": "İyileşmek, bir sabah her şeyin düzelmesi değil, o sabaha rağmen kalkabilmektir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "iyileşme",
+      "mood": "umut",
+      "score": 90,
+      "hash": "83cf14b9669efd18",
+      "pattern_tags": [
+        "X_DEGIL_Y"
+      ]
+    },
+    {
+      "id": "db6a5117-c2d3-49ca-8151-9c8a822a9a12",
+      "text": "Karanlık bir gecenin ardından güneşin doğması değil, senin hâlâ onu izliyor olman asıl mucizedir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "şükür/farkındalık",
+      "mood": "umut",
+      "score": 85,
+      "hash": "843b075cfbb812c2",
+      "pattern_tags": [
+        "X_DEGIL_Y"
+      ]
+    },
+    {
+      "id": "951dd6e7-c1b3-44fb-af50-69f02ea61719",
+      "text": "Bir bahçıvanın toprağa güvenmesi gibi, bazı emekler meyvesini seninle aynı mevsimde vermez.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "sabır",
+      "mood": "umut",
+      "score": 86,
+      "hash": "7e1e6be926a6367e",
+      "pattern_tags": [
+        "OPENER_BIR"
+      ]
+    },
+    {
+      "id": "cc521668-54a6-46c2-b9e5-ffa786dc944e",
+      "text": "Küçük bir iyi haber, kötü bir haftanın tamamını silmez ama nefes almana yeter.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "hayat tespiti",
+      "mood": "umut",
+      "score": 85,
+      "hash": "e25c8aad4be6fce2",
+      "pattern_tags": [
+        "OPENER_KÜÇÜK"
+      ]
+    },
+    {
+      "id": "391b3a90-5676-47ed-9a6d-3b38f78e5e08",
+      "text": "Yarın daha iyi olacağına inanmak değil, bugün yine de bir şeyler yapmak asıl umuttur.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "umut/eylem",
+      "mood": "umut",
+      "score": 85,
+      "hash": "253e7a6bc9c64212",
+      "pattern_tags": [
+        "X_DEGIL_Y"
+      ]
+    },
+    {
+      "id": "9b76882d-a38d-4687-8619-06d610785580",
+      "text": "Bugün attığın küçük adım, bir yıl sonra 'işte o gün başlamıştım' dediğin gün olabilir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "başarı/emek",
+      "mood": "umut",
+      "score": 85,
+      "hash": "8716d134a9d34348",
+      "pattern_tags": [
+        "OPENER_BUGÜN"
+      ]
+    },
+    {
+      "id": "d3367e15-c5ff-4c15-810c-ba9c188f5e92",
+      "text": "Bir şeyi hâlâ istemek, ona hâlâ inandığının en dürüst kanıtıdır.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "umut",
+      "mood": "umut",
+      "score": 86,
+      "hash": "59a5246deb59c7b8",
+      "pattern_tags": [
+        "OPENER_BIR"
+      ]
+    },
+    {
+      "id": "4d73716f-2494-4c2c-8883-22e3d4325a85",
+      "text": "Karamsar bir gün, kötü bir yıl olduğu anlamına gelmez; sadece kötü bir gündür.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "farkındalık",
+      "mood": "umut",
+      "score": 85,
+      "hash": "a8053973def2f02e",
+      "pattern_tags": [
+        "OPENER_KARAMSAR"
+      ]
+    },
+    {
+      "id": "e4d48bf2-2f75-42cd-971f-ae0d940281ac",
+      "text": "Kalabalık bir odada kimseyle konuşmadan durabilmek, öğrenilmiş bir rahatlıktır.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "yalnızlık/özgüven",
+      "mood": "yalnizlik",
+      "score": 85,
+      "hash": "1a5e848b647bee17",
+      "pattern_tags": [
+        "OPENER_KALABALIK"
+      ]
+    },
+    {
+      "id": "84bd15c1-0aa6-4e56-83a0-79368b6ca003",
+      "text": "Telefonunu sessize alıp bir akşam kimseye cevap vermemek, kabalık değil kendine zamandır.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "sınır koymak",
+      "mood": "yalnizlik",
+      "score": 87,
+      "hash": "b6169788d7b8a485",
+      "pattern_tags": [
+        "OPENER_TELEFONUNU"
+      ]
+    },
+    {
+      "id": "4c522d38-5c46-4bfb-9a10-ee37488cb8c8",
+      "text": "Tek başına sinemaya gitmek, arkadaşsız olduğun için değil, kimseyi beklemek istemediğin için de olabilir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "özgüven",
+      "mood": "yalnizlik",
+      "score": 85,
+      "hash": "fb04e42fa36fab60",
+      "pattern_tags": [
+        "X_DEGIL_Y"
+      ]
+    },
+    {
+      "id": "f9b3ea6d-d5c1-4771-b02b-2d09b60ad572",
+      "text": "Bir insanın yalnız kalmaktan korkması, aslında kendisiyle baş başa kalmaktan korkmasıdır.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "iç gözlem",
+      "mood": "yalnizlik",
+      "score": 88,
+      "hash": "bad7c75f42424322",
+      "pattern_tags": [
+        "BIR_INSAN"
+      ]
+    },
+    {
+      "id": "984f413d-ce27-488f-a77f-a6c5879647df",
+      "text": "Boş bir eve gelmek bazen huzurdur, kalabalık bir eve gelip görünmemek asıl yalnızlıktır.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "hayat tespiti",
+      "mood": "yalnizlik",
+      "score": 89,
+      "hash": "6e3c72617c03d7bb",
+      "pattern_tags": [
+        "OPENER_BOŞ"
+      ]
+    },
+    {
+      "id": "53ac9fad-d350-49fa-ad44-e2880417242e",
+      "text": "Kimsenin seni aramadığı bir gün, kimsenin seni özlemediği anlamına gelmez.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "farkındalık",
+      "mood": "yalnizlik",
+      "score": 85,
+      "hash": "f3ac9cd2e23d2bba",
+      "pattern_tags": [
+        "OPENER_KIMSENIN"
+      ]
+    },
+    {
+      "id": "02c3b9ab-9e1c-458e-bb68-3f3a8ca07e05",
+      "text": "Tek kişilik bir masada yemek yemek, artık sana tuhaf gelmiyorsa, büyümüşsün demektir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "büyümek",
+      "mood": "yalnizlik",
+      "score": 86,
+      "hash": "38f08fa08e11288a",
+      "pattern_tags": [
+        "OPENER_TEK"
+      ]
+    },
+    {
+      "id": "bc0c1046-1aa2-424b-966e-3e79399001d9",
+      "text": "Bir insanla değil kendi düşünceleriyle iyi vakit geçirebilmek, sanıldığından nadir bir beceridir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "özgüven",
+      "mood": "yalnizlik",
+      "score": 85,
+      "hash": "aff887ee2a427628",
+      "pattern_tags": [
+        "BIR_INSAN"
+      ]
+    },
+    {
+      "id": "38e6f651-ca79-4a12-a6dd-50e5e97b26ff",
+      "text": "Sessiz bir akşam yemeği, konuşacak bir şey kalmadığı için değil, konuşmaya gerek kalmadığı için de olabilir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "huzur/yalnızlık",
+      "mood": "yalnizlik",
+      "score": 85,
+      "hash": "6668b39e72bddc81",
+      "pattern_tags": [
+        "X_DEGIL_Y"
+      ]
+    },
+    {
+      "id": "8ec99235-88ea-4f06-9274-7b7a3c389a12",
+      "text": "Bir fotoğrafa yıllar sonra bakıp gülümsemek, o anın ne kadar sıradan geçtiğini unutmandandır.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "anı/nostalji",
+      "mood": "zaman",
+      "score": 88,
+      "hash": "ba83678dcbf044b9",
+      "pattern_tags": [
+        "OPENER_BIR"
+      ]
+    },
+    {
+      "id": "65aecb62-2145-4f3f-9f6b-ec92756c4535",
+      "text": "Çocukken uzun gelen bir yaz tatili, büyüyünce bir hafta sonu kadar kısalır.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "hayat tespiti",
+      "mood": "zaman",
+      "score": 85,
+      "hash": "97497dab3c72524e",
+      "pattern_tags": [
+        "OPENER_ÇOCUKKEN"
+      ]
+    },
+    {
+      "id": "240bb52e-77da-4bf7-ad2a-274adb441a3c",
+      "text": "Bir şarkının eski bir yıla ait olduğunu, ancak radyoda tesadüfen duyunca anlarsın.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "anı",
+      "mood": "zaman",
+      "score": 86,
+      "hash": "3ddf5d8f12f8eb01",
+      "pattern_tags": [
+        "OPENER_BIR"
+      ]
+    },
+    {
+      "id": "92c69d38-c4b0-4f8d-b9f5-221f4e4d1a8c",
+      "text": "Eski bir telefon numarasını hâlâ ezbere bilmek, o kişiyi unutmadığın anlamına gelmez, sadece rakamları unutmadığın anlamına gelir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "anı/ayrılık",
+      "mood": "zaman",
+      "score": 87,
+      "hash": "de3975fc9397a9e2",
+      "pattern_tags": [
+        "OPENER_ESKI"
+      ]
+    },
+    {
+      "id": "59af3a1c-abf8-46ca-afaa-c9121dc9d393",
+      "text": "Bir mahalleye yıllar sonra dönüp değişmediğini görmek, seni değişmiş hissettiren şeydir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "hayat tespiti",
+      "mood": "zaman",
+      "score": 85,
+      "hash": "9accbb453bd1d360",
+      "pattern_tags": [
+        "OPENER_BIR"
+      ]
+    },
+    {
+      "id": "0460add9-0a7e-4f7d-9be3-58c449d491ba",
+      "text": "Saatini bir dakika ileri almak seni erken kaldırmaz, sadece kendini biraz daha kandırırsın.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "mizahi",
+      "mood": "zaman",
+      "score": 85,
+      "hash": "91b48da908c21904",
+      "pattern_tags": [
+        "OPENER_SAATINI"
+      ]
+    },
+    {
+      "id": "c4b56cd7-f507-4cef-8919-3b24d0fb3171",
+      "text": "Eski bir arkadaşla yıllar sonra karşılaşınca ilk cümle hep aynıdır: hiç değişmemişsin.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "dostluk/zaman",
+      "mood": "zaman",
+      "score": 85,
+      "hash": "53de412c9963d199",
+      "pattern_tags": [
+        "OPENER_ESKI"
+      ]
+    },
+    {
+      "id": "4a51efe9-1bb3-450e-ba3f-3b190fc171e0",
+      "text": "Çocukluk evinin artık başkasına ait olduğunu bilmek, oraya hiç gitmemekten daha ağırdır.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "aile/anı",
+      "mood": "zaman",
+      "score": 88,
+      "hash": "e6adcf003adc7fea",
+      "pattern_tags": [
+        "OPENER_ÇOCUKLUK"
+      ]
+    },
+    {
+      "id": "5ef09ace-0b18-4a7b-a891-992e6e732ccc",
+      "text": "Kaybettiğin bir alışkanlığı, ancak onu yapmadığın bir günün ortasında fark edersin.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "farkındalık",
+      "mood": "zaman",
+      "score": 85,
+      "hash": "b90a41278392544a",
+      "pattern_tags": [
+        "OPENER_KAYBETTIĞIN"
+      ]
+    },
+    {
+      "id": "74d0b048-c108-4551-94d2-286d27c4cbfb",
+      "text": "Bir fincan çayı yavaş içmek, acelesi olmadığını kendine kanıtlamanın en ucuz yoludur.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "huzur",
+      "mood": "huzur",
+      "score": 85,
+      "hash": "666487c97129e34c",
+      "pattern_tags": [
+        "OPENER_BIR"
+      ]
+    },
+    {
+      "id": "54890305-dfa8-4515-b0b4-85bd3480439e",
+      "text": "Pencereden yağmuru izlemek, dışarı çıkmamak için bulduğun en masum bahanedir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "huzur",
+      "mood": "huzur",
+      "score": 85,
+      "hash": "10fe3bc262d57c2b",
+      "pattern_tags": [
+        "OPENER_PENCEREDEN"
+      ]
+    },
+    {
+      "id": "b634b144-f7f4-49ee-abb7-a8583900347c",
+      "text": "Telefonu başka bir odada bırakmak, günün geri kalanını fark edilir şekilde uzatır.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "farkındalık",
+      "mood": "huzur",
+      "score": 86,
+      "hash": "1a9273c8a0c2dd88",
+      "pattern_tags": [
+        "OPENER_TELEFONU"
+      ]
+    },
+    {
+      "id": "319f5ce0-ab6b-4e3a-ad68-549f4801f8eb",
+      "text": "Bir şehirde artık kimsenin seni beklemediğini fark etmek, orayı terk etmenden daha yavaş olur.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "ayrılık",
+      "mood": "melankoli",
+      "score": 87,
+      "hash": "3a4f42b3496c2152",
+      "pattern_tags": [
+        "OPENER_BIR"
+      ]
+    },
+    {
+      "id": "b1eb4869-6deb-46d2-ac83-d98a6b9570ac",
+      "text": "Bazı insanlarla son konuşmanın son olduğunu, aylar sonra fark edersin.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "ayrılık/özlem",
+      "mood": "melankoli",
+      "score": 89,
+      "hash": "d669d4cbe3cfcd7c",
+      "pattern_tags": [
+        "OPENER_BAZI"
+      ]
+    },
+    {
+      "id": "b24f361a-2ff2-4876-ba09-560f8cce1919",
+      "text": "Bir arkadaşlığın bittiğini kimse söylemez, sadece mesajlar seyrekleşir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "dostluk/ayrılık",
+      "mood": "melankoli",
+      "score": 89,
+      "hash": "2f7f4f7135c61d79",
+      "pattern_tags": [
+        "OPENER_BIR"
+      ]
+    },
+    {
+      "id": "23fbc2e5-2c90-417d-847e-0bfc5b91a89d",
+      "text": "Eski bir fotoğrafta gülen ama artık hayatında olmayan biri, en sessiz hüzündür.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "anı/özlem",
+      "mood": "melankoli",
+      "score": 86,
+      "hash": "bbd48ca3955c6a55",
+      "pattern_tags": [
+        "OPENER_ESKI"
+      ]
+    },
+    {
+      "id": "c81ae41b-06d5-4103-87e9-4191fa0cdc28",
+      "text": "Gerçek bir arkadaş, başarını kutlarken sesindeki kıskançlığı fark ettirmeyendir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "dostluk",
+      "mood": "huzur",
+      "score": 87,
+      "hash": "24cf6befc9bf0d76",
+      "pattern_tags": [
+        "GERCEK"
+      ]
+    },
+    {
+      "id": "a895839f-81d6-4413-97ba-cb0b3a1bb62b",
+      "text": "Bir arkadaşın gece yarısı seni aramaktan çekinmemesi, en büyük güven belgesidir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "dostluk",
+      "mood": "umut",
+      "score": 85,
+      "hash": "ea3245b4c81da7ab",
+      "pattern_tags": [
+        "OPENER_BIR"
+      ]
+    },
+    {
+      "id": "51797efc-b3e0-4e26-8e5d-b8203485005b",
+      "text": "Maaşın yattığı gün hissettiğin rahatlık, üç gün sonra faturalarla birlikte biter.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "para/mizahi",
+      "mood": "zaman",
+      "score": 88,
+      "hash": "a95d3b8f565dd034",
+      "pattern_tags": [
+        "OPENER_MAAŞIN"
+      ]
+    },
+    {
+      "id": "fff2bc92-99f9-4439-8581-87b978387d2f",
+      "text": "Para biriktirmek, bir gün rahat edeceğine değil, bugün seçme özgürlüğün olduğuna dair bir bahistir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "para",
+      "mood": "umut",
+      "score": 87,
+      "hash": "9e215726d338f6c9",
+      "pattern_tags": [
+        "X_DEGIL_Y"
+      ]
+    },
+    {
+      "id": "cd90e5c3-ad59-4e7d-84ac-fc6e95cb7542",
+      "text": "Bir zam istemeye karar vermek, çoğu zaman zammın kendisinden daha zordur.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "cesaret/iş",
+      "mood": "umut",
+      "score": 86,
+      "hash": "3b93113a291b55af",
+      "pattern_tags": [
+        "OPENER_BIR"
+      ]
+    },
+    {
+      "id": "7303845a-51c5-46b6-8f41-de1b7e04ba5d",
+      "text": "Bir hatayı kabul etmek, onu savunmaktan her zaman daha az enerji ister.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "karakter",
+      "mood": "huzur",
+      "score": 85,
+      "hash": "3106fc72b3b2723d",
+      "pattern_tags": [
+        "OPENER_BIR"
+      ]
+    },
+    {
+      "id": "7178db1d-5784-4369-8d3d-7aab1763e196",
+      "text": "Telefonunun şarjı biterken hissettiğin panik, aslında yalnız kalma korkunun ölçüsüdür.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "mizahi/modern hayat",
+      "mood": "yalnizlik",
+      "score": 87,
+      "hash": "ef40731efec314fc",
+      "pattern_tags": [
+        "OPENER_TELEFONUNUN"
+      ]
+    },
+    {
+      "id": "6ba2c3b2-e9eb-4586-b830-764532ae2747",
+      "text": "Bir grup sohbetinde 'yazıyor...' yazısını görüp cevabı beklemek, günün en gereksiz gerginliğidir.",
+      "author": null,
+      "category": "ORIGINAL",
+      "theme": "mizahi/modern hayat",
+      "mood": "zaman",
+      "score": 86,
+      "hash": "f605c8455865a58b",
+      "pattern_tags": [
+        "OPENER_BIR"
+      ]
+    },
+    {
+      "id": "962bb575-3ab5-43af-8a23-df596d3545a8",
+      "text": "Vapur kalktı, ben kalmadım,\nrıhtım hâlâ oradaydı ama.\nBazı ayrılıklar limanı değil,\nseni değiştirir.",
+      "author": null,
+      "category": "SHORT_POEM",
+      "theme": "ayrılık/yol",
+      "mood": "melankoli",
+      "score": 87,
+      "hash": "b54dba12b6c33968",
+      "pattern_tags": [
+        "X_DEGIL_Y"
+      ]
+    },
+    {
+      "id": "53d9f6da-f7bd-4e7f-830d-060825d8927a",
+      "text": "Bavulumu açtım, koku hâlâ oradaydı,\ngittiğim şehrin değil, bıraktığım odanın.\nBazı yolculuklar dönüş için değil,\nunutmak için çıkılır.",
+      "author": null,
+      "category": "SHORT_POEM",
+      "theme": "ayrılık/yol",
+      "mood": "melankoli",
+      "score": 86,
+      "hash": "56ccd1e46a5a75c3",
+      "pattern_tags": [
+        "X_DEGIL_Y"
+      ]
+    },
+    {
+      "id": "785fa736-2805-4a6e-bcd3-212a5a501fe9",
+      "text": "Yeni bir deftere ilk cümleyi yazmak zordur,\nboş sayfa hep suçlar gibi bakar.\nAma ikinci cümle gelir,\nüçüncüsü zaten kendiliğinden.",
+      "author": null,
+      "category": "SHORT_POEM",
+      "theme": "başlangıç",
+      "mood": "umut",
+      "score": 85,
+      "hash": "7c7b856a6778f225",
+      "pattern_tags": [
+        "OPENER_YENI"
+      ]
+    },
+    {
+      "id": "708ba5b5-caea-4706-8d68-baa73d48cc9f",
+      "text": "Sabah alarmını erteledim üç kere,\nher seferinde beş dakika daha çaldım kendimi.\nSonunda kalktım,\ngün zaten beni bekliyordu.",
+      "author": null,
+      "category": "SHORT_POEM",
+      "theme": "hayat tespiti",
+      "mood": "umut",
+      "score": 85,
+      "hash": "3afede2f91da9c42",
+      "pattern_tags": [
+        "OPENER_SABAH"
+      ]
+    },
+    {
+      "id": "195466fc-5f48-4897-ac29-5a379e8739be",
+      "text": "Otobüs penceresinden geçen şehirler,\nhiçbiri benim değildi ama hepsi tanıdıktı.\nBelki de ev,\nbir yer değil bir alışkanlıktır.",
+      "author": null,
+      "category": "SHORT_POEM",
+      "theme": "yol/aidiyet",
+      "mood": "yol",
+      "score": 87,
+      "hash": "81105b0f4c14bbac",
+      "pattern_tags": [
+        "OPENER_OTOBÜS"
+      ]
+    },
+    {
+      "id": "d9d857f0-b4a6-4082-aaec-49a5e4203b27",
+      "text": "Bir bardak su içmek için kalktım gece yarısı,\nev sessizdi, ben de öyleydim.\nBazı sessizlikler korkutmaz,\nsadece dinlendirir.",
+      "author": null,
+      "category": "SHORT_POEM",
+      "theme": "huzur/yalnızlık",
+      "mood": "huzur",
+      "score": 85,
+      "hash": "e60ea9ee58764709",
+      "pattern_tags": [
+        "OPENER_BIR"
+      ]
+    },
+    {
+      "id": "d0c52899-3b0e-4d38-9727-6690901401f9",
+      "text": "Herkes bir yere yetişiyordu istasyonda,\nben tek kişiydim beklemekten memnun.\nTren geldiğinde bile,\nacele etmedim binmeye.",
+      "author": null,
+      "category": "SHORT_POEM",
+      "theme": "yol/huzur",
+      "mood": "yol",
+      "score": 85,
+      "hash": "7927d02d7dbf4128",
+      "pattern_tags": [
+        "OPENER_HERKES"
+      ]
+    },
+    {
+      "id": "86c311fe-e2c1-44d2-92c9-c52008c39683",
+      "text": "Yıllar sonra o sokağa döndüm,\ndükkanlar değişmiş, isimler başka.\nAma köşedeki ışık hâlâ aynı yerde yanıyordu,\nbeni bekliyormuş gibi.",
+      "author": null,
+      "category": "SHORT_POEM",
+      "theme": "zaman/anı",
+      "mood": "zaman",
+      "score": 86,
+      "hash": "b466940e7c3847f7",
+      "pattern_tags": [
+        "OPENER_YILLAR"
+      ]
     }
   ]
 }

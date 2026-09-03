@@ -108,7 +108,7 @@ def pick_quote(pool: list[dict], used_ids: set[str], history: list[dict], recent
     recent_texts = (
         [a.get("quote_text", "") for a in recent_attrs if a.get("quote_text")]
         + list(session_texts or [])
-        + list(all_known_quote_texts())  # point 3: gold_quotes + reserve, not just published history
+        + list(all_known_quote_texts(include_pool=False))  # point 3: gold_quotes + reserve, not just published history -- include_pool=True here would make every candidate a "duplicate" of its own pool entry, see quote_pool_manager.all_known_quote_texts() docstring
     )
     candidates = [q for q in pool if q["id"] not in used_ids]
     candidates.sort(key=lambda q: -q["score"])  # prefer the strongest first, ties broken by diversity checks below
