@@ -105,5 +105,53 @@
       "total_interactions": 0
     },
     "performance_score": 0.0
+  },
+  {
+    "id": "6f39e8c9-c263-4946-bf19-1b87f9deea64",
+    "theme": "aile",
+    "content_type": "post",
+    "caption_summary": "🌫️\n\n#atasözü #yol #doğa",
+    "hashtags": [
+      "#atasözü",
+      "#yol",
+      "#doğa"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "1727e05689c20059",
+      "quote_text": "Anne-baba kavgası unutulur ama sofrada kimin kime bakmadığı hep hatırlanır.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aile",
+      "zone": "bottom_right"
+    },
+    "image_fingerprint": "1c1fcd3b321db0555f038389a20446b925ccdaf232dd25d3c4bec07a7ef66a55",
+    "published_at": "2026-09-03T16:11:24.775532+00:00",
+    "instagram_media_id": "18154331722509608",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "f747abf7-a3d6-417b-98d5-86ad7caf150d",
+    "theme": "dostluk",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "5de19540e714ea4a",
+      "quote_text": "Herkes sana kestirmeyi tarif eder, kimse seninle yürümeyi teklif etmez.",
+      "mood": "yol",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "dostluk",
+      "zone": "upper"
+    },
+    "image_fingerprint": "1ce6100aeb65307ea289de4ff0d3f0588228f4d5b02e070cd223cb40fbc06708",
+    "published_at": "2026-09-03T16:11:35.403403+00:00",
+    "instagram_media_id": "18144083071520615",
+    "insights": null,
+    "performance_score": null
   }
 ]
