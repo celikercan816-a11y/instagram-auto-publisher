@@ -283,18 +283,43 @@ def _todays_scheduled_count(queue: list[dict], media_type: str, today: date) -> 
     return count
 
 
+def _occupied_feed_times_today(queue: list[dict], today: date) -> set[str]:
+    """HH:MM labels (Europe/Istanbul) that already have a pending/published
+    quote_v1 IMAGE item scheduled today -- see compute_feed_slots()."""
+    occupied = set()
+    for item in queue:
+        if item.get("pipeline_version") != PIPELINE_VERSION or item.get("media_type") != "IMAGE":
+            continue
+        if item.get("status") not in ("pending", "published"):
+            continue
+        try:
+            sched = datetime.fromisoformat(item["scheduled_at"])
+        except (KeyError, ValueError):
+            continue
+        if sched.tzinfo is None:
+            sched = sched.replace(tzinfo=timezone.utc)
+        sched_local = sched.astimezone(TZ)
+        if sched_local.date() == today:
+            occupied.add(sched_local.strftime("%H:%M"))
+    return occupied
+
+
 def compute_feed_slots(now: datetime, queue: list[dict] | None = None) -> tuple[list[str], list[str]]:
     """Returns (remaining_today, skipped_past_time) as "HH:MM" strings,
-    Europe/Istanbul. If `queue` is given, caps how many of the remaining
-    (still-future) slots get used by the number ALREADY scheduled today for
-    this media type having been subtracted from the day's overall target
-    upstream (see run_daily_content_generation) -- this function itself
-    only ever removes slots whose time has passed, never a future slot,
-    so a same-day re-run can't accidentally shrink capacity for a slot
-    that's still perfectly usable."""
+    Europe/Istanbul. Removes slots whose time has passed AND (bug found
+    2026-09-04 -- a same-day re-run genuinely double-booked 3 identical
+    HH:MM slots in production) any slot already occupied by a pending/
+    published item today: the "cap how many MORE to schedule" count in
+    run_daily_content_generation() only shrinks the TOTAL target, it does
+    not know which specific clock-time labels were already used, so without
+    this a second same-day run (manual re-trigger, retry, etc.) happily
+    reused the same FEED_TIMES strings for brand-new items."""
     today = now.astimezone(TZ).date()
+    occupied = _occupied_feed_times_today(queue or [], today)
     remaining, skipped = [], []
     for t in FEED_TIMES:
+        if t in occupied:
+            continue
         (remaining if _slot_datetime_today(t, today) > now else skipped).append(t)
     return remaining, skipped
 
