@@ -38,3 +38,15 @@
 {"timestamp": "2026-09-03T15:57:49.686969+00:00", "level": "success", "item_id": "102bddeb-4cdf-4341-9250-8fd9621b950d", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 1.51}
 {"timestamp": "2026-09-03T15:57:51.701820+00:00", "level": "warning", "item_id": "e0488e3d-b418-49b9-8025-ae85b5643cc5", "attempt": 1, "message": "Kota/rate-limit: Cloudflare Workers AI günlük ücretsiz Neuron kotası (10.000/gün) tükendi veya istek geçici olarak sınırlandı. Otomatik olarak ücretli plana geçilmiyor."}
 {"timestamp": "2026-09-03T15:58:23.712546+00:00", "level": "success", "item_id": "e0488e3d-b418-49b9-8025-ae85b5643cc5", "attempt": 2, "message": "Cloudflare background OK", "duration_s": 2.01}
+{"timestamp": "2026-09-04T09:30:27.452892+00:00", "level": "success", "item_id": "65978099-3a02-4ed6-a091-860ac0bbd27a", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 2.42}
+{"timestamp": "2026-09-04T09:30:29.504809+00:00", "level": "success", "item_id": "09d770d6-62f1-457b-a965-7c04a3d8c334", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 1.73}
+{"timestamp": "2026-09-04T09:30:31.437069+00:00", "level": "success", "item_id": "70629bb3-ae97-430b-b12b-defad9e89baa", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 1.73}
+{"timestamp": "2026-09-04T09:30:33.854259+00:00", "level": "success", "item_id": "ae6162d4-abc4-460d-a017-cd782393e3ea", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 1.87}
+{"timestamp": "2026-09-04T09:30:39.546541+00:00", "level": "success", "item_id": "5e343332-7572-4b62-8357-b7fd1e36d833", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 4.75}
+{"timestamp": "2026-09-04T09:30:42.999362+00:00", "level": "success", "item_id": "c6db5b03-c3cc-44fa-a25c-5ba39cf09cb9", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 2.84}
+{"timestamp": "2026-09-04T09:30:45.776871+00:00", "level": "success", "item_id": "f570c546-0996-43d7-85ae-dbb1092e30d6", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 1.7}
+{"timestamp": "2026-09-04T09:30:49.609834+00:00", "level": "success", "item_id": "cfff9d7d-4e94-449f-a1ce-0a33a820732c", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 3.48}
+{"timestamp": "2026-09-04T09:30:51.952370+00:00", "level": "success", "item_id": "8934a0f8-de3c-48ad-a1a0-90d6f324484d", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 1.68}
+{"timestamp": "2026-09-04T09:30:53.635981+00:00", "level": "success", "item_id": "afe381a4-f238-47d8-b76b-567be8e5538a", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 1.39}
+{"timestamp": "2026-09-04T09:30:55.912226+00:00", "level": "warning", "item_id": "a2221ded-07f4-4ccd-93a4-aee4cf700d80", "attempt": 1, "message": "Kota/rate-limit: Cloudflare Workers AI günlük ücretsiz Neuron kotası (10.000/gün) tükendi veya istek geçici olarak sınırlandı. Otomatik olarak ücretli plana geçilmiyor."}
+{"timestamp": "2026-09-04T09:31:27.341450+00:00", "level": "success", "item_id": "a2221ded-07f4-4ccd-93a4-aee4cf700d80", "attempt": 2, "message": "Cloudflare background OK", "duration_s": 1.43}

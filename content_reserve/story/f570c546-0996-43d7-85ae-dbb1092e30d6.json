@@ -1,6 +1,6 @@
 {
-  "content_id": "ba8b1e63-1205-4ae8-b2b3-f5576dfb38b6",
-  "type": "feed",
+  "content_id": "f570c546-0996-43d7-85ae-dbb1092e30d6",
+  "type": "story",
   "quote": {
     "id": "01b722e4-dcdb-43ec-b2d7-c0c7ea2bd083",
     "text": "Onu unuttuğumu sandığım an, bir şarkı üç saniyede beni yalanlıyor.",
@@ -16,10 +16,10 @@
   },
   "source_type": "ORIGINAL",
   "theme": "ayrılık/özlem",
-  "image_path": "media/generated/ba8b1e63-1205-4ae8-b2b3-f5576dfb38b6_feed.jpg",
+  "image_path": "media/generated/f570c546-0996-43d7-85ae-dbb1092e30d6_story.jpg",
   "quote_score": 88,
-  "visual_score": 96,
-  "overall_score": 96,
-  "zone": "bottom_left",
-  "generated_at": "2026-09-03T15:50:50.857456+00:00"
+  "visual_score": 94,
+  "overall_score": 94,
+  "zone": "lower",
+  "generated_at": "2026-09-04T09:30:25.033255+00:00"
 }

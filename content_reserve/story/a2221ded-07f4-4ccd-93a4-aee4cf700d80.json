@@ -1,0 +1,25 @@
+{
+  "content_id": "a2221ded-07f4-4ccd-93a4-aee4cf700d80",
+  "type": "story",
+  "quote": {
+    "id": "1544a22c-0044-4c27-93b4-c93273acaa9c",
+    "text": "Yıllar sonra bir arkadaşla buluşup hâlâ aynı yerden devam edebiliyorsan, o dostluk gerçektir.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "dostluk",
+    "mood": "huzur",
+    "score": 86,
+    "hash": "b566215d33300698",
+    "pattern_tags": [
+      "OPENER_YILLAR"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "dostluk",
+  "image_path": "media/generated/a2221ded-07f4-4ccd-93a4-aee4cf700d80_story.jpg",
+  "quote_score": 86,
+  "visual_score": 92,
+  "overall_score": 92,
+  "zone": "lower",
+  "generated_at": "2026-09-04T09:30:25.033255+00:00"
+}
