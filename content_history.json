@@ -317,5 +317,71 @@
     "instagram_media_id": "17979764429898859",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "102bddeb-4cdf-4341-9250-8fd9621b950d",
+    "theme": "cesaret/başarı",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "180ffb21bb0a5621",
+      "quote_text": "Bir işe yeniden başlamak, ilk defa başlamaktan daha çok cesaret ister.",
+      "mood": "umut",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "cesaret/başarı",
+      "zone": "lower"
+    },
+    "image_fingerprint": "1da1fa127fc1ffef9561689086289223a8004750e0262105ec91b15d030d5325",
+    "published_at": "2026-09-04T11:09:17.112871+00:00",
+    "instagram_media_id": "17933541057125741",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "277037e3-68c4-47de-8dca-ce5508927d9d",
+    "theme": "hayat tespiti",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "5f20e65781ab18f5",
+      "quote_text": "Bir insanın en dürüst hâli, telefon galerisinde, sosyal medya hesabında değil.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "hayat tespiti",
+      "zone": "upper"
+    },
+    "image_fingerprint": "f04c2a1ddc68d2931e95f4ea36f38ab81c81ac38891e0bb279ad47c6dd3ce8ee",
+    "published_at": "2026-09-04T11:09:24.202551+00:00",
+    "instagram_media_id": "18654603340016316",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "3acb3a1a-5fe6-4e25-aea8-3528590a958c",
+    "theme": "ayrılık/özlem",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "d2a941ee01e69f30",
+      "quote_text": "Sana yazdığım cümleleri sildim,\ngeriye sadece\n'iyi ki'ler kaldı.",
+      "mood": "melankoli",
+      "category": "SHORT_POEM",
+      "source_type": "SHORT_POEM",
+      "theme": "ayrılık/özlem",
+      "zone": "lower"
+    },
+    "image_fingerprint": "771c679f09b10fc70c9ec6b3e1a3344ebbcd4efde02faa11687a59f09211b927",
+    "published_at": "2026-09-04T11:09:34.247034+00:00",
+    "instagram_media_id": "18069827687746333",
+    "insights": null,
+    "performance_score": null
   }
 ]
