@@ -506,5 +506,101 @@
     "instagram_media_id": "17895518190669764",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "9e2b6a4c-f128-4c2f-8ba6-b124d0483ff8",
+    "theme": "ayrılık/özlem",
+    "content_type": "post",
+    "caption_summary": "#şehir #sözler #zaman",
+    "hashtags": [
+      "#şehir",
+      "#sözler",
+      "#zaman"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "3bf2924c2cd8bf64",
+      "quote_text": "Onu özlediğimi en çok, iyi bir haber alıp kimseyi arayacak halim kalmayınca anlıyorum.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "ayrılık/özlem",
+      "zone": "bottom_right"
+    },
+    "image_fingerprint": "53baa65d521d10999fe9720d6872a6b1f45191d7c8df3847d6a6fea9725f2c8b",
+    "published_at": "2026-09-04T18:19:17.188093+00:00",
+    "instagram_media_id": "18368571313213763",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "e0488e3d-b418-49b9-8025-ae85b5643cc5",
+    "theme": "sınır koymak",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "b6169788d7b8a485",
+      "quote_text": "Telefonunu sessize alıp bir akşam kimseye cevap vermemek, kabalık değil kendine zamandır.",
+      "mood": "yalnizlik",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "sınır koymak",
+      "zone": "lower"
+    },
+    "image_fingerprint": "b60774ca7245171740a43102c53dcaa93e38d2e82103b22125cb15ad1ebcdd3f",
+    "published_at": "2026-09-04T18:19:29.551269+00:00",
+    "instagram_media_id": "18213057784357535",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "ec490f19-9391-4bbc-b9dc-49419ed37e89",
+    "theme": "aşk",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "3e9cc777d6c700a3",
+      "quote_text": "Seni en çok, hastayken bana nasıl baktığını hatırlayınca özlüyorum.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aşk",
+      "zone": "lower"
+    },
+    "image_fingerprint": "1cf0c4fc7c70aac6d400ab80af7babd7b1e645dec8fbeabc824a422a1121e6c0",
+    "published_at": "2026-09-04T18:19:41.868225+00:00",
+    "instagram_media_id": "17888784810612959",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "a98b1252-6a3d-42ee-97f1-e0566f349306",
+    "theme": "aile",
+    "content_type": "post",
+    "caption_summary": "🌙\n\n#yol #sessizlik #manzara",
+    "hashtags": [
+      "#yol",
+      "#sessizlik",
+      "#manzara"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "8cd782b5bfcf40ee",
+      "quote_text": "Babamın en sevdiği koltuğu hâlâ boş dururken doldurulmuyor, ailede kimse bunu konuşmuyor.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aile",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "64258fad5d63a670afde95e14e758a056ae2128483818815e7a911a916a32595",
+    "published_at": "2026-09-04T18:19:55.175757+00:00",
+    "instagram_media_id": "18108825797584355",
+    "insights": null,
+    "performance_score": null
   }
 ]
