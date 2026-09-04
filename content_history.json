@@ -383,5 +383,128 @@
     "instagram_media_id": "18069827687746333",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "205d84fc-991e-45ad-8f1f-b0389fde778b",
+    "theme": "ayrılık/özlem",
+    "content_type": "post",
+    "caption_summary": "🌫️\n\n#deniz #doğa #akşam #sessizlik #gece #huzur",
+    "hashtags": [
+      "#deniz",
+      "#doğa",
+      "#akşam",
+      "#sessizlik",
+      "#gece",
+      "#huzur"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "853fa01be4558223",
+      "quote_text": "Onunla gittiğimiz kafeye artık tek başıma gidiyorum; garson hâlâ iki kahve soruyor.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "ayrılık/özlem",
+      "zone": "top_left"
+    },
+    "image_fingerprint": "c3c3d8d8eb780749e8ecbe3c536f83b1a5521138de40f82f27857b2faef47d29",
+    "published_at": "2026-09-04T15:00:24.521479+00:00",
+    "instagram_media_id": "18061358486610465",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "5e741c9d-98ff-4939-a036-16a0f03784e3",
+    "theme": "kararsızlık",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "912c3f310088c13d",
+      "quote_text": "Durakta saatine üç kere bakman, gitmekten değil kalmaktan korktuğunun işaretidir.",
+      "mood": "yol",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "kararsızlık",
+      "zone": "upper"
+    },
+    "image_fingerprint": "f8e004dc6665b04a07a598777b9d94cabe8d517da5e1b81c6410f22c042e09c0",
+    "published_at": "2026-09-04T15:00:35.072866+00:00",
+    "instagram_media_id": "17987374589861222",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "9e299a10-30bc-4cdf-b40e-3f5fb09ebffa",
+    "theme": "özgüven",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "ec09a2cc13ec0ae8",
+      "quote_text": "Adres sormaktan çekinmek, aslında yolunu kaybettiğini kabul etmekten çekinmektir.",
+      "mood": "yol",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "özgüven",
+      "zone": "lower"
+    },
+    "image_fingerprint": "bc39e6ea1b13abb0d1720bd19c32433cf26d907837f651bff493d358d56f695d",
+    "published_at": "2026-09-04T15:00:41.215202+00:00",
+    "instagram_media_id": "18117652756922872",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "81d48a18-302f-4e4f-a59c-eb02e65c480b",
+    "theme": "aile",
+    "content_type": "post",
+    "caption_summary": "Biraz sessizlik.\n\n#şiir #akşam #doğa #düşünce #gece",
+    "hashtags": [
+      "#şiir",
+      "#akşam",
+      "#doğa",
+      "#düşünce",
+      "#gece"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "f4c25c65433e1156",
+      "quote_text": "Babam hâlâ evden çıkarken 'dikkatli git' der, ben kırk yaşında olsam da.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aile",
+      "zone": "bottom_right"
+    },
+    "image_fingerprint": "7977557c578f0d144c3c02a4b650339b5bbb2df92ce100d731f5630b3d625228",
+    "published_at": "2026-09-04T15:00:53.358885+00:00",
+    "instagram_media_id": "18119807611856290",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "b32be45f-938f-45d9-99d1-5dd3b7435d93",
+    "theme": "aile",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "cbd661aeeab3daec",
+      "quote_text": "Bir baba, çocuğunun arabasına her bindiğinde önce lastikleri kontrol eder; sevgisi genelde oradadır.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aile",
+      "zone": "lower"
+    },
+    "image_fingerprint": "715e4c47ac97b3f5c7b31e57b9d636be8678fa6af510cd144c49b4f4fc71af18",
+    "published_at": "2026-09-04T15:01:05.031327+00:00",
+    "instagram_media_id": "17895518190669764",
+    "insights": null,
+    "performance_score": null
   }
 ]
