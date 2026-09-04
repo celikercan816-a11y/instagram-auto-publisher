@@ -602,5 +602,149 @@
     "instagram_media_id": "18108825797584355",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "f0fd7996-f1a3-4842-a80b-928f76fbe681",
+    "theme": "karakter/vicdan",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "2227bb3b704fa185",
+      "quote_text": "Vicdan, kimsenin bilmediği bir gece telefonun ışığında yazıp sildiğin mesajlarda saklıdır.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "karakter/vicdan",
+      "zone": "lower"
+    },
+    "image_fingerprint": "585b3863848135b2741a9bdc3414e9a1062558efa1fdccd12fb16877248e2a59",
+    "published_at": "2026-09-04T20:51:14.455169+00:00",
+    "instagram_media_id": "17887734432613368",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "b35a7a32-8364-4ef4-a89f-c558131d7016",
+    "theme": "ayrılık/özlem",
+    "content_type": "post",
+    "caption_summary": "🌫️\n\n#gece #yol #şehir #manzara #sakinlik #sessizlik",
+    "hashtags": [
+      "#gece",
+      "#yol",
+      "#şehir",
+      "#manzara",
+      "#sakinlik",
+      "#sessizlik"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "d669d4cbe3cfcd7c",
+      "quote_text": "Bazı insanlarla son konuşmanın son olduğunu, aylar sonra fark edersin.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "ayrılık/özlem",
+      "zone": "top_right"
+    },
+    "image_fingerprint": "736358845594e12fd6c984a0181f80f7ee2e90fee59b13bda6ff116ba860854e",
+    "published_at": "2026-09-04T20:51:22.622981+00:00",
+    "instagram_media_id": "17987577054050373",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "65978099-3a02-4ed6-a091-860ac0bbd27a",
+    "theme": "ayrılık/özlem",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "853fa01be4558223",
+      "quote_text": "Onunla gittiğimiz kafeye artık tek başıma gidiyorum; garson hâlâ iki kahve soruyor.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "ayrılık/özlem",
+      "zone": "lower"
+    },
+    "image_fingerprint": "cdd16a7c4097a5c56573c3c2e5077bd09c219632f7bbbb752d5189b98903c839",
+    "published_at": "2026-09-04T20:51:33.901910+00:00",
+    "instagram_media_id": "18426517789194496",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "09d770d6-62f1-457b-a965-7c04a3d8c334",
+    "theme": "aile",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "f4c25c65433e1156",
+      "quote_text": "Babam hâlâ evden çıkarken 'dikkatli git' der, ben kırk yaşında olsam da.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aile",
+      "zone": "lower"
+    },
+    "image_fingerprint": "17b428d2de4f40e79176d5e566128829f2d4a1b9f46c2792435d674f20f911bb",
+    "published_at": "2026-09-04T20:51:45.488583+00:00",
+    "instagram_media_id": "18245218738308951",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "ba8b1e63-1205-4ae8-b2b3-f5576dfb38b6",
+    "theme": "ayrılık/özlem",
+    "content_type": "post",
+    "caption_summary": "Bazı akşamlar böyle geçiyor.\n\n#şehir #sakinlik #yol #sessizlik",
+    "hashtags": [
+      "#şehir",
+      "#sakinlik",
+      "#yol",
+      "#sessizlik"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "5e9c52d02d7b9d6d",
+      "quote_text": "Onu unuttuğumu sandığım an, bir şarkı üç saniyede beni yalanlıyor.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "ayrılık/özlem",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "ccd98cf4913a0aeff779df8a3a3739ec21d9fbc2cc038e212b5213b73f5f5f89",
+    "published_at": "2026-09-04T20:51:53.692566+00:00",
+    "instagram_media_id": "18188505346406193",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "5e343332-7572-4b62-8357-b7fd1e36d833",
+    "theme": "ayrılık/özlem",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "3bf2924c2cd8bf64",
+      "quote_text": "Onu özlediğimi en çok, iyi bir haber alıp kimseyi arayacak halim kalmayınca anlıyorum.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "ayrılık/özlem",
+      "zone": "lower"
+    },
+    "image_fingerprint": "933ac75a54562b21722cfa866506ca6ffdffa3e746f89bba39000640991dd0a3",
+    "published_at": "2026-09-04T20:52:04.192337+00:00",
+    "instagram_media_id": "18088027748658761",
+    "insights": null,
+    "performance_score": null
   }
 ]
