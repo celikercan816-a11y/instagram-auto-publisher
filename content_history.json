@@ -1147,5 +1147,77 @@
     "instagram_media_id": "18119265319864145",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "ad26adf7-84fb-4428-825d-b5981a41d41d",
+    "theme": "yeni başlangıç",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "dfc6f323a648cef8",
+      "quote_text": "Yeni yıla girerken tuttuğun sözlerden çok, ocak ayında hâlâ hatırladığın söz önemlidir.",
+      "mood": "umut",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "yeni başlangıç",
+      "zone": "upper"
+    },
+    "image_fingerprint": "ccc36ca08fd7877d676aaf4b93b2b5ee1e9c51326df9974e395b934a53e79147",
+    "published_at": "2026-09-05T21:38:46.898825+00:00",
+    "instagram_media_id": "18219210397340170",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "87c144f4-8f56-463c-afbe-857807830c20",
+    "theme": "karakter/vicdan",
+    "content_type": "post",
+    "caption_summary": "Huzur.\n\n#sözler #sakinlik #yalnızlık #sessizlik #huzur",
+    "hashtags": [
+      "#sözler",
+      "#sakinlik",
+      "#yalnızlık",
+      "#sessizlik",
+      "#huzur"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "fe7542273cdc237c",
+      "quote_text": "Kibir, aslında güvensizliğin en gürültülü hâlidir.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "karakter/vicdan",
+      "zone": "bottom_right"
+    },
+    "image_fingerprint": "bd4801f42bb04ab180b2e636d2072b573e6d33459144fd3177de685228f28bb4",
+    "published_at": "2026-09-05T21:38:59.873315+00:00",
+    "instagram_media_id": "17862391275680158",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "efd0e5ce-614c-4a05-b822-4845af7d5a1c",
+    "theme": "büyümek",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "38f08fa08e11288a",
+      "quote_text": "Tek kişilik bir masada yemek yemek, artık sana tuhaf gelmiyorsa, büyümüşsün demektir.",
+      "mood": "yalnizlik",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "büyümek",
+      "zone": "lower"
+    },
+    "image_fingerprint": "f8f922b63513c84cfc5837993c217b526bafe0855b3eb7317a010f70fcc93bea",
+    "published_at": "2026-09-05T21:39:11.583302+00:00",
+    "instagram_media_id": "17903814273553714",
+    "insights": null,
+    "performance_score": null
   }
 ]
