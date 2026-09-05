@@ -1,0 +1,25 @@
+{
+  "content_id": "6ba9d3e4-b014-41c8-b26c-de73c0173c50",
+  "type": "story",
+  "quote": {
+    "id": "b634b144-f7f4-49ee-abb7-a8583900347c",
+    "text": "Telefonu başka bir odada bırakmak, günün geri kalanını fark edilir şekilde uzatır.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "farkındalık",
+    "mood": "huzur",
+    "score": 86,
+    "hash": "1a9273c8a0c2dd88",
+    "pattern_tags": [
+      "OPENER_TELEFONU"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "farkındalık",
+  "image_path": "media/generated/6ba9d3e4-b014-41c8-b26c-de73c0173c50_story.jpg",
+  "quote_score": 86,
+  "visual_score": 93,
+  "overall_score": 93,
+  "zone": "lower",
+  "generated_at": "2026-09-05T08:57:39.901405+00:00"
+}

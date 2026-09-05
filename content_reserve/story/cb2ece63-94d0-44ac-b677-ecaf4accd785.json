@@ -1,0 +1,25 @@
+{
+  "content_id": "cb2ece63-94d0-44ac-b677-ecaf4accd785",
+  "type": "story",
+  "quote": {
+    "id": "2980fa19-e1e3-4735-af59-491d451b83d6",
+    "text": "Annemin elleri, söylemediği bütün fedakarlıkların kanıtıdır.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "aile",
+    "mood": "huzur",
+    "score": 85,
+    "hash": "ab200cf013023d55",
+    "pattern_tags": [
+      "OPENER_ANNEMIN"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "aile",
+  "image_path": "media/generated/cb2ece63-94d0-44ac-b677-ecaf4accd785_story.jpg",
+  "quote_score": 85,
+  "visual_score": 93,
+  "overall_score": 93,
+  "zone": "lower",
+  "generated_at": "2026-09-05T08:57:39.901405+00:00"
+}

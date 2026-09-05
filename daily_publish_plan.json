@@ -1,147 +1,204 @@
 {
-  "date": "2026-09-04",
-  "generated_at": "2026-09-04T09:30:25.033255+00:00",
+  "date": "2026-09-05",
+  "generated_at": "2026-09-05T08:57:39.901405+00:00",
   "feed": [
     {
-      "content_id": "205d84fc-991e-45ad-8f1f-b0389fde778b",
-      "scheduled_at": "2026-09-04T14:30:00+03:00",
+      "content_id": "cdeb30b3-0770-41e1-a77b-928c71123d46",
+      "scheduled_at": "2026-09-05T12:30:00+03:00",
       "theme": "ayrılık/özlem"
     },
     {
-      "content_id": "81d48a18-302f-4e4f-a59c-eb02e65c480b",
-      "scheduled_at": "2026-09-04T16:30:00+03:00",
+      "content_id": "d4f6a3bd-5181-4159-884f-4436ad3f9dfe",
+      "scheduled_at": "2026-09-05T14:30:00+03:00",
+      "theme": "hayat tespiti"
+    },
+    {
+      "content_id": "ec9d6079-ff50-418d-bd74-197875a381fd",
+      "scheduled_at": "2026-09-05T16:30:00+03:00",
+      "theme": "dostluk/ayrılık"
+    },
+    {
+      "content_id": "2d060ba9-85e6-4221-8d0c-5ed40ede9cf8",
+      "scheduled_at": "2026-09-05T18:30:00+03:00",
       "theme": "aile"
     },
     {
-      "content_id": "9e2b6a4c-f128-4c2f-8ba6-b124d0483ff8",
-      "scheduled_at": "2026-09-04T18:30:00+03:00",
-      "theme": "ayrılık/özlem"
-    },
-    {
-      "content_id": "a98b1252-6a3d-42ee-97f1-e0566f349306",
-      "scheduled_at": "2026-09-04T20:30:00+03:00",
+      "content_id": "83417004-61b1-4ebd-af17-776c03f3fcf3",
+      "scheduled_at": "2026-09-05T20:30:00+03:00",
       "theme": "aile"
     },
     {
-      "content_id": "b35a7a32-8364-4ef4-a89f-c558131d7016",
-      "scheduled_at": "2026-09-04T22:00:00+03:00",
+      "content_id": "63695eb8-d317-46d9-bcc7-bb6754994be4",
+      "scheduled_at": "2026-09-05T22:00:00+03:00",
       "theme": "ayrılık/özlem"
     },
     {
-      "content_id": "ba8b1e63-1205-4ae8-b2b3-f5576dfb38b6",
-      "scheduled_at": "2026-09-04T23:30:00+03:00",
-      "theme": "ayrılık/özlem"
+      "content_id": "87c144f4-8f56-463c-afbe-857807830c20",
+      "scheduled_at": "2026-09-05T23:30:00+03:00",
+      "theme": "karakter/vicdan"
     }
   ],
   "story": [
     {
-      "content_id": "102bddeb-4cdf-4341-9250-8fd9621b950d",
-      "scheduled_at": "2026-09-04T09:49:30.861046+00:00",
-      "theme": "cesaret/başarı"
+      "content_id": "8934a0f8-de3c-48ad-a1a0-90d6f324484d",
+      "scheduled_at": "2026-09-05T09:22:13.251171+00:00",
+      "theme": "mizahi/modern hayat"
     },
     {
-      "content_id": "277037e3-68c4-47de-8dca-ce5508927d9d",
-      "scheduled_at": "2026-09-04T10:17:42.516627+00:00",
-      "theme": "hayat tespiti"
+      "content_id": "a2221ded-07f4-4ccd-93a4-aee4cf700d80",
+      "scheduled_at": "2026-09-05T10:01:19.950703+00:00",
+      "theme": "dostluk"
     },
     {
-      "content_id": "3acb3a1a-5fe6-4e25-aea8-3528590a958c",
-      "scheduled_at": "2026-09-04T10:45:54.172209+00:00",
+      "content_id": "f570c546-0996-43d7-85ae-dbb1092e30d6",
+      "scheduled_at": "2026-09-05T10:40:26.650234+00:00",
       "theme": "ayrılık/özlem"
     },
     {
-      "content_id": "5e741c9d-98ff-4939-a036-16a0f03784e3",
-      "scheduled_at": "2026-09-04T14:40:00+03:00",
-      "theme": "kararsızlık"
+      "content_id": "f5ec2639-668c-40df-8ebb-1420ad66732a",
+      "scheduled_at": "2026-09-05T14:40:00+03:00",
+      "theme": "dostluk"
     },
     {
-      "content_id": "9e299a10-30bc-4cdf-b40e-3f5fb09ebffa",
-      "scheduled_at": "2026-09-04T16:00:00+03:00",
-      "theme": "özgüven"
+      "content_id": "bb52abbb-6688-4885-8ab2-e77a065b375c",
+      "scheduled_at": "2026-09-05T16:00:00+03:00",
+      "theme": "serbest tema"
     },
     {
-      "content_id": "b32be45f-938f-45d9-99d1-5dd3b7435d93",
-      "scheduled_at": "2026-09-04T17:20:00+03:00",
+      "content_id": "64697ad5-9593-442a-be21-4e2faa02d625",
+      "scheduled_at": "2026-09-05T17:20:00+03:00",
       "theme": "aile"
     },
     {
-      "content_id": "e0488e3d-b418-49b9-8025-ae85b5643cc5",
-      "scheduled_at": "2026-09-04T18:40:00+03:00",
-      "theme": "sınır koymak"
+      "content_id": "440fee22-00d8-4b89-8873-f94fb34bb9f9",
+      "scheduled_at": "2026-09-05T18:40:00+03:00",
+      "theme": "huzur/umut"
     },
     {
-      "content_id": "ec490f19-9391-4bbc-b9dc-49419ed37e89",
-      "scheduled_at": "2026-09-04T20:00:00+03:00",
-      "theme": "aşk"
-    },
-    {
-      "content_id": "f0fd7996-f1a3-4842-a80b-928f76fbe681",
-      "scheduled_at": "2026-09-04T21:20:00+03:00",
-      "theme": "karakter/vicdan"
-    },
-    {
-      "content_id": "65978099-3a02-4ed6-a091-860ac0bbd27a",
-      "scheduled_at": "2026-09-04T22:19:50+03:00",
+      "content_id": "2a35c545-af23-41fc-a87e-ee68eb39ef6f",
+      "scheduled_at": "2026-09-05T20:00:00+03:00",
       "theme": "ayrılık/özlem"
     },
     {
-      "content_id": "09d770d6-62f1-457b-a965-7c04a3d8c334",
-      "scheduled_at": "2026-09-04T22:59:30+03:00",
-      "theme": "aile"
+      "content_id": "0d73cd04-32c1-4449-9a38-58401281dd09",
+      "scheduled_at": "2026-09-05T21:20:00+03:00",
+      "theme": "huzur/yol"
     },
     {
-      "content_id": "5e343332-7572-4b62-8357-b7fd1e36d833",
-      "scheduled_at": "2026-09-04T23:39:10+03:00",
-      "theme": "ayrılık/özlem"
+      "content_id": "e8b2301d-cb51-449c-a183-1287727c5cdc",
+      "scheduled_at": "2026-09-05T22:19:50+03:00",
+      "theme": "mizahi"
+    },
+    {
+      "content_id": "ad26adf7-84fb-4428-825d-b5981a41d41d",
+      "scheduled_at": "2026-09-05T22:59:30+03:00",
+      "theme": "yeni başlangıç"
+    },
+    {
+      "content_id": "efd0e5ce-614c-4a05-b822-4845af7d5a1c",
+      "scheduled_at": "2026-09-05T23:39:10+03:00",
+      "theme": "büyümek"
     }
   ],
   "feed_skipped_past_time": [
     "08:30",
-    "10:30",
-    "12:30"
+    "10:30"
   ],
   "story_skipped_blocks": [
     "07:30-10:30"
   ],
   "feed_reserved": [
-    "cdeb30b3-0770-41e1-a77b-928c71123d46",
-    "d4f6a3bd-5181-4159-884f-4436ad3f9dfe",
-    "ec9d6079-ff50-418d-bd74-197875a381fd"
+    "cb4f609f-c3d1-4a87-b543-4a4bc0d64381",
+    "d53784be-5818-4488-9761-d5290c7f5b93"
   ],
   "story_reserved": [
-    "f570c546-0996-43d7-85ae-dbb1092e30d6",
-    "8934a0f8-de3c-48ad-a1a0-90d6f324484d",
-    "a2221ded-07f4-4ccd-93a4-aee4cf700d80"
+    "6ba9d3e4-b014-41c8-b26c-de73c0173c50",
+    "cb2ece63-94d0-44ac-b677-ecaf4accd785",
+    "018112ee-0ed6-4499-8e79-ed9b5dbb32d5"
   ],
   "needs_review": [
     {
-      "content_id": "70629bb3-ae97-430b-b12b-defad9e89baa",
-      "type": "story",
-      "quote": "Bazı insanlarla son konuşmanın son olduğunu, aylar sonra fark edersin.",
-      "reason": "QC geçemedi: score=89, placement=0.45"
+      "content_id": "771f8bd6-af4f-4216-ae31-fad65d28e2d3",
+      "type": "feed",
+      "quote": "Bir insanın karakteri, hesap hatası kendi lehine çıktığında ne yaptığında ortaya çıkar.",
+      "reason": "QC geçemedi: score=87, placement=0.44"
     },
     {
-      "content_id": "ae6162d4-abc4-460d-a017-cd782393e3ea",
-      "type": "story",
-      "quote": "Babamın en sevdiği koltuğu hâlâ boş dururken doldurulmuyor, ailede kimse bunu konuşmuyor.",
-      "reason": "QC geçemedi: score=89, placement=0.49"
+      "content_id": "b0f650c4-6dd1-449e-b762-b3e5359d38cd",
+      "type": "feed",
+      "quote": "Bir insanın yalnız kalmaktan korkması, aslında kendisiyle baş başa kalmaktan korkmasıdır.",
+      "reason": "QC geçemedi: score=89, placement=0.48"
     },
     {
-      "content_id": "c6db5b03-c3cc-44fa-a25c-5ba39cf09cb9",
-      "type": "story",
-      "quote": "Eski bir telefon numarasını hâlâ ezbere bilmek, o kişiyi unutmadığın anlamına gelmez, sadece rakamları unutmadığın anlamına gelir.",
-      "reason": "Metin hiçbir denemede kadraja/safe-zone'a sığmadı."
+      "content_id": "36518992-c03d-4366-9f41-e42fd1d62006",
+      "type": "feed",
+      "quote": "İşten çıkışta omuzların ne kadar düştüğü, günün nasıl geçtiğinin en dürüst özetidir.",
+      "reason": "QC geçemedi: score=88, placement=0.55"
     },
     {
-      "content_id": "cfff9d7d-4e94-449f-a1ce-0a33a820732c",
-      "type": "story",
-      "quote": "Gerçek bir arkadaş, başarını kutlarken sesindeki kıskançlığı fark ettirmeyendir.",
-      "reason": "QC geçemedi: score=90, placement=0.50"
+      "content_id": "26fa34e5-74f2-4fd3-be9d-4e77330ba892",
+      "type": "feed",
+      "quote": "Annem hâlâ eve geldiğimde koridor lambasını benim için açık bırakır, otuz yaşında olsam da.",
+      "reason": "QC geçemedi: score=87, placement=0.49"
     },
     {
-      "content_id": "afe381a4-f238-47d8-b76b-567be8e5538a",
+      "content_id": "26c73a90-6ea6-4f97-ab5c-cb3c20368c7a",
+      "type": "feed",
+      "quote": "Ayrılık, mesaj kutusundaki son 'görüldü' yazısında donup kalmaktır.",
+      "reason": "QC geçemedi: score=89, placement=0.53"
+    },
+    {
+      "content_id": "85b73f7f-a2de-4708-ad76-dd084fe26316",
+      "type": "feed",
+      "quote": "Vicdan, kimseye anlatmayacağın halde gece telefonunun ışığında yazıp sildiğin mesajlarda saklıdır.",
+      "reason": "QC geçemedi: score=89, placement=0.58"
+    },
+    {
+      "content_id": "8b312e16-91d5-4239-aa48-31d9771ae7a7",
+      "type": "feed",
+      "quote": "Seni sevmek, hiç öğrenmediğim bir dilde konuşmak gibiydi; yine de anlaşıldım.",
+      "reason": "QC geçemedi: score=87, placement=0.51"
+    },
+    {
+      "content_id": "b4be5f48-63f6-4118-b9bc-771f4dfa9a51",
+      "type": "feed",
+      "quote": "Kaybettiğin bir arkadaşlığın en tuhaf tarafı, hâlâ ona anlatmak istediğin şeyler olması.",
+      "reason": "QC geçemedi: score=88, placement=0.52"
+    },
+    {
+      "content_id": "b7c04fdb-2c8d-45b5-a9ff-12136d913e01",
       "type": "story",
-      "quote": "Otobüs penceresinden geçen şehirler,\nhiçbiri benim değildi ama hepsi tanıdıktı.\nBelki de ev,\nbir yer değil bir alışkanlıktır.",
+      "quote": "Boş bir eve gelmek bazen huzurdur, kalabalık bir eve gelip görünmemek asıl yalnızlıktır.",
+      "reason": "QC geçemedi: score=90, placement=0.52"
+    },
+    {
+      "content_id": "1b06848d-b301-4a56-a090-e886facf8e47",
+      "type": "story",
+      "quote": "Kredi kartı ekstresi bazen bir insanı, söylediklerinden daha dürüst anlatır.",
+      "reason": "QC geçemedi: score=90, placement=0.47"
+    },
+    {
+      "content_id": "9a1e5f26-2a87-44ba-b1ee-b95e0369a79f",
+      "type": "story",
+      "quote": "Annem uzaktan bile, sesimden yorgun olduğumu telefonda daha ben söylemeden anlar.",
+      "reason": "QC geçemedi: score=88, placement=0.48"
+    },
+    {
+      "content_id": "c9cf4df7-962f-4bd0-96e1-77692103c7bd",
+      "type": "story",
+      "quote": "Yetişkinlik, doktoru ertelerken dizinin son bölümünü asla ertelemediğin dönemdir.",
+      "reason": "QC geçemedi: score=91, placement=0.55"
+    },
+    {
+      "content_id": "9cf38454-9772-4da4-b2cf-72a342fa4555",
+      "type": "story",
+      "quote": "Eski bir fotoğrafta gülen ama artık hayatında olmayan biri, en sessiz hüzündür.",
+      "reason": "QC geçemedi: score=84, placement=0.33"
+    },
+    {
+      "content_id": "f84c3b0d-5c78-4312-8a3c-b7e9cb8d127b",
+      "type": "story",
+      "quote": "Yıllar sonra o sokağa döndüm,\ndükkanlar değişmiş, isimler başka.\nAma köşedeki ışık hâlâ aynı yerde yanıyordu,\nbeni bekliyormuş gibi.",
       "reason": "Metin hiçbir denemede kadraja/safe-zone'a sığmadı."
     }
   ]

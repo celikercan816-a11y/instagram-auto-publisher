@@ -1,0 +1,25 @@
+{
+  "content_id": "018112ee-0ed6-4499-8e79-ed9b5dbb32d5",
+  "type": "story",
+  "quote": {
+    "id": "0510a07c-9048-4b33-b6d7-e7f8d640af11",
+    "text": "Param olmadığı dönemlerde yanımda kalanları, param olduğunda unutmamaya çalışıyorum.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "para",
+    "mood": "zaman",
+    "score": 85,
+    "hash": "a3d1c9ddb7bc5757",
+    "pattern_tags": [
+      "OPENER_PARAM"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "para",
+  "image_path": "media/generated/018112ee-0ed6-4499-8e79-ed9b5dbb32d5_story.jpg",
+  "quote_score": 85,
+  "visual_score": 93,
+  "overall_score": 93,
+  "zone": "lower",
+  "generated_at": "2026-09-05T08:57:39.901405+00:00"
+}

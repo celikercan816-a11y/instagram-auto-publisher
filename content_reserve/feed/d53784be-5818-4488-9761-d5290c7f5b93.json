@@ -1,0 +1,25 @@
+{
+  "content_id": "d53784be-5818-4488-9761-d5290c7f5b93",
+  "type": "feed",
+  "quote": {
+    "id": "b4ebe799-6279-4c7d-a42e-141fb26fb7e2",
+    "text": "En çok, birlikte hiçbir şey yapmadığımız günleri özlüyorum.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "aşk",
+    "mood": "melankoli",
+    "score": 86,
+    "hash": "39945fb8bc820331",
+    "pattern_tags": [
+      "OPENER_EN"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "aşk",
+  "image_path": "media/generated/d53784be-5818-4488-9761-d5290c7f5b93_feed.jpg",
+  "quote_score": 86,
+  "visual_score": 99,
+  "overall_score": 99,
+  "zone": "bottom_left",
+  "generated_at": "2026-09-05T08:57:39.901405+00:00"
+}

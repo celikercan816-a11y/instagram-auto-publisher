@@ -1,0 +1,25 @@
+{
+  "content_id": "cb4f609f-c3d1-4a87-b543-4a4bc0d64381",
+  "type": "feed",
+  "quote": {
+    "id": "b9601ec4-36a4-4255-aa88-29c3cc66063e",
+    "text": "Evden ayrılınca fark ettiğim şey, oradaki gürültünün aslında güvenlik olduğuydu.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "aile",
+    "mood": "melankoli",
+    "score": 86,
+    "hash": "408eb2219ef808ce",
+    "pattern_tags": [
+      "OPENER_EVDEN"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "aile",
+  "image_path": "media/generated/cb4f609f-c3d1-4a87-b543-4a4bc0d64381_feed.jpg",
+  "quote_score": 86,
+  "visual_score": 98,
+  "overall_score": 98,
+  "zone": "bottom_left",
+  "generated_at": "2026-09-05T08:57:39.901405+00:00"
+}

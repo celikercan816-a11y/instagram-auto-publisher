@@ -1,7 +1,21 @@
 {
-  "generated_at": "2026-09-04T09:31:28.132295+00:00",
-  "sample_size": 4,
+  "generated_at": "2026-09-05T09:11:46.205458+00:00",
+  "sample_size": 13,
   "by_theme": {},
-  "by_content_type": {},
-  "by_hour": {}
+  "by_content_type": {
+    "post": {
+      "avg_score": 0.0,
+      "n": 6
+    },
+    "story": {
+      "avg_score": 0.0,
+      "n": 7
+    }
+  },
+  "by_hour": {
+    "21": {
+      "avg_score": 0.0,
+      "n": 5
+    }
+  }
 }
