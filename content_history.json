@@ -909,5 +909,76 @@
     "instagram_media_id": "17904814080515360",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "bb52abbb-6688-4885-8ab2-e77a065b375c",
+    "theme": "serbest tema",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "c5500b49dd33e469",
+      "quote_text": "Bir insanın gerçekten kiminle olduğunu, kötü haberi ilk kime söylediğine bakarak anlarsın.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "serbest tema",
+      "zone": "lower"
+    },
+    "image_fingerprint": "4defa6e1ff2658efac52f3cc0a5e15cd8b86c1076f7342822b49eeb4252d6652",
+    "published_at": "2026-09-05T15:21:19.646530+00:00",
+    "instagram_media_id": "18086352272690523",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "ec9d6079-ff50-418d-bd74-197875a381fd",
+    "theme": "dostluk/ayrılık",
+    "content_type": "post",
+    "caption_summary": "#yalnızlık #deniz #istanbul #şehir",
+    "hashtags": [
+      "#yalnızlık",
+      "#deniz",
+      "#istanbul",
+      "#şehir"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "2f7f4f7135c61d79",
+      "quote_text": "Bir arkadaşlığın bittiğini kimse söylemez, sadece mesajlar seyrekleşir.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "dostluk/ayrılık",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "c27154d94f720fc810958b0f175666e9ca5686e2e7fb2183d083af14e67aabda",
+    "published_at": "2026-09-05T15:21:27.858316+00:00",
+    "instagram_media_id": "17981255007153709",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "64697ad5-9593-442a-be21-4e2faa02d625",
+    "theme": "aile",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "f2c0d75671f9223f",
+      "quote_text": "Babamla aramdaki en uzun sohbetler hep arabada, ikimiz de yol izlerken geçti.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aile",
+      "zone": "lower"
+    },
+    "image_fingerprint": "4eeb420f1322b7f44ac567a521885c6f3ab3b995abb183c307df1cc4c74de0c9",
+    "published_at": "2026-09-05T15:21:34.867396+00:00",
+    "instagram_media_id": "18125221456770027",
+    "insights": null,
+    "performance_score": null
   }
 ]
