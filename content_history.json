@@ -980,5 +980,75 @@
     "instagram_media_id": "18125221456770027",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "2d060ba9-85e6-4221-8d0c-5ed40ede9cf8",
+    "theme": "aile",
+    "content_type": "post",
+    "caption_summary": "🌊\n\n#zaman #atasözü #doğa",
+    "hashtags": [
+      "#zaman",
+      "#atasözü",
+      "#doğa"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "e154cbcf6808c7d5",
+      "quote_text": "Annemin buzdolabına not bırakma alışkanlığı, ben evden ayrılalı yıllar oldu ama hâlâ bitmedi.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aile",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "f33dbe98da3d8ef9165020e16acf1072d43188b1f5830678c5b2ae7f8a2a55ce",
+    "published_at": "2026-09-05T17:24:55.720723+00:00",
+    "instagram_media_id": "18486039289097853",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "440fee22-00d8-4b89-8873-f94fb34bb9f9",
+    "theme": "huzur/umut",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "783a1f666b8bd07e",
+      "quote_text": "Umudun en sessiz hâli, hâlâ o eski anahtarı çöpe atmamış olmandır.",
+      "mood": "umut",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "huzur/umut",
+      "zone": "upper"
+    },
+    "image_fingerprint": "d4af8ec29f76ee0074275a58a336ec60f85338141618f700f5872dea6abfae94",
+    "published_at": "2026-09-05T17:25:05.436881+00:00",
+    "instagram_media_id": "18083076068691383",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "2a35c545-af23-41fc-a87e-ee68eb39ef6f",
+    "theme": "ayrılık/özlem",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "d6e2dad85582a63e",
+      "quote_text": "Eski bir bavulun dibinde unutulmuş bir bilet gibidir bazı özlemler: hatırlamıyorsun ama atamıyorsun.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "ayrılık/özlem",
+      "zone": "upper"
+    },
+    "image_fingerprint": "e534a8986c98044231a32403167b8ed97779ae7cefa3fd36a2f2cae372697832",
+    "published_at": "2026-09-05T17:25:14.751522+00:00",
+    "instagram_media_id": "18069844652743244",
+    "insights": null,
+    "performance_score": null
   }
 ]
