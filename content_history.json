@@ -1050,5 +1050,102 @@
     "instagram_media_id": "18069844652743244",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "83417004-61b1-4ebd-af17-776c03f3fcf3",
+    "theme": "aile",
+    "content_type": "post",
+    "caption_summary": "Bazı akşamlar böyle geçiyor.\n\n#istanbul #huzur #doğa #manzara",
+    "hashtags": [
+      "#istanbul",
+      "#huzur",
+      "#doğa",
+      "#manzara"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "e5bcb0becff98a0e",
+      "quote_text": "Annem hastalandığında ilk fark ettiğim şey, sesinin telefonda ne kadar küçüldüğüydü.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aile",
+      "zone": "top_right"
+    },
+    "image_fingerprint": "605ff88f128721295a5f73d8dd9cdc5b44bbf68a02aeaecb56f3bf23f44ba56d",
+    "published_at": "2026-09-05T19:25:00.836989+00:00",
+    "instagram_media_id": "17913775317265111",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "0d73cd04-32c1-4449-9a38-58401281dd09",
+    "theme": "huzur/yol",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "93758b596b12069f",
+      "quote_text": "Vapurun güvertesinde durup hiçbir yere bakmamak da bir tür varış sayılır.",
+      "mood": "yol",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "huzur/yol",
+      "zone": "lower"
+    },
+    "image_fingerprint": "2fc877d1b007321f4cdb549b4b937b48e4816f38bc90c86921362d80f2d19e30",
+    "published_at": "2026-09-05T19:25:11.279595+00:00",
+    "instagram_media_id": "18107227577597869",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "63695eb8-d317-46d9-bcc7-bb6754994be4",
+    "theme": "ayrılık/özlem",
+    "content_type": "post",
+    "caption_summary": "🌙\n\n#düşünce #manzara #huzur",
+    "hashtags": [
+      "#düşünce",
+      "#manzara",
+      "#huzur"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "fce07f015a72d1d1",
+      "quote_text": "Sen gittin,\nodadaki eşyalar\nyerlerini hâlâ değiştirmiyor.",
+      "mood": "melankoli",
+      "category": "SHORT_POEM",
+      "source_type": "SHORT_POEM",
+      "theme": "ayrılık/özlem",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "20dd97b66a1f3642d2f193f10b208685f073d8e797a20c2b620b7b63b44b9e6f",
+    "published_at": "2026-09-05T19:25:21.332137+00:00",
+    "instagram_media_id": "17966338890177525",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "e8b2301d-cb51-449c-a183-1287727c5cdc",
+    "theme": "mizahi",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "f162948d26a828d0",
+      "quote_text": "Otobanda hiç tanımadığın bir arabayı el sallayarak geçmek, günün en anlamsız iyiliğidir.",
+      "mood": "yol",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "mizahi",
+      "zone": "upper"
+    },
+    "image_fingerprint": "9f9c1fe055272966ac628e681910a85c47cae11320dfdfc92bbf3e83dc13085c",
+    "published_at": "2026-09-05T19:25:32.236428+00:00",
+    "instagram_media_id": "18119265319864145",
+    "insights": null,
+    "performance_score": null
   }
 ]
