@@ -767,5 +767,147 @@
     "instagram_media_id": "18088027748658761",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "8934a0f8-de3c-48ad-a1a0-90d6f324484d",
+    "theme": "mizahi/modern hayat",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "ef40731efec314fc",
+      "quote_text": "Telefonunun şarjı biterken hissettiğin panik, aslında yalnız kalma korkunun ölçüsüdür.",
+      "mood": "yalnizlik",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "mizahi/modern hayat",
+      "zone": "upper"
+    },
+    "image_fingerprint": "595e7a8632e51dc48b15130cb5d2040165564f3e33dec133b5afb1c5869b545c",
+    "published_at": "2026-09-05T12:08:24.697765+00:00",
+    "instagram_media_id": "18077196347356366",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "a2221ded-07f4-4ccd-93a4-aee4cf700d80",
+    "theme": "dostluk",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "b566215d33300698",
+      "quote_text": "Yıllar sonra bir arkadaşla buluşup hâlâ aynı yerden devam edebiliyorsan, o dostluk gerçektir.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "dostluk",
+      "zone": "lower"
+    },
+    "image_fingerprint": "4ac54fcb48458e241b79c62e3ce6d32c2636d9c4429e3ba20df2eaa7af4dd515",
+    "published_at": "2026-09-05T12:08:36.563984+00:00",
+    "instagram_media_id": "17966522642961213",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "f570c546-0996-43d7-85ae-dbb1092e30d6",
+    "theme": "ayrılık/özlem",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "5e9c52d02d7b9d6d",
+      "quote_text": "Onu unuttuğumu sandığım an, bir şarkı üç saniyede beni yalanlıyor.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "ayrılık/özlem",
+      "zone": "lower"
+    },
+    "image_fingerprint": "761c3f25b53eb2846c90d68d36c083d9129a755ec404cc56b238ad19c5d461cb",
+    "published_at": "2026-09-05T12:08:47.817543+00:00",
+    "instagram_media_id": "17890374546612090",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "cdeb30b3-0770-41e1-a77b-928c71123d46",
+    "theme": "ayrılık/özlem",
+    "content_type": "post",
+    "caption_summary": "#doğa #akşam #şehir #anlar",
+    "hashtags": [
+      "#doğa",
+      "#akşam",
+      "#şehir",
+      "#anlar"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "3e1505f976498a44",
+      "quote_text": "Yıllar sonra aynı kafede oturup artık kimin ne içtiğini unutmuş olmak, ayrılığın en sessiz hâlidir.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "ayrılık/özlem",
+      "zone": "top_right"
+    },
+    "image_fingerprint": "10b54cecca5617a753b08382c86733567b400f0af8a3b16728d6ddc64a64e459",
+    "published_at": "2026-09-05T12:09:19.870794+00:00",
+    "instagram_media_id": "18131963593656522",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "d4f6a3bd-5181-4159-884f-4436ad3f9dfe",
+    "theme": "hayat tespiti",
+    "content_type": "post",
+    "caption_summary": "Sessizlik.\n\n#zaman #sakinlik #anlar #akşam",
+    "hashtags": [
+      "#zaman",
+      "#sakinlik",
+      "#anlar",
+      "#akşam"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "6e3c72617c03d7bb",
+      "quote_text": "Boş bir eve gelmek bazen huzurdur, kalabalık bir eve gelip görünmemek asıl yalnızlıktır.",
+      "mood": "yalnizlik",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "hayat tespiti",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "ec250282e28cc7aed876d6960c5c19093667f583824b79d23e3cf6ae11827dcc",
+    "published_at": "2026-09-05T12:09:35.928680+00:00",
+    "instagram_media_id": "18104939879340123",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "f5ec2639-668c-40df-8ebb-1420ad66732a",
+    "theme": "dostluk",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "1d19549c19f160fb",
+      "quote_text": "En eski arkadaşımla aramızda artık ortak bir şehir bile yok, ama hâlâ aynı şakaya gülüyoruz.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "dostluk",
+      "zone": "lower"
+    },
+    "image_fingerprint": "e7565050149c66b16b22349b9cff0e7f0288f6afd2eb45bc287d2a0f1bc33f81",
+    "published_at": "2026-09-05T12:09:47.586825+00:00",
+    "instagram_media_id": "17904814080515360",
+    "insights": null,
+    "performance_score": null
   }
 ]
