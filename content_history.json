@@ -1353,5 +1353,103 @@
     "instagram_media_id": "17892673275420695",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "d53784be-5818-4488-9761-d5290c7f5b93",
+    "theme": "aşk",
+    "content_type": "post",
+    "caption_summary": "#manzara #sessizlik #sözler #gece",
+    "hashtags": [
+      "#manzara",
+      "#sessizlik",
+      "#sözler",
+      "#gece"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "39945fb8bc820331",
+      "quote_text": "En çok, birlikte hiçbir şey yapmadığımız günleri özlüyorum.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aşk",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "125b1d683b648963b39c39d2875a083b30ed84fc0ceeaab153e5c3e644761a7e",
+    "published_at": "2026-09-06T13:50:01.414464+00:00",
+    "instagram_media_id": "17902173435563030",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "f15fda97-9a5a-44b3-a8aa-66bc49fd3dad",
+    "theme": "aile",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "408eb2219ef808ce",
+      "quote_text": "Evden ayrılınca fark ettiğim şey, oradaki gürültünün aslında güvenlik olduğuydu.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aile",
+      "zone": "lower"
+    },
+    "image_fingerprint": "a9ae8b54133ba9148f2ecaf41492b65f0ea509a2b1659124a15358995ef56d13",
+    "published_at": "2026-09-06T13:50:13.529165+00:00",
+    "instagram_media_id": "17868304038641518",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "32f6c2cb-3889-46cf-97d9-ae6b08e1a233",
+    "theme": "aşk",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "39945fb8bc820331",
+      "quote_text": "En çok, birlikte hiçbir şey yapmadığımız günleri özlüyorum.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aşk",
+      "zone": "lower"
+    },
+    "image_fingerprint": "cf9d808f55176be60e2e655e7e83cb018fd354ed484a5aa34ddb7792e28093ec",
+    "published_at": "2026-09-06T13:50:26.108201+00:00",
+    "instagram_media_id": "18141048802504084",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "05a4949d-a882-45cd-8fdc-3f436b0c63b1",
+    "theme": "dostluk",
+    "content_type": "post",
+    "caption_summary": "Bugün her şey biraz yavaşladı.\n\n#huzur #şehir #istanbul #yalnızlık",
+    "hashtags": [
+      "#huzur",
+      "#şehir",
+      "#istanbul",
+      "#yalnızlık"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "24cf6befc9bf0d76",
+      "quote_text": "Gerçek bir arkadaş, başarını kutlarken sesindeki kıskançlığı fark ettirmeyendir.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "dostluk",
+      "zone": "bottom_right"
+    },
+    "image_fingerprint": "77fd668c6abd366102f2e0402e676bb819850513e045a9de72e671d610523949",
+    "published_at": "2026-09-06T13:50:38.951130+00:00",
+    "instagram_media_id": "18087824564229646",
+    "insights": null,
+    "performance_score": null
   }
 ]
