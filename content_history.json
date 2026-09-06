@@ -1521,5 +1521,77 @@
     "instagram_media_id": "18114706556091444",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "60d14c95-d3ba-42bd-89b3-ed447c7304a6",
+    "theme": "başarı/emek",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "8716d134a9d34348",
+      "quote_text": "Bugün attığın küçük adım, bir yıl sonra 'işte o gün başlamıştım' dediğin gün olabilir.",
+      "mood": "umut",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "başarı/emek",
+      "zone": "lower"
+    },
+    "image_fingerprint": "9dbe6d0e10d28623163cbcf8f9a0aef7437427e44fcefcca08502cc243d621b9",
+    "published_at": "2026-09-06T18:36:30.519043+00:00",
+    "instagram_media_id": "18051486440799463",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "fa92c543-55bf-4c7a-815f-73d2c07b77e0",
+    "theme": "aile",
+    "content_type": "post",
+    "caption_summary": "#sakinlik #huzur #anlar #sessizlik #manzara",
+    "hashtags": [
+      "#sakinlik",
+      "#huzur",
+      "#anlar",
+      "#sessizlik",
+      "#manzara"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "7bde522dcf690c9a",
+      "quote_text": "Kardeşimle aramızdaki en eski kavga bile, biri hastalandığında bir anda önemini kaybediyor.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aile",
+      "zone": "bottom_right"
+    },
+    "image_fingerprint": "c3c83d233902458dd76ed209921d1009b441c07cbc758cd1fc0e668c1a613382",
+    "published_at": "2026-09-06T18:36:41.898279+00:00",
+    "instagram_media_id": "18622387447053355",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "36907968-ebd1-4e8d-af2f-1fab866e45a7",
+    "theme": "yalnızlık/özgüven",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "1a5e848b647bee17",
+      "quote_text": "Kalabalık bir odada kimseyle konuşmadan durabilmek, öğrenilmiş bir rahatlıktır.",
+      "mood": "yalnizlik",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "yalnızlık/özgüven",
+      "zone": "upper"
+    },
+    "image_fingerprint": "c5bc324d984166aedc37683febcbdb3723426c6b22276f900f703d416e73c28d",
+    "published_at": "2026-09-06T18:36:51.593024+00:00",
+    "instagram_media_id": "17918593530433300",
+    "insights": null,
+    "performance_score": null
   }
 ]
