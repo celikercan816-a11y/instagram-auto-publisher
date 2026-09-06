@@ -1593,5 +1593,125 @@
     "instagram_media_id": "17918593530433300",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "ed36eee5-99ef-4cc2-90ba-48ac77aaebc5",
+    "theme": "ayrılık/özlem",
+    "content_type": "post",
+    "caption_summary": "Bazı akşamlar böyle geçiyor.\n\n#deniz #şiir #sessizlik #sözler #yol",
+    "hashtags": [
+      "#deniz",
+      "#şiir",
+      "#sessizlik",
+      "#sözler",
+      "#yol"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "8c77af4b15575cbe",
+      "quote_text": "Bazı vedalar kapıda olmaz; biri diğerine mesaj atmayı bırakınca sessizce gerçekleşir.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "ayrılık/özlem",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "142cceb323d3ef343423a3c308e0682df0ad59ba1b59b0fae000bdff3a504322",
+    "published_at": "2026-09-06T20:48:30.988857+00:00",
+    "instagram_media_id": "18109965038026470",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "33a71363-a03f-440d-964d-a27bb0753a83",
+    "theme": "özgüven",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "aff887ee2a427628",
+      "quote_text": "Bir insanla değil kendi düşünceleriyle iyi vakit geçirebilmek, sanıldığından nadir bir beceridir.",
+      "mood": "yalnizlik",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "özgüven",
+      "zone": "lower"
+    },
+    "image_fingerprint": "3f3b7babac6a3a016685337ab2dabd15e8968c9b9b79031af22d0b4199e25676",
+    "published_at": "2026-09-06T20:48:44.243946+00:00",
+    "instagram_media_id": "18120966166809902",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "ccad36cd-76c1-4f71-9dfa-2c94752e91d5",
+    "theme": "mizahi",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "91b48da908c21904",
+      "quote_text": "Saatini bir dakika ileri almak seni erken kaldırmaz, sadece kendini biraz daha kandırırsın.",
+      "mood": "zaman",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "mizahi",
+      "zone": "upper"
+    },
+    "image_fingerprint": "93baefac67dfddb5e2f0f9b31d8343491bd87e15110b96822ce4efe8be7314f4",
+    "published_at": "2026-09-06T20:48:55.144685+00:00",
+    "instagram_media_id": "18130869922673912",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "2249f7e1-8382-4b96-9772-c5c6fbdc2f8d",
+    "theme": "para",
+    "content_type": "post",
+    "caption_summary": "#sakinlik #doğa #düşünce",
+    "hashtags": [
+      "#sakinlik",
+      "#doğa",
+      "#düşünce"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "685ebb06dc8b7787",
+      "quote_text": "Param olsa yapardım dediğim şeylerin çoğunu, aslında param olduğunda da yapmadım.",
+      "mood": "zaman",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "para",
+      "zone": "top_left"
+    },
+    "image_fingerprint": "f056eb49d12b08acb5388e511655feefc5b55654c933d1f7cd18724bcea14936",
+    "published_at": "2026-09-06T20:49:08.566740+00:00",
+    "instagram_media_id": "17987828955018702",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "3f190dd0-25e9-4474-b0fe-3798eab27fff",
+    "theme": "dostluk/zaman",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "53de412c9963d199",
+      "quote_text": "Eski bir arkadaşla yıllar sonra karşılaşınca ilk cümle hep aynıdır: hiç değişmemişsin.",
+      "mood": "zaman",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "dostluk/zaman",
+      "zone": "lower"
+    },
+    "image_fingerprint": "b8001d89df869f6362c484770a9eea00240042d69beb909a9676b7379bbd2806",
+    "published_at": "2026-09-06T20:49:15.802543+00:00",
+    "instagram_media_id": "18041194160834185",
+    "insights": null,
+    "performance_score": null
   }
 ]
