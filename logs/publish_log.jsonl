@@ -112,3 +112,7 @@
 {"timestamp": "2026-09-05T23:24:14.182545+00:00", "level": "info", "message": "No due items."}
 {"timestamp": "2026-09-06T01:18:14.026539+00:00", "level": "info", "message": "No due items."}
 {"timestamp": "2026-09-06T06:03:13.370576+00:00", "level": "info", "message": "No due items."}
+{"timestamp": "2026-09-06T10:49:37.171730+00:00", "level": "success", "item_id": "018112ee-0ed6-4499-8e79-ed9b5dbb32d5", "instagram_media_id": "18132830194732472", "message": "Published STORIES scheduled for 2026-09-06T09:39:44.745647+00:00"}
+{"timestamp": "2026-09-06T10:49:44.191454+00:00", "level": "success", "item_id": "6ba9d3e4-b014-41c8-b26c-de73c0173c50", "instagram_media_id": "18126846034744606", "message": "Published STORIES scheduled for 2026-09-06T10:11:50.847388+00:00"}
+{"timestamp": "2026-09-06T10:49:54.171260+00:00", "level": "success", "item_id": "cb2ece63-94d0-44ac-b677-ecaf4accd785", "instagram_media_id": "18065971277764691", "message": "Published STORIES scheduled for 2026-09-06T10:43:56.949129+00:00"}
+{"timestamp": "2026-09-06T10:50:05.712386+00:00", "level": "success", "item_id": "cb4f609f-c3d1-4a87-b543-4a4bc0d64381", "instagram_media_id": "17892673275420695", "message": "Published IMAGE scheduled for 2026-09-06T12:30:00+03:00"}

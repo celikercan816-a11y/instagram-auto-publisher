@@ -1261,5 +1261,97 @@
     "instagram_media_id": "17903814273553714",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "018112ee-0ed6-4499-8e79-ed9b5dbb32d5",
+    "theme": "para",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "a3d1c9ddb7bc5757",
+      "quote_text": "Param olmadığı dönemlerde yanımda kalanları, param olduğunda unutmamaya çalışıyorum.",
+      "mood": "zaman",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "para",
+      "zone": "lower"
+    },
+    "image_fingerprint": "b8607fb1d3bf22d8235ca7020793f93a2d184e5c426b8c3b403c15da26ff64ce",
+    "published_at": "2026-09-06T10:49:37.169031+00:00",
+    "instagram_media_id": "18132830194732472",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "6ba9d3e4-b014-41c8-b26c-de73c0173c50",
+    "theme": "farkındalık",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "1a9273c8a0c2dd88",
+      "quote_text": "Telefonu başka bir odada bırakmak, günün geri kalanını fark edilir şekilde uzatır.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "farkındalık",
+      "zone": "lower"
+    },
+    "image_fingerprint": "2cd7ddd5cf89d4ba72441200434d61b3db3b2702854fa5b92cd9386cbb201a67",
+    "published_at": "2026-09-06T10:49:44.189065+00:00",
+    "instagram_media_id": "18126846034744606",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "cb2ece63-94d0-44ac-b677-ecaf4accd785",
+    "theme": "aile",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "ab200cf013023d55",
+      "quote_text": "Annemin elleri, söylemediği bütün fedakarlıkların kanıtıdır.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aile",
+      "zone": "lower"
+    },
+    "image_fingerprint": "8d819c2b131999103cf08b22c5e14ba1922989a4dbcf50a1afc74908003f23d3",
+    "published_at": "2026-09-06T10:49:54.169081+00:00",
+    "instagram_media_id": "18065971277764691",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "cb4f609f-c3d1-4a87-b543-4a4bc0d64381",
+    "theme": "aile",
+    "content_type": "post",
+    "caption_summary": "#sakinlik #şehir #manzara",
+    "hashtags": [
+      "#sakinlik",
+      "#şehir",
+      "#manzara"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "408eb2219ef808ce",
+      "quote_text": "Evden ayrılınca fark ettiğim şey, oradaki gürültünün aslında güvenlik olduğuydu.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aile",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "8157fc4b3a2c62f7b2af863059304da5974b9d570ef790503339b0b916bde258",
+    "published_at": "2026-09-06T10:50:05.710097+00:00",
+    "instagram_media_id": "17892673275420695",
+    "insights": null,
+    "performance_score": null
   }
 ]
