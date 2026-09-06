@@ -1,0 +1,25 @@
+{
+  "content_id": "e9322931-9e6a-47c1-9c8a-8c3aa8e0f94f",
+  "type": "feed",
+  "quote": {
+    "id": "bd80e19b-f0e4-4f21-a902-101e46aca656",
+    "text": "Ailece çekilen son fotoğrafın ne zaman olduğunu hatırlamayan biri, büyüdüğünü anlar.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "aile",
+    "mood": "melankoli",
+    "score": 85,
+    "hash": "0271815d0b17c1d4",
+    "pattern_tags": [
+      "OPENER_AILECE"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "aile",
+  "image_path": "media/generated/e9322931-9e6a-47c1-9c8a-8c3aa8e0f94f_feed.jpg",
+  "quote_score": 85,
+  "visual_score": 91,
+  "overall_score": 91,
+  "zone": "bottom_left",
+  "generated_at": "2026-09-06T09:18:41.694776+00:00"
+}

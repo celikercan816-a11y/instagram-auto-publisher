@@ -1,0 +1,25 @@
+{
+  "content_id": "c5734e19-1293-435a-8bb6-41417751b306",
+  "type": "feed",
+  "quote": {
+    "id": "bebfc96c-55ce-4183-a706-ed9d49621f12",
+    "text": "Yetişkinlik, doktora gitmeyi 'sonra' deyip dizinin son bölümünü kaçırmadığın dönemdir.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "mizahi",
+    "mood": "huzur",
+    "score": 85,
+    "hash": "7f71cf2e32c3c7e8",
+    "pattern_tags": [
+      "OPENER_YETIŞKINLIK"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "mizahi",
+  "image_path": "media/generated/c5734e19-1293-435a-8bb6-41417751b306_feed.jpg",
+  "quote_score": 85,
+  "visual_score": 91,
+  "overall_score": 91,
+  "zone": "bottom_left",
+  "generated_at": "2026-09-06T09:18:41.694776+00:00"
+}
