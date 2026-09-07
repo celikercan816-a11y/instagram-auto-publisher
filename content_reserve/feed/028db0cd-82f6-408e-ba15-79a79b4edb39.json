@@ -1,0 +1,25 @@
+{
+  "content_id": "028db0cd-82f6-408e-ba15-79a79b4edb39",
+  "type": "feed",
+  "quote": {
+    "id": "7e69795c-5e0a-4513-a9a0-4b7801124da7",
+    "text": "Seni sevmek, hiç öğrenmediğim bir dilde konuşmak gibiydi; yine de anlaşıldım.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "aşk",
+    "mood": "melankoli",
+    "score": 86,
+    "hash": "15883e109c1f0fa9",
+    "pattern_tags": [
+      "SEVMEK"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "aşk",
+  "image_path": "media/generated/028db0cd-82f6-408e-ba15-79a79b4edb39_feed.jpg",
+  "quote_score": 86,
+  "visual_score": 89,
+  "overall_score": 89,
+  "zone": "bottom_right",
+  "generated_at": "2026-09-07T10:07:49.643547+00:00"
+}
