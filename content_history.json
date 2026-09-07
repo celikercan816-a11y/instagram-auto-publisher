@@ -2119,5 +2119,78 @@
     "instagram_media_id": "18120712360700655",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "c57cd245-a2b5-40a8-a57d-0f0d942cf5c3",
+    "theme": "aile",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "0271815d0b17c1d4",
+      "quote_text": "Ailece çekilen son fotoğrafın ne zaman olduğunu hatırlamayan biri, büyüdüğünü anlar.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aile",
+      "zone": "lower"
+    },
+    "image_fingerprint": "d770d8f59beef32727fc1c9049155fcb3a813877bd2cadcedd4f7a3cf78fccc3",
+    "published_at": "2026-09-07T22:46:04.491129+00:00",
+    "instagram_media_id": "17970143961136724",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "60f0ff64-dfb7-4f81-be18-ea9af04cf025",
+    "theme": "karakter/vicdan",
+    "content_type": "post",
+    "caption_summary": "#doğa #anlar #manzara #gece #sözler #düşünce",
+    "hashtags": [
+      "#doğa",
+      "#anlar",
+      "#manzara",
+      "#gece",
+      "#sözler",
+      "#düşünce"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "67e46a932af49369",
+      "quote_text": "Vicdan, kimseye anlatmayacağın halde gece telefonunun ışığında yazıp sildiğin mesajlarda saklıdır.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "karakter/vicdan",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "5c3dfbb95a149b02a3cc44fc76b78c3f4612d2594ddee1bc504e36ca5f380a6d",
+    "published_at": "2026-09-07T22:46:15.652063+00:00",
+    "instagram_media_id": "17983879935077306",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "a0be7af7-1c28-4a8f-9cce-1121790eb706",
+    "theme": "keşif",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "0d1ad5a2a1406a86",
+      "quote_text": "Bir şehri sevmek için oraya taşınman gerekmez, sadece bir kez amaçsızca yürümen yeter.",
+      "mood": "yol",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "keşif",
+      "zone": "lower"
+    },
+    "image_fingerprint": "e066836f9dbd1654b5f84d08fb8737059be0614722cf708733acb35b4467a209",
+    "published_at": "2026-09-07T22:46:25.127499+00:00",
+    "instagram_media_id": "18108165551174414",
+    "insights": null,
+    "performance_score": null
   }
 ]
