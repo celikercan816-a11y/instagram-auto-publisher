@@ -1762,5 +1762,242 @@
     "instagram_media_id": "18041194160834185",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "d7694f45-8278-4f26-8762-689e76984cce",
+    "theme": "iyileşme",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "83cf14b9669efd18",
+      "quote_text": "İyileşmek, bir sabah her şeyin düzelmesi değil, o sabaha rağmen kalkabilmektir.",
+      "mood": "umut",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "iyileşme",
+      "zone": "lower"
+    },
+    "image_fingerprint": "4cf136c7fe9a168116cdf985643ea4a01f6561a84f700e8b1f9968f152097795",
+    "published_at": "2026-09-07T15:55:21.026653+00:00",
+    "instagram_media_id": "17867909610645321",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "5c5a41e2-c086-4a0b-94f3-0f6940a4b273",
+    "theme": "hayat tespiti",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "88542cca273879ff",
+      "quote_text": "İnsanın en çok pişman olduğu şeyler, yaptıkları değil, korkudan yapmadıklarıdır.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "hayat tespiti",
+      "zone": "lower"
+    },
+    "image_fingerprint": "7750eb9663191c7922f733b670fc742c0b1f127d0c47c19e18da17089ad7010c",
+    "published_at": "2026-09-07T15:55:33.190183+00:00",
+    "instagram_media_id": "18114103684794854",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "99b661d2-7d19-4e06-9f4c-cce019ed4c5a",
+    "theme": "para",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "9e215726d338f6c9",
+      "quote_text": "Para biriktirmek, bir gün rahat edeceğine değil, bugün seçme özgürlüğün olduğuna dair bir bahistir.",
+      "mood": "umut",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "para",
+      "zone": "lower"
+    },
+    "image_fingerprint": "e31b521990a724855485092624f8a383f138f282491c29e8c4a06ba23a02967f",
+    "published_at": "2026-09-07T15:55:45.661324+00:00",
+    "instagram_media_id": "18101079185196362",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "c5734e19-1293-435a-8bb6-41417751b306",
+    "theme": "mizahi",
+    "content_type": "post",
+    "caption_summary": "#düşünce #deniz #yol",
+    "hashtags": [
+      "#düşünce",
+      "#deniz",
+      "#yol"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "7f71cf2e32c3c7e8",
+      "quote_text": "Yetişkinlik, doktora gitmeyi 'sonra' deyip dizinin son bölümünü kaçırmadığın dönemdir.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "mizahi",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "ce496a0fd38737b1cafadedafcc8486c6b270e3e355bff50512409577baca279",
+    "published_at": "2026-09-07T15:55:56.738323+00:00",
+    "instagram_media_id": "18191371687393575",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "8616e1f9-8bf3-4c54-911d-17a0ea60af0e",
+    "theme": "aşk",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "226e8a7db7e79ceb",
+      "quote_text": "Sende sevdiğim, mükemmelliğin değil, çabalamayı hiç bırakmamandı.",
+      "mood": "melankoli",
+      "category": "SHORT_POEM",
+      "source_type": "SHORT_POEM",
+      "theme": "aşk",
+      "zone": "lower"
+    },
+    "image_fingerprint": "8013bb42a6ad8bff03c6f035fe744c5871ee1a4bb5c8aea05ef6d7f3905c6349",
+    "published_at": "2026-09-07T15:56:08.750828+00:00",
+    "instagram_media_id": "18127922551750244",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "4a17ed42-68e8-401f-8447-8a51dab05879",
+    "theme": "sabır",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "7e1e6be926a6367e",
+      "quote_text": "Bir bahçıvanın toprağa güvenmesi gibi, bazı emekler meyvesini seninle aynı mevsimde vermez.",
+      "mood": "umut",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "sabır",
+      "zone": "upper"
+    },
+    "image_fingerprint": "ce3c0057f30b3ffd7b052de7e59ca855b0f421fc2f85509e4002d380e69dfa92",
+    "published_at": "2026-09-07T15:56:19.018059+00:00",
+    "instagram_media_id": "17902220850564121",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "e9322931-9e6a-47c1-9c8a-8c3aa8e0f94f",
+    "theme": "aile",
+    "content_type": "post",
+    "caption_summary": "🌙\n\n#gece #yalnızlık #manzara #sessizlik #doğa #sakinlik",
+    "hashtags": [
+      "#gece",
+      "#yalnızlık",
+      "#manzara",
+      "#sessizlik",
+      "#doğa",
+      "#sakinlik"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "0271815d0b17c1d4",
+      "quote_text": "Ailece çekilen son fotoğrafın ne zaman olduğunu hatırlamayan biri, büyüdüğünü anlar.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aile",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "7446077f3d790b2681a223352fa66f724a4092013ecaa831e8011ad734486dfc",
+    "published_at": "2026-09-07T15:56:41.674409+00:00",
+    "instagram_media_id": "18593723359067623",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "984f6ae6-5ca1-43bb-b581-bb2ec8520563",
+    "theme": "umut",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "59a5246deb59c7b8",
+      "quote_text": "Bir şeyi hâlâ istemek, ona hâlâ inandığının en dürüst kanıtıdır.",
+      "mood": "umut",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "umut",
+      "zone": "lower"
+    },
+    "image_fingerprint": "dc9ea53ddbc5170a6bd61e3e14483a04a42e0d5185c4a97e4a80264a847b5ec0",
+    "published_at": "2026-09-07T15:56:53.797950+00:00",
+    "instagram_media_id": "18111156683025563",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "5c236a4e-014e-433b-9147-220a216836db",
+    "theme": "karakter",
+    "content_type": "post",
+    "caption_summary": "🍃\n\n#sözler #atasözü #zaman #deniz #düşünce",
+    "hashtags": [
+      "#sözler",
+      "#atasözü",
+      "#zaman",
+      "#deniz",
+      "#düşünce"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "8470eee7e20a365b",
+      "quote_text": "Bir insanın karakteri, hesap hatası kendi lehine çıktığında ne yaptığında ortaya çıkar.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "karakter",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "19fb4ebdf8a8cbab5890a49e6de80eda46fff9deb8601df9c56a67984b209809",
+    "published_at": "2026-09-07T15:57:03.050904+00:00",
+    "instagram_media_id": "17874924834564290",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "7c39effe-0fdf-4959-b6eb-71cbb8a04452",
+    "theme": "anı",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "3ddf5d8f12f8eb01",
+      "quote_text": "Bir şarkının eski bir yıla ait olduğunu, ancak radyoda tesadüfen duyunca anlarsın.",
+      "mood": "zaman",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "anı",
+      "zone": "lower"
+    },
+    "image_fingerprint": "7e25e56d74d72c13cfc543cb848fa3e49eee18183ba6f60b1ed133db8c63e1d3",
+    "published_at": "2026-09-07T15:57:10.494165+00:00",
+    "instagram_media_id": "18145630978569163",
+    "insights": null,
+    "performance_score": null
   }
 ]
