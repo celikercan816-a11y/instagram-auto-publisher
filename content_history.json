@@ -1999,5 +1999,125 @@
     "instagram_media_id": "18145630978569163",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "fd5ebb14-3fc6-47c5-9ed6-f3684889be5d",
+    "theme": "anı/özlem",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "bbd48ca3955c6a55",
+      "quote_text": "Eski bir fotoğrafta gülen ama artık hayatında olmayan biri, en sessiz hüzündür.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "anı/özlem",
+      "zone": "upper"
+    },
+    "image_fingerprint": "5b6dc3a297c3d15780494dd5b779622c530a7d01b08b00e4c33d37163557b205",
+    "published_at": "2026-09-07T19:52:53.696980+00:00",
+    "instagram_media_id": "18471491743115645",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "708fbb26-2ca0-4c37-96c9-fbbed9f70040",
+    "theme": "iç gözlem",
+    "content_type": "post",
+    "caption_summary": "#akşam #yalnızlık #şehir #gece #zaman",
+    "hashtags": [
+      "#akşam",
+      "#yalnızlık",
+      "#şehir",
+      "#gece",
+      "#zaman"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "bad7c75f42424322",
+      "quote_text": "Bir insanın yalnız kalmaktan korkması, aslında kendisiyle baş başa kalmaktan korkmasıdır.",
+      "mood": "yalnizlik",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "iç gözlem",
+      "zone": "top_left"
+    },
+    "image_fingerprint": "246b5e08f78be9f1a1e8838aa1214f8893f2b8d03ac7a11c3eae478a429ae207",
+    "published_at": "2026-09-07T19:53:03.710282+00:00",
+    "instagram_media_id": "17909008248497996",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "155380a6-ee21-423c-9241-04627f16b13b",
+    "theme": "cesaret/iş",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "3b93113a291b55af",
+      "quote_text": "Bir zam istemeye karar vermek, çoğu zaman zammın kendisinden daha zordur.",
+      "mood": "umut",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "cesaret/iş",
+      "zone": "upper"
+    },
+    "image_fingerprint": "fd4eb1725119e4a9b93fc3e1a0c589850ef05dfff3a967cce7aa2f30e214e1df",
+    "published_at": "2026-09-07T19:53:12.416631+00:00",
+    "instagram_media_id": "17860330389696296",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "94f130ee-ffe0-4f06-bcf7-a8cebec130cb",
+    "theme": "ayrılık/özlem",
+    "content_type": "post",
+    "caption_summary": "🌫️\n\n#istanbul #zaman #huzur",
+    "hashtags": [
+      "#istanbul",
+      "#zaman",
+      "#huzur"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "0d2614f8c043e6d7",
+      "quote_text": "Ayrılık, mesaj kutusundaki son 'görüldü' yazısında donup kalmaktır.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "ayrılık/özlem",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "f6ec2178d3c664f898a95f7bdfde43f3bae1c20aad55a31b6c590fdd7cc75bbc",
+    "published_at": "2026-09-07T19:53:22.145924+00:00",
+    "instagram_media_id": "17951064288035265",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "9bdf0e98-7ff6-4dd8-b816-c4d14e80cc23",
+    "theme": "mizahi/modern hayat",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "f605c8455865a58b",
+      "quote_text": "Bir grup sohbetinde 'yazıyor...' yazısını görüp cevabı beklemek, günün en gereksiz gerginliğidir.",
+      "mood": "zaman",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "mizahi/modern hayat",
+      "zone": "upper"
+    },
+    "image_fingerprint": "d4251f627c8f4e4ac419f4709ca9e11b40eb05548c24d3fa8b7c79af225ea168",
+    "published_at": "2026-09-07T19:53:30.517521+00:00",
+    "instagram_media_id": "18120712360700655",
+    "insights": null,
+    "performance_score": null
   }
 ]
