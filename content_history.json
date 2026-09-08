@@ -2263,5 +2263,148 @@
     "instagram_media_id": "18113671538075896",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "4f01ae7a-0abb-44d4-8f0f-282f89e87b59",
+    "theme": "özgüven",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "fb04e42fa36fab60",
+      "quote_text": "Tek başına sinemaya gitmek, arkadaşsız olduğun için değil, kimseyi beklemek istemediğin için de olabilir.",
+      "mood": "yalnizlik",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "özgüven",
+      "zone": "lower"
+    },
+    "image_fingerprint": "21c03efbffc6736a4574f3a4c400a105a0b2fc3a4349298079fea8774f913128",
+    "published_at": "2026-09-08T13:57:34.205816+00:00",
+    "instagram_media_id": "17879934774623936",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "f54dd898-8f29-4cf9-b549-8b9ce74d4da6",
+    "theme": "umut/eylem",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "253e7a6bc9c64212",
+      "quote_text": "Yarın daha iyi olacağına inanmak değil, bugün yine de bir şeyler yapmak asıl umuttur.",
+      "mood": "umut",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "umut/eylem",
+      "zone": "lower"
+    },
+    "image_fingerprint": "0902fd44827213dbf5d7d66c2ebe76ab4c9dfea8fa16215d4d05167c8e4a0d1f",
+    "published_at": "2026-09-08T13:57:48.170951+00:00",
+    "instagram_media_id": "18092400458438945",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "028db0cd-82f6-408e-ba15-79a79b4edb39",
+    "theme": "aşk",
+    "content_type": "post",
+    "caption_summary": "#deniz #düşünce #akşam",
+    "hashtags": [
+      "#deniz",
+      "#düşünce",
+      "#akşam"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "15883e109c1f0fa9",
+      "quote_text": "Seni sevmek, hiç öğrenmediğim bir dilde konuşmak gibiydi; yine de anlaşıldım.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aşk",
+      "zone": "bottom_right"
+    },
+    "image_fingerprint": "aef2992cd4a7c12e93da143a714da2484626f731d08a627f645206c74ced2ff2",
+    "published_at": "2026-09-08T13:57:58.266013+00:00",
+    "instagram_media_id": "18103178396611013",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "0559d511-6201-4e25-b7cf-c835f5f4abe4",
+    "theme": "aşk",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "15883e109c1f0fa9",
+      "quote_text": "Seni sevmek, hiç öğrenmediğim bir dilde konuşmak gibiydi; yine de anlaşıldım.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aşk",
+      "zone": "lower"
+    },
+    "image_fingerprint": "8cf19a7c793929752889a22cab88651919361035475e2aab4e07c1d4212a56b9",
+    "published_at": "2026-09-08T13:58:11.851369+00:00",
+    "instagram_media_id": "18104965097591971",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "2bb4ec51-8445-466c-af45-9e1ac5e0cbd2",
+    "theme": "dostluk",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "06b7b74fc4488b7b",
+      "quote_text": "Kaybettiğin bir arkadaşlığın en tuhaf tarafı, hâlâ ona anlatmak istediğin şeyler olması.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "dostluk",
+      "zone": "lower"
+    },
+    "image_fingerprint": "1d4e741defc19fa507f5b5695099702531be6ba20857ce1db2790bd37bc5609c",
+    "published_at": "2026-09-08T13:58:19.856510+00:00",
+    "instagram_media_id": "17902228923591194",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "164e8975-4309-4a44-85b2-36ab42723af5",
+    "theme": "aile",
+    "content_type": "post",
+    "caption_summary": "#anlar #manzara #gece #istanbul #şehir #sözler",
+    "hashtags": [
+      "#anlar",
+      "#manzara",
+      "#gece",
+      "#istanbul",
+      "#şehir",
+      "#sözler"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "467c276b3dc4811e",
+      "quote_text": "Annem uzaktan bile, sesimden yorgun olduğumu telefonda daha ben söylemeden anlar.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aile",
+      "zone": "top_right"
+    },
+    "image_fingerprint": "dcdc92118efc04f1be2eac6262917d06bd0ebe382f496617a49e02bf1f766a72",
+    "published_at": "2026-09-08T13:58:36.016532+00:00",
+    "instagram_media_id": "18122001671304577",
+    "insights": null,
+    "performance_score": null
   }
 ]
