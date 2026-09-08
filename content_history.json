@@ -2406,5 +2406,126 @@
     "instagram_media_id": "18122001671304577",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "d15e9988-f2fe-4d6d-aace-be9c0d7e2f7d",
+    "theme": "aile",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "467c276b3dc4811e",
+      "quote_text": "Annem uzaktan bile, sesimden yorgun olduğumu telefonda daha ben söylemeden anlar.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aile",
+      "zone": "upper"
+    },
+    "image_fingerprint": "0ea15b5dc6a2a41848d5e884de135352dc912eb95fabf40269fa272051eb0f64",
+    "published_at": "2026-09-08T17:53:10.649818+00:00",
+    "instagram_media_id": "17991417357017086",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "45cb6355-fd0d-4983-879f-3356809227fc",
+    "theme": "dostluk",
+    "content_type": "post",
+    "caption_summary": "Bazı akşamlar böyle geçiyor.\n\n#zaman #istanbul #şiir #yalnızlık",
+    "hashtags": [
+      "#zaman",
+      "#istanbul",
+      "#şiir",
+      "#yalnızlık"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "06b7b74fc4488b7b",
+      "quote_text": "Kaybettiğin bir arkadaşlığın en tuhaf tarafı, hâlâ ona anlatmak istediğin şeyler olması.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "dostluk",
+      "zone": "bottom_right"
+    },
+    "image_fingerprint": "d44bf4b51a3aa5c3a16bb843b3216fd7290afbc077ef2f818aa490d3ebb09daf",
+    "published_at": "2026-09-08T17:53:23.750016+00:00",
+    "instagram_media_id": "18133565041724133",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "610d351a-2dbd-4859-913a-551842faffc2",
+    "theme": "huzur",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "10fe3bc262d57c2b",
+      "quote_text": "Pencereden yağmuru izlemek, dışarı çıkmamak için bulduğun en masum bahanedir.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "huzur",
+      "zone": "lower"
+    },
+    "image_fingerprint": "43869489569fcf498fff68e9ee78ee00b51a506f00237402bd3e7e21321a1843",
+    "published_at": "2026-09-08T17:53:33.930976+00:00",
+    "instagram_media_id": "18353806477222076",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "573c5dda-7069-4963-af07-57b5788e70ac",
+    "theme": "karakter",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "3106fc72b3b2723d",
+      "quote_text": "Bir hatayı kabul etmek, onu savunmaktan her zaman daha az enerji ister.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "karakter",
+      "zone": "lower"
+    },
+    "image_fingerprint": "94fe4b6060f0ac2dddb60975e5df43d70e43b7663352481ea3a9f30693590d28",
+    "published_at": "2026-09-08T17:53:44.688821+00:00",
+    "instagram_media_id": "18075259208396712",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "ef4c4c69-5141-432e-8d95-4aeef6e20f91",
+    "theme": "ayrılık/özlem",
+    "content_type": "post",
+    "caption_summary": "Bazı akşamlar böyle geçiyor.\n\n#anlar #düşünce #şehir #zaman #doğa",
+    "hashtags": [
+      "#anlar",
+      "#düşünce",
+      "#şehir",
+      "#zaman",
+      "#doğa"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "f8f4ddc770a02674",
+      "quote_text": "Sana söylemediğim sözler, şimdi bir mektup gibi katlanıp bir kenarda duruyor.",
+      "mood": "melankoli",
+      "category": "SHORT_POEM",
+      "source_type": "SHORT_POEM",
+      "theme": "ayrılık/özlem",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "7d2823b1c5765c996977600d1e5ae4947d8994fec99efef9d2ec5a126b7e1307",
+    "published_at": "2026-09-08T17:53:56.822223+00:00",
+    "instagram_media_id": "18094610324102350",
+    "insights": null,
+    "performance_score": null
   }
 ]
