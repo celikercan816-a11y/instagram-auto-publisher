@@ -1,0 +1,25 @@
+{
+  "content_id": "c18cbd40-6995-4e78-b947-4deb4386a557",
+  "type": "feed",
+  "quote": {
+    "id": "74d0b048-c108-4551-94d2-286d27c4cbfb",
+    "text": "Bir fincan çayı yavaş içmek, acelesi olmadığını kendine kanıtlamanın en ucuz yoludur.",
+    "author": null,
+    "category": "ORIGINAL",
+    "theme": "huzur",
+    "mood": "huzur",
+    "score": 85,
+    "hash": "666487c97129e34c",
+    "pattern_tags": [
+      "OPENER_BIR"
+    ]
+  },
+  "source_type": "ORIGINAL",
+  "theme": "huzur",
+  "image_path": "media/generated/c18cbd40-6995-4e78-b947-4deb4386a557_feed.jpg",
+  "quote_score": 85,
+  "visual_score": 89,
+  "overall_score": 89,
+  "zone": "bottom_right",
+  "generated_at": "2026-09-08T09:32:31.007162+00:00"
+}
