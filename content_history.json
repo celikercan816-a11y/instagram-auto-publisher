@@ -2527,5 +2527,57 @@
     "instagram_media_id": "18094610324102350",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "c904107f-88fc-4127-82d4-297f69425c91",
+    "theme": "aşk",
+    "content_type": "post",
+    "caption_summary": "#sessizlik #doğa #sözler",
+    "hashtags": [
+      "#sessizlik",
+      "#doğa",
+      "#sözler"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "345fc272e1f856e5",
+      "quote_text": "Aşk ilk günlerde her şeyi konuşmaktır, yıllar sonra hiçbir şey konuşmadan anlaşabilmektir.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aşk",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "47183681b93f6db2fd33388ddb9bbe50bf7833fde7b8d892f978721b88a99013",
+    "published_at": "2026-09-08T21:04:39.568183+00:00",
+    "instagram_media_id": "18103798301189675",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "21b144aa-f864-4e8c-80d9-c9bc3d9a5fcf",
+    "theme": "cesaret/değişim",
+    "content_type": "post",
+    "caption_summary": "🌊\n\n#huzur #yalnızlık #istanbul",
+    "hashtags": [
+      "#huzur",
+      "#yalnızlık",
+      "#istanbul"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "38f9c37c25747b83",
+      "quote_text": "İnsan değişmez, sadece daha önce göstermediği tarafını göstermeye başlar.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "cesaret/değişim",
+      "zone": "bottom_right"
+    },
+    "image_fingerprint": "ae9b5705fa33f57514a0764122a1e5ea6f6f21c0834bb2f2bbfa740ea85a0f32",
+    "published_at": "2026-09-08T21:04:50.781283+00:00",
+    "instagram_media_id": "17906086845475293",
+    "insights": null,
+    "performance_score": null
   }
 ]
