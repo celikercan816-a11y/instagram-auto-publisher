@@ -2241,5 +2241,27 @@
     "instagram_media_id": "18108165551174414",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "1fdcc956-f09b-4e1f-8821-27718ef0e862",
+    "theme": "şükür/farkındalık",
+    "content_type": "story",
+    "caption_summary": "",
+    "hashtags": [],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "843b075cfbb812c2",
+      "quote_text": "Karanlık bir gecenin ardından güneşin doğması değil, senin hâlâ onu izliyor olman asıl mucizedir.",
+      "mood": "umut",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "şükür/farkındalık",
+      "zone": "upper"
+    },
+    "image_fingerprint": "5e69f1da45e9d70e565ae8d5d3ce30c42fe321b75f670f3b5a354d2518741e0b",
+    "published_at": "2026-09-08T09:52:13.498569+00:00",
+    "instagram_media_id": "18113671538075896",
+    "insights": null,
+    "performance_score": null
   }
 ]
