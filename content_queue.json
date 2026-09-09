@@ -3678,10 +3678,10 @@
       "#anlar"
     ],
     "scheduled_at": "2026-09-09T22:00:00+03:00",
-    "status": "pending",
+    "status": "published",
     "created_at": "2026-09-09T09:36:37.011822+00:00",
-    "published_at": null,
-    "instagram_media_id": null,
+    "published_at": "2026-09-09T21:16:49.032357+00:00",
+    "instagram_media_id": "17973865689067971",
     "quality_score": 91,
     "performance_score": null,
     "error": null,

@@ -2734,5 +2734,32 @@
     "instagram_media_id": "18121412971903705",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "263f87fb-485e-4a81-9203-8f12ff53efb9",
+    "theme": "mizahi",
+    "content_type": "post",
+    "caption_summary": "#sözler #deniz #doğa #anlar",
+    "hashtags": [
+      "#sözler",
+      "#deniz",
+      "#doğa",
+      "#anlar"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "49fa15d715953e05",
+      "quote_text": "Yetişkinlik, doktoru ertelerken dizinin son bölümünü asla ertelemediğin dönemdir.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "mizahi",
+      "zone": "bottom_right"
+    },
+    "image_fingerprint": "61f45f51ea6c291d852a8694209bef689fd6e6a84fd3c2ac85abf1af3ebb152c",
+    "published_at": "2026-09-09T21:16:49.032357+00:00",
+    "instagram_media_id": "17973865689067971",
+    "insights": null,
+    "performance_score": null
   }
 ]
