@@ -2621,5 +2621,60 @@
     "instagram_media_id": "17906086845475293",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "471af205-670b-4f4a-8cf5-c7d23812bf03",
+    "theme": "dostluk",
+    "content_type": "post",
+    "caption_summary": "🌅\n\n#istanbul #yol #huzur #anlar #doğa #akşam",
+    "hashtags": [
+      "#istanbul",
+      "#yol",
+      "#huzur",
+      "#anlar",
+      "#doğa",
+      "#akşam"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "ea3245b4c81da7ab",
+      "quote_text": "Bir arkadaşın gece yarısı seni aramaktan çekinmemesi, en büyük güven belgesidir.",
+      "mood": "umut",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "dostluk",
+      "zone": "bottom_right"
+    },
+    "image_fingerprint": "a2c45dcf701bd2e3cb772c33f82ca22382fc090a8052cf3715ad272ba058b886",
+    "published_at": "2026-09-09T15:10:37.491104+00:00",
+    "instagram_media_id": "18016688546886698",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "5667bf73-6b1f-4c67-b658-1ceb327a698f",
+    "theme": "aile",
+    "content_type": "post",
+    "caption_summary": "Hafif bir hüzün, kötü değil.\n\n#düşünce #istanbul #yalnızlık",
+    "hashtags": [
+      "#düşünce",
+      "#istanbul",
+      "#yalnızlık"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "4a87461c95e78028",
+      "quote_text": "Dedemin saati artık çalışmıyor ama duvardan hiç indirilmedi.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aile",
+      "zone": "top_left"
+    },
+    "image_fingerprint": "f5bfef4cdfe5b852da496a11a48a2dda29aac5db7a8484fa6ffbf98ad6f2da18",
+    "published_at": "2026-09-09T15:10:49.901193+00:00",
+    "instagram_media_id": "17876408085553928",
+    "insights": null,
+    "performance_score": null
   }
 ]
