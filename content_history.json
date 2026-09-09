@@ -2676,5 +2676,63 @@
     "instagram_media_id": "17876408085553928",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "c18cbd40-6995-4e78-b947-4deb4386a557",
+    "theme": "huzur",
+    "content_type": "post",
+    "caption_summary": "Huzur.\n\n#düşünce #şiir #sessizlik #deniz #doğa #manzara",
+    "hashtags": [
+      "#düşünce",
+      "#şiir",
+      "#sessizlik",
+      "#deniz",
+      "#doğa",
+      "#manzara"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "666487c97129e34c",
+      "quote_text": "Bir fincan çayı yavaş içmek, acelesi olmadığını kendine kanıtlamanın en ucuz yoludur.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "huzur",
+      "zone": "bottom_right"
+    },
+    "image_fingerprint": "e49c23b65a7f6e246a5ed1321f3fb5f2f889de42bf03224772997c0c64ce66e9",
+    "published_at": "2026-09-09T18:42:20.698330+00:00",
+    "instagram_media_id": "18154296028513893",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "b04e0f09-5e28-4a1b-ae8c-ac29e6289999",
+    "theme": "başarı/emek/hayal",
+    "content_type": "post",
+    "caption_summary": "#yalnızlık #yol #deniz #sessizlik #sözler #akşam",
+    "hashtags": [
+      "#yalnızlık",
+      "#yol",
+      "#deniz",
+      "#sessizlik",
+      "#sözler",
+      "#akşam"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "9ebe6138b5978e2d",
+      "quote_text": "İşten çıkışta omuzların ne kadar düştüğü, günün nasıl geçtiğinin en dürüst özetidir.",
+      "mood": "yalnizlik",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "başarı/emek/hayal",
+      "zone": "top_right"
+    },
+    "image_fingerprint": "742f785b3389f060a6dd742fc070f6a55ca50af14552d678ed9645b52a12248c",
+    "published_at": "2026-09-09T18:42:31.509935+00:00",
+    "instagram_media_id": "18121412971903705",
+    "insights": null,
+    "performance_score": null
   }
 ]
