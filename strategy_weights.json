@@ -1,24 +1,28 @@
 {
-  "generated_at": "2026-09-08T09:36:32.440433+00:00",
-  "sample_size": 69,
+  "generated_at": "2026-09-09T09:36:45.857085+00:00",
+  "sample_size": 87,
   "by_theme": {
     "aile": {
       "avg_score": 0.0,
-      "n": 13
+      "n": 15
+    },
+    "hayat tespiti": {
+      "avg_score": 0.0,
+      "n": 5
     },
     "ayrılık/özlem": {
       "avg_score": 0.0,
-      "n": 14
+      "n": 15
     }
   },
   "by_content_type": {
     "post": {
-      "avg_score": 3.8,
-      "n": 26
+      "avg_score": 3.1,
+      "n": 32
     },
     "story": {
       "avg_score": 0.0,
-      "n": 43
+      "n": 55
     }
   },
   "by_hour": {
@@ -36,7 +40,7 @@
     },
     "15": {
       "avg_score": 0.0,
-      "n": 8
+      "n": 18
     },
     "20": {
       "avg_score": 0.0,
@@ -45,6 +49,10 @@
     "12": {
       "avg_score": 0.0,
       "n": 6
+    },
+    "19": {
+      "avg_score": 0.0,
+      "n": 9
     }
   }
 }

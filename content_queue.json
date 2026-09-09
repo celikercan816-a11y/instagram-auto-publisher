@@ -2477,7 +2477,7 @@
     "published_at": "2026-09-07T15:55:56.738323+00:00",
     "instagram_media_id": "18191371687393575",
     "quality_score": 91,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -2515,7 +2515,7 @@
     "published_at": "2026-09-07T15:56:41.674409+00:00",
     "instagram_media_id": "18593723359067623",
     "quality_score": 91,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -2552,7 +2552,7 @@
     "published_at": "2026-09-07T15:57:03.050904+00:00",
     "instagram_media_id": "17874924834564290",
     "quality_score": 96,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -2589,7 +2589,7 @@
     "published_at": "2026-09-07T19:53:03.710282+00:00",
     "instagram_media_id": "17909008248497996",
     "quality_score": 90,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -2624,7 +2624,7 @@
     "published_at": "2026-09-07T19:53:22.145924+00:00",
     "instagram_media_id": "17951064288035265",
     "quality_score": 92,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -2662,7 +2662,7 @@
     "published_at": "2026-09-07T22:46:15.652063+00:00",
     "instagram_media_id": "17983879935077306",
     "quality_score": 90,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -2693,7 +2693,7 @@
     "published_at": "2026-09-07T15:55:21.026653+00:00",
     "instagram_media_id": "17867909610645321",
     "quality_score": 97,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -2724,7 +2724,7 @@
     "published_at": "2026-09-07T15:55:33.190183+00:00",
     "instagram_media_id": "18114103684794854",
     "quality_score": 97,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -2755,7 +2755,7 @@
     "published_at": "2026-09-07T15:55:45.661324+00:00",
     "instagram_media_id": "18101079185196362",
     "quality_score": 98,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -2786,7 +2786,7 @@
     "published_at": "2026-09-07T15:56:08.750828+00:00",
     "instagram_media_id": "18127922551750244",
     "quality_score": 91,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -2817,7 +2817,7 @@
     "published_at": "2026-09-07T15:56:19.018059+00:00",
     "instagram_media_id": "17902220850564121",
     "quality_score": 96,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -2848,7 +2848,7 @@
     "published_at": "2026-09-07T15:56:53.797950+00:00",
     "instagram_media_id": "18111156683025563",
     "quality_score": 92,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -2879,7 +2879,7 @@
     "published_at": "2026-09-07T15:57:10.494165+00:00",
     "instagram_media_id": "18145630978569163",
     "quality_score": 92,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -2910,7 +2910,7 @@
     "published_at": "2026-09-07T19:52:53.696980+00:00",
     "instagram_media_id": "18471491743115645",
     "quality_score": 98,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -2941,7 +2941,7 @@
     "published_at": "2026-09-07T19:53:12.416631+00:00",
     "instagram_media_id": "17860330389696296",
     "quality_score": 93,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -2972,7 +2972,7 @@
     "published_at": "2026-09-07T19:53:30.517521+00:00",
     "instagram_media_id": "18120712360700655",
     "quality_score": 92,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -3003,7 +3003,7 @@
     "published_at": "2026-09-07T22:46:04.491129+00:00",
     "instagram_media_id": "17970143961136724",
     "quality_score": 96,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -3034,7 +3034,7 @@
     "published_at": "2026-09-07T22:46:25.127499+00:00",
     "instagram_media_id": "18108165551174414",
     "quality_score": 96,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -3509,6 +3509,191 @@
       "source_type": "ORIGINAL",
       "theme": "karakter",
       "zone": "lower"
+    },
+    "pipeline_version": "quote_v1"
+  },
+  {
+    "id": "471af205-670b-4f4a-8cf5-c7d23812bf03",
+    "content_type": "post",
+    "theme": "dostluk",
+    "media_type": "IMAGE",
+    "media_source": "ai_generated",
+    "media_path": "media/generated/471af205-670b-4f4a-8cf5-c7d23812bf03_feed.jpg",
+    "media_url": "https://raw.githubusercontent.com/celikercan816-a11y/instagram-auto-publisher/master/media/generated/471af205-670b-4f4a-8cf5-c7d23812bf03_feed.jpg",
+    "image_prompt": null,
+    "caption": "🌅\n\n#istanbul #yol #huzur #anlar #doğa #akşam",
+    "hashtags": [
+      "#istanbul",
+      "#yol",
+      "#huzur",
+      "#anlar",
+      "#doğa",
+      "#akşam"
+    ],
+    "scheduled_at": "2026-09-09T14:30:00+03:00",
+    "status": "pending",
+    "created_at": "2026-09-09T09:36:37.010868+00:00",
+    "published_at": null,
+    "instagram_media_id": null,
+    "quality_score": 93,
+    "performance_score": null,
+    "error": null,
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "ea3245b4c81da7ab",
+      "quote_text": "Bir arkadaşın gece yarısı seni aramaktan çekinmemesi, en büyük güven belgesidir.",
+      "mood": "umut",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "dostluk",
+      "zone": "bottom_right"
+    },
+    "pipeline_version": "quote_v1"
+  },
+  {
+    "id": "5667bf73-6b1f-4c67-b658-1ceb327a698f",
+    "content_type": "post",
+    "theme": "aile",
+    "media_type": "IMAGE",
+    "media_source": "ai_generated",
+    "media_path": "media/generated/5667bf73-6b1f-4c67-b658-1ceb327a698f_feed.jpg",
+    "media_url": "https://raw.githubusercontent.com/celikercan816-a11y/instagram-auto-publisher/master/media/generated/5667bf73-6b1f-4c67-b658-1ceb327a698f_feed.jpg",
+    "image_prompt": null,
+    "caption": "Hafif bir hüzün, kötü değil.\n\n#düşünce #istanbul #yalnızlık",
+    "hashtags": [
+      "#düşünce",
+      "#istanbul",
+      "#yalnızlık"
+    ],
+    "scheduled_at": "2026-09-09T16:30:00+03:00",
+    "status": "pending",
+    "created_at": "2026-09-09T09:36:37.011208+00:00",
+    "published_at": null,
+    "instagram_media_id": null,
+    "quality_score": 96,
+    "performance_score": null,
+    "error": null,
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "4a87461c95e78028",
+      "quote_text": "Dedemin saati artık çalışmıyor ama duvardan hiç indirilmedi.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aile",
+      "zone": "top_left"
+    },
+    "pipeline_version": "quote_v1"
+  },
+  {
+    "id": "c18cbd40-6995-4e78-b947-4deb4386a557",
+    "content_type": "post",
+    "theme": "huzur",
+    "media_type": "IMAGE",
+    "media_source": "ai_generated",
+    "media_path": "media/generated/c18cbd40-6995-4e78-b947-4deb4386a557_feed.jpg",
+    "media_url": "https://raw.githubusercontent.com/celikercan816-a11y/instagram-auto-publisher/master/media/generated/c18cbd40-6995-4e78-b947-4deb4386a557_feed.jpg",
+    "image_prompt": null,
+    "caption": "Huzur.\n\n#düşünce #şiir #sessizlik #deniz #doğa #manzara",
+    "hashtags": [
+      "#düşünce",
+      "#şiir",
+      "#sessizlik",
+      "#deniz",
+      "#doğa",
+      "#manzara"
+    ],
+    "scheduled_at": "2026-09-09T18:30:00+03:00",
+    "status": "pending",
+    "created_at": "2026-09-09T09:36:37.011441+00:00",
+    "published_at": null,
+    "instagram_media_id": null,
+    "quality_score": 89,
+    "performance_score": null,
+    "error": null,
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "666487c97129e34c",
+      "quote_text": "Bir fincan çayı yavaş içmek, acelesi olmadığını kendine kanıtlamanın en ucuz yoludur.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "huzur",
+      "zone": "bottom_right"
+    },
+    "pipeline_version": "quote_v1"
+  },
+  {
+    "id": "b04e0f09-5e28-4a1b-ae8c-ac29e6289999",
+    "content_type": "post",
+    "theme": "başarı/emek/hayal",
+    "media_type": "IMAGE",
+    "media_source": "ai_generated",
+    "media_path": "media/generated/b04e0f09-5e28-4a1b-ae8c-ac29e6289999_feed.jpg",
+    "media_url": "https://raw.githubusercontent.com/celikercan816-a11y/instagram-auto-publisher/master/media/generated/b04e0f09-5e28-4a1b-ae8c-ac29e6289999_feed.jpg",
+    "image_prompt": null,
+    "caption": "#yalnızlık #yol #deniz #sessizlik #sözler #akşam",
+    "hashtags": [
+      "#yalnızlık",
+      "#yol",
+      "#deniz",
+      "#sessizlik",
+      "#sözler",
+      "#akşam"
+    ],
+    "scheduled_at": "2026-09-09T20:30:00+03:00",
+    "status": "pending",
+    "created_at": "2026-09-09T09:36:37.011646+00:00",
+    "published_at": null,
+    "instagram_media_id": null,
+    "quality_score": 99,
+    "performance_score": null,
+    "error": null,
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "9ebe6138b5978e2d",
+      "quote_text": "İşten çıkışta omuzların ne kadar düştüğü, günün nasıl geçtiğinin en dürüst özetidir.",
+      "mood": "yalnizlik",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "başarı/emek/hayal",
+      "zone": "top_right"
+    },
+    "pipeline_version": "quote_v1"
+  },
+  {
+    "id": "263f87fb-485e-4a81-9203-8f12ff53efb9",
+    "content_type": "post",
+    "theme": "mizahi",
+    "media_type": "IMAGE",
+    "media_source": "ai_generated",
+    "media_path": "media/generated/263f87fb-485e-4a81-9203-8f12ff53efb9_feed.jpg",
+    "media_url": "https://raw.githubusercontent.com/celikercan816-a11y/instagram-auto-publisher/master/media/generated/263f87fb-485e-4a81-9203-8f12ff53efb9_feed.jpg",
+    "image_prompt": null,
+    "caption": "#sözler #deniz #doğa #anlar",
+    "hashtags": [
+      "#sözler",
+      "#deniz",
+      "#doğa",
+      "#anlar"
+    ],
+    "scheduled_at": "2026-09-09T22:00:00+03:00",
+    "status": "pending",
+    "created_at": "2026-09-09T09:36:37.011822+00:00",
+    "published_at": null,
+    "instagram_media_id": null,
+    "quality_score": 91,
+    "performance_score": null,
+    "error": null,
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "49fa15d715953e05",
+      "quote_text": "Yetişkinlik, doktoru ertelerken dizinin son bölümünü asla ertelemediğin dönemdir.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "mizahi",
+      "zone": "bottom_right"
     },
     "pipeline_version": "quote_v1"
   }
