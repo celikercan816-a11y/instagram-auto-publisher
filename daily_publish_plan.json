@@ -1,31 +1,36 @@
 {
-  "date": "2026-09-09",
-  "generated_at": "2026-09-09T09:35:16.268690+00:00",
+  "date": "2026-09-10",
+  "generated_at": "2026-09-10T09:35:14.436458+00:00",
   "feed": [
     {
-      "content_id": "471af205-670b-4f4a-8cf5-c7d23812bf03",
-      "scheduled_at": "2026-09-09T14:30:00+03:00",
-      "theme": "dostluk"
+      "content_id": "7b055dbf-1a3e-4739-86ea-13441e95d23f",
+      "scheduled_at": "2026-09-10T14:30:00+03:00",
+      "theme": "anı/ayrılık"
     },
     {
-      "content_id": "5667bf73-6b1f-4c67-b658-1ceb327a698f",
-      "scheduled_at": "2026-09-09T16:30:00+03:00",
-      "theme": "aile"
+      "content_id": "23ec76a3-9849-42e7-bf53-42cff433e8cd",
+      "scheduled_at": "2026-09-10T16:30:00+03:00",
+      "theme": "hayaller"
     },
     {
-      "content_id": "c18cbd40-6995-4e78-b947-4deb4386a557",
-      "scheduled_at": "2026-09-09T18:30:00+03:00",
-      "theme": "huzur"
+      "content_id": "bf7349fc-1a18-4c9d-8762-001087279b7b",
+      "scheduled_at": "2026-09-10T18:30:00+03:00",
+      "theme": "aşk"
     },
     {
-      "content_id": "b04e0f09-5e28-4a1b-ae8c-ac29e6289999",
-      "scheduled_at": "2026-09-09T20:30:00+03:00",
-      "theme": "başarı/emek/hayal"
+      "content_id": "2c6e08a6-a9ab-4858-870a-3decfaa85e6f",
+      "scheduled_at": "2026-09-10T20:30:00+03:00",
+      "theme": "farkındalık"
     },
     {
-      "content_id": "263f87fb-485e-4a81-9203-8f12ff53efb9",
-      "scheduled_at": "2026-09-09T22:00:00+03:00",
-      "theme": "mizahi"
+      "content_id": "36817dad-7727-4bbe-b5f1-dce768d6ab1c",
+      "scheduled_at": "2026-09-10T22:00:00+03:00",
+      "theme": "hayat tespiti"
+    },
+    {
+      "content_id": "a1afbac4-4346-4496-be96-afd1d51395b2",
+      "scheduled_at": "2026-09-10T23:30:00+03:00",
+      "theme": "farkındalık"
     }
   ],
   "story": [],
@@ -37,32 +42,24 @@
   "story_skipped_blocks": [
     "07:30-10:30"
   ],
-  "feed_reserved": [],
+  "feed_reserved": [
+    "0faf9441-4109-421f-aed8-8bcd57c82790",
+    "f07718d7-a887-4d2c-ac47-571b227b544f",
+    "603b8002-a103-4d61-aa8d-ecab4005158e"
+  ],
   "story_reserved": [],
   "needs_review": [
     {
-      "content_id": "3c20b4ed-7389-47ed-8767-740342604ba2",
+      "content_id": "06b3f648-4a9d-4979-b50a-b788c2725499",
       "type": "feed",
-      "quote": "Annem hâlâ eve geldiğimde koridor lambasını benim için açık bırakır, otuz yaşında olsam da.",
-      "reason": "QC geçemedi: score=88, placement=0.53"
+      "quote": "İşten çıkıp hemen eve gitmeyip arabada birkaç dakika oturmak, kimsenin bilmediği küçük bir moladır.",
+      "reason": "QC geçemedi: score=89, placement=0.51"
     },
     {
-      "content_id": "b8f8adf7-aaf6-4efc-aa73-451f5a92c77a",
-      "type": "feed",
-      "quote": "Kredi kartı ekstresi bazen bir insanı, söylediklerinden daha dürüst anlatır.",
-      "reason": "QC geçemedi: score=89, placement=0.53"
-    },
-    {
-      "content_id": "82996fb4-91bb-4fff-ba1e-1d30f138e76e",
-      "type": "feed",
-      "quote": "Yıllar sonra o sokağa döndüm,\ndükkanlar değişmiş, isimler başka.\nAma köşedeki ışık hâlâ aynı yerde yanıyordu,\nbeni bekliyormuş gibi.",
-      "reason": "QC geçemedi: score=85, placement=0.42"
-    },
-    {
-      "content_id": "04998fc7-0c90-4da8-8d2a-3bf71f5539a4",
+      "content_id": "aa990fe7-dabf-48bf-89a6-d7eb5283ac98",
       "type": "story",
-      "quote": "Dedemin saati artık çalışmıyor ama duvardan hiç indirilmedi.",
-      "reason": "QC geçemedi: score=89, placement=0.47"
+      "quote": "Herkes bir yere yetişiyordu istasyonda,\nben tek kişiydim beklemekten memnun.\nTren geldiğinde bile,\nacele etmedim binmeye.",
+      "reason": "Metin hiçbir denemede kadraja/safe-zone'a sığmadı."
     }
   ]
 }
