@@ -2915,5 +2915,57 @@
     "instagram_media_id": "18018573857924101",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "36817dad-7727-4bbe-b5f1-dce768d6ab1c",
+    "theme": "hayat tespiti",
+    "content_type": "post",
+    "caption_summary": "⏳\n\n#sakinlik #şiir #deniz",
+    "hashtags": [
+      "#sakinlik",
+      "#şiir",
+      "#deniz"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "97497dab3c72524e",
+      "quote_text": "Çocukken uzun gelen bir yaz tatili, büyüyünce bir hafta sonu kadar kısalır.",
+      "mood": "zaman",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "hayat tespiti",
+      "zone": "top_left"
+    },
+    "image_fingerprint": "01c62586c68b3d2a0b6b3c12fba1b5a5411442bf03213a28b5d72085da3a28d7",
+    "published_at": "2026-09-10T20:59:46.011471+00:00",
+    "instagram_media_id": "18132623710727365",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "a1afbac4-4346-4496-be96-afd1d51395b2",
+    "theme": "farkındalık",
+    "content_type": "post",
+    "caption_summary": "Sessizlik.\n\n#şehir #istanbul #zaman",
+    "hashtags": [
+      "#şehir",
+      "#istanbul",
+      "#zaman"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "f3ac9cd2e23d2bba",
+      "quote_text": "Kimsenin seni aramadığı bir gün, kimsenin seni özlemediği anlamına gelmez.",
+      "mood": "yalnizlik",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "farkındalık",
+      "zone": "bottom_right"
+    },
+    "image_fingerprint": "33278c5dd6fa9e03e2041bef55a22722e0d48d6ce45e8d6e3e735972b91960ba",
+    "published_at": "2026-09-10T20:59:58.273383+00:00",
+    "instagram_media_id": "18098450540375774",
+    "insights": null,
+    "performance_score": null
   }
 ]
