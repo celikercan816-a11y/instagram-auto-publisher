@@ -2858,5 +2858,62 @@
     "instagram_media_id": "18621829495052848",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "bf7349fc-1a18-4c9d-8762-001087279b7b",
+    "theme": "aşk",
+    "content_type": "post",
+    "caption_summary": "#sözler #manzara #anlar #akşam #sessizlik",
+    "hashtags": [
+      "#sözler",
+      "#manzara",
+      "#anlar",
+      "#akşam",
+      "#sessizlik"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "6184e87ee4d77a54",
+      "quote_text": "Sevdiğin biri hasta olduğunda telefonuna bakma sıklığın, ona ne kadar değer verdiğini gösterir.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aşk",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "7c36292b326835b12dad9c0fae003162bdd4db6ecfd866e274a2ba90cc47fba9",
+    "published_at": "2026-09-10T18:20:48.063952+00:00",
+    "instagram_media_id": "18143730973602094",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "2c6e08a6-a9ab-4858-870a-3decfaa85e6f",
+    "theme": "farkındalık",
+    "content_type": "post",
+    "caption_summary": "✨\n\n#gece #sessizlik #manzara #akşam #yol #sözler",
+    "hashtags": [
+      "#gece",
+      "#sessizlik",
+      "#manzara",
+      "#akşam",
+      "#yol",
+      "#sözler"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "a8053973def2f02e",
+      "quote_text": "Karamsar bir gün, kötü bir yıl olduğu anlamına gelmez; sadece kötü bir gündür.",
+      "mood": "umut",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "farkındalık",
+      "zone": "bottom_right"
+    },
+    "image_fingerprint": "ed1e455c224ec4ba144fbe6ec26f3461e140a3841249294eae0d0049fc5836b2",
+    "published_at": "2026-09-10T18:21:00.773234+00:00",
+    "instagram_media_id": "18018573857924101",
+    "insights": null,
+    "performance_score": null
   }
 ]

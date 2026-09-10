@@ -185,3 +185,5 @@
 {"timestamp": "2026-09-10T11:11:09.283734+00:00", "level": "info", "message": "No due items."}
 {"timestamp": "2026-09-10T15:03:17.147755+00:00", "level": "success", "item_id": "7b055dbf-1a3e-4739-86ea-13441e95d23f", "instagram_media_id": "18154015234450098", "message": "Published IMAGE scheduled for 2026-09-10T14:30:00+03:00"}
 {"timestamp": "2026-09-10T15:03:24.257232+00:00", "level": "success", "item_id": "23ec76a3-9849-42e7-bf53-42cff433e8cd", "instagram_media_id": "18621829495052848", "message": "Published IMAGE scheduled for 2026-09-10T16:30:00+03:00"}
+{"timestamp": "2026-09-10T18:20:48.068327+00:00", "level": "success", "item_id": "bf7349fc-1a18-4c9d-8762-001087279b7b", "instagram_media_id": "18143730973602094", "message": "Published IMAGE scheduled for 2026-09-10T18:30:00+03:00"}
+{"timestamp": "2026-09-10T18:21:00.777350+00:00", "level": "success", "item_id": "2c6e08a6-a9ab-4858-870a-3decfaa85e6f", "instagram_media_id": "18018573857924101", "message": "Published IMAGE scheduled for 2026-09-10T20:30:00+03:00"}
