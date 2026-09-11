@@ -3111,5 +3111,33 @@
     "instagram_media_id": "18132375148733017",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "f9b6d2ed-5526-4c5e-b3c6-cd5fa5bf5904",
+    "theme": "ayrılık/yol",
+    "content_type": "post",
+    "caption_summary": "#yalnızlık #istanbul #atasözü #anlar #yol",
+    "hashtags": [
+      "#yalnızlık",
+      "#istanbul",
+      "#atasözü",
+      "#anlar",
+      "#yol"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "56ccd1e46a5a75c3",
+      "quote_text": "Bavulumu açtım, koku hâlâ oradaydı,\ngittiğim şehrin değil, bıraktığım odanın.\nBazı yolculuklar dönüş için değil,\nunutmak için çıkılır.",
+      "mood": "melankoli",
+      "category": "SHORT_POEM",
+      "source_type": "SHORT_POEM",
+      "theme": "ayrılık/yol",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "0b1758dec457bd03135894541a78846319c2f9f504a167a0df7e54efe1ba94a9",
+    "published_at": "2026-09-11T20:05:14.665628+00:00",
+    "instagram_media_id": "18121069568486122",
+    "insights": null,
+    "performance_score": null
   }
 ]
