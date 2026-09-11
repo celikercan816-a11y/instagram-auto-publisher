@@ -216,3 +216,18 @@
 {"timestamp": "2026-09-10T09:36:40.131068+00:00", "level": "success", "item_id": "f07718d7-a887-4d2c-ac47-571b227b544f", "attempt": 2, "message": "Cloudflare background OK", "duration_s": 2.15}
 {"timestamp": "2026-09-10T09:36:42.460540+00:00", "level": "success", "item_id": "603b8002-a103-4d61-aa8d-ecab4005158e", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 2.0}
 {"timestamp": "2026-09-10T09:36:44.698255+00:00", "level": "success", "item_id": "aa990fe7-dabf-48bf-89a6-d7eb5283ac98", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 1.59}
+{"timestamp": "2026-09-11T09:32:32.908140+00:00", "level": "success", "item_id": "f818fa86-5c77-44c6-879b-924d293d8913", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 4.33}
+{"timestamp": "2026-09-11T09:32:35.777672+00:00", "level": "success", "item_id": "2b773ef3-d2b3-4d38-b299-e25575258b95", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 2.23}
+{"timestamp": "2026-09-11T09:32:37.604338+00:00", "level": "success", "item_id": "6c072980-f7eb-4b1c-b4bb-004a9ddcbcd9", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 1.61}
+{"timestamp": "2026-09-11T09:32:39.977812+00:00", "level": "success", "item_id": "37583f85-a0d4-42cb-a990-8f3995ffc1c6", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 1.86}
+{"timestamp": "2026-09-11T09:32:41.860069+00:00", "level": "success", "item_id": "a1c11cd3-91f6-486c-b933-df7d21d3f023", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 1.26}
+{"timestamp": "2026-09-11T09:32:43.677941+00:00", "level": "success", "item_id": "f9b6d2ed-5526-4c5e-b3c6-cd5fa5bf5904", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 1.31}
+{"timestamp": "2026-09-11T09:32:47.439985+00:00", "level": "success", "item_id": "c107907e-c046-4df2-af09-5ad61311bc91", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 3.38}
+{"timestamp": "2026-09-11T09:32:49.552589+00:00", "level": "success", "item_id": "93562711-19b8-4960-9b91-cc2765b4dc11", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 1.56}
+{"timestamp": "2026-09-11T09:32:51.579635+00:00", "level": "warning", "item_id": "13c3c8e3-06f0-4dae-85c8-6a22b0f023b3", "attempt": 1, "message": "Kota/rate-limit: Cloudflare Workers AI günlük ücretsiz Neuron kotası (10.000/gün) tükendi veya istek geçici olarak sınırlandı. Otomatik olarak ücretli plana geçilmiyor."}
+{"timestamp": "2026-09-11T09:33:23.588556+00:00", "level": "success", "item_id": "13c3c8e3-06f0-4dae-85c8-6a22b0f023b3", "attempt": 2, "message": "Cloudflare background OK", "duration_s": 2.01}
+{"timestamp": "2026-09-11T09:33:25.753230+00:00", "level": "success", "item_id": "1d0ff045-5c0f-4c60-b62c-4d883edd1c93", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 1.59}
+{"timestamp": "2026-09-11T09:33:27.689618+00:00", "level": "warning", "item_id": "d64a59a6-f882-4a93-a521-8c6a472a3b29", "attempt": 1, "message": "Kota/rate-limit: Cloudflare Workers AI günlük ücretsiz Neuron kotası (10.000/gün) tükendi veya istek geçici olarak sınırlandı. Otomatik olarak ücretli plana geçilmiyor."}
+{"timestamp": "2026-09-11T09:33:58.958979+00:00", "level": "success", "item_id": "d64a59a6-f882-4a93-a521-8c6a472a3b29", "attempt": 2, "message": "Cloudflare background OK", "duration_s": 1.27}
+{"timestamp": "2026-09-11T09:34:01.480530+00:00", "level": "success", "item_id": "1acb79ca-2a5b-49e8-9478-6e53fa6ced33", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 1.58}
+{"timestamp": "2026-09-11T09:34:03.977801+00:00", "level": "success", "item_id": "37c04fcc-a2a7-45d3-bcf4-c1f95a1d8417", "attempt": 1, "message": "Cloudflare background OK", "duration_s": 1.6}

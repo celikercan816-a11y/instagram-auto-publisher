@@ -1,36 +1,36 @@
 {
-  "date": "2026-09-10",
-  "generated_at": "2026-09-10T09:35:14.436458+00:00",
+  "date": "2026-09-11",
+  "generated_at": "2026-09-11T09:32:28.551113+00:00",
   "feed": [
     {
-      "content_id": "7b055dbf-1a3e-4739-86ea-13441e95d23f",
-      "scheduled_at": "2026-09-10T14:30:00+03:00",
-      "theme": "anı/ayrılık"
+      "content_id": "0faf9441-4109-421f-aed8-8bcd57c82790",
+      "scheduled_at": "2026-09-11T14:30:00+03:00",
+      "theme": "başlangıç"
     },
     {
-      "content_id": "23ec76a3-9849-42e7-bf53-42cff433e8cd",
-      "scheduled_at": "2026-09-10T16:30:00+03:00",
-      "theme": "hayaller"
-    },
-    {
-      "content_id": "bf7349fc-1a18-4c9d-8762-001087279b7b",
-      "scheduled_at": "2026-09-10T18:30:00+03:00",
-      "theme": "aşk"
-    },
-    {
-      "content_id": "2c6e08a6-a9ab-4858-870a-3decfaa85e6f",
-      "scheduled_at": "2026-09-10T20:30:00+03:00",
-      "theme": "farkındalık"
-    },
-    {
-      "content_id": "36817dad-7727-4bbe-b5f1-dce768d6ab1c",
-      "scheduled_at": "2026-09-10T22:00:00+03:00",
+      "content_id": "603b8002-a103-4d61-aa8d-ecab4005158e",
+      "scheduled_at": "2026-09-11T16:30:00+03:00",
       "theme": "hayat tespiti"
     },
     {
-      "content_id": "a1afbac4-4346-4496-be96-afd1d51395b2",
-      "scheduled_at": "2026-09-10T23:30:00+03:00",
+      "content_id": "f07718d7-a887-4d2c-ac47-571b227b544f",
+      "scheduled_at": "2026-09-11T18:30:00+03:00",
       "theme": "farkındalık"
+    },
+    {
+      "content_id": "2b773ef3-d2b3-4d38-b299-e25575258b95",
+      "scheduled_at": "2026-09-11T20:30:00+03:00",
+      "theme": "ayrılık"
+    },
+    {
+      "content_id": "f9b6d2ed-5526-4c5e-b3c6-cd5fa5bf5904",
+      "scheduled_at": "2026-09-11T22:00:00+03:00",
+      "theme": "ayrılık/yol"
+    },
+    {
+      "content_id": "93562711-19b8-4960-9b91-cc2765b4dc11",
+      "scheduled_at": "2026-09-11T23:30:00+03:00",
+      "theme": "huzur/yalnızlık"
     }
   ],
   "story": [],
@@ -43,22 +43,62 @@
     "07:30-10:30"
   ],
   "feed_reserved": [
-    "0faf9441-4109-421f-aed8-8bcd57c82790",
-    "f07718d7-a887-4d2c-ac47-571b227b544f",
-    "603b8002-a103-4d61-aa8d-ecab4005158e"
+    "1d0ff045-5c0f-4c60-b62c-4d883edd1c93"
   ],
   "story_reserved": [],
   "needs_review": [
     {
-      "content_id": "06b3f648-4a9d-4979-b50a-b788c2725499",
+      "content_id": "f818fa86-5c77-44c6-879b-924d293d8913",
       "type": "feed",
-      "quote": "İşten çıkıp hemen eve gitmeyip arabada birkaç dakika oturmak, kimsenin bilmediği küçük bir moladır.",
-      "reason": "QC geçemedi: score=89, placement=0.51"
+      "quote": "Annem hâlâ eve geldiğimde koridor lambasını benim için açık bırakır, otuz yaşında olsam da.",
+      "reason": "QC geçemedi: score=87, placement=0.49"
     },
     {
-      "content_id": "aa990fe7-dabf-48bf-89a6-d7eb5283ac98",
+      "content_id": "6c072980-f7eb-4b1c-b4bb-004a9ddcbcd9",
+      "type": "feed",
+      "quote": "Vapur kalktı, ben kalmadım,\nrıhtım hâlâ oradaydı ama.\nBazı ayrılıklar limanı değil,\nseni değiştirir.",
+      "reason": "QC geçemedi: score=86, placement=0.45"
+    },
+    {
+      "content_id": "37583f85-a0d4-42cb-a990-8f3995ffc1c6",
+      "type": "feed",
+      "quote": "Bir çiftin ne kadar mutlu olduğunu, tartışırken bile birbirlerine nasıl seslendiklerine bakarak anlarsın.",
+      "reason": "QC geçemedi: score=88, placement=0.55"
+    },
+    {
+      "content_id": "a1c11cd3-91f6-486c-b933-df7d21d3f023",
+      "type": "feed",
+      "quote": "Kredi kartı ekstresi bazen bir insanı, söylediklerinden daha dürüst anlatır.",
+      "reason": "QC geçemedi: score=87, placement=0.47"
+    },
+    {
+      "content_id": "c107907e-c046-4df2-af09-5ad61311bc91",
+      "type": "feed",
+      "quote": "Evlilik yıl dönümünde çekilen fotoğraflar değil, sıradan bir salı akşamı gülüşü asıl aşkı gösterir.",
+      "reason": "QC geçemedi: score=91, placement=0.59"
+    },
+    {
+      "content_id": "13c3c8e3-06f0-4dae-85c8-6a22b0f023b3",
+      "type": "feed",
+      "quote": "Bir mahalleye yıllar sonra dönüp değişmediğini görmek, seni değişmiş hissettiren şeydir.",
+      "reason": "QC geçemedi: score=88, placement=0.49"
+    },
+    {
+      "content_id": "d64a59a6-f882-4a93-a521-8c6a472a3b29",
       "type": "story",
-      "quote": "Herkes bir yere yetişiyordu istasyonda,\nben tek kişiydim beklemekten memnun.\nTren geldiğinde bile,\nacele etmedim binmeye.",
+      "quote": "Kaybettiğin bir alışkanlığı, ancak onu yapmadığın bir günün ortasında fark edersin.",
+      "reason": "QC geçemedi: score=88, placement=0.48"
+    },
+    {
+      "content_id": "1acb79ca-2a5b-49e8-9478-6e53fa6ced33",
+      "type": "story",
+      "quote": "Yeni bir deftere ilk cümleyi yazmak zordur,\nboş sayfa hep suçlar gibi bakar.\nAma ikinci cümle gelir,\nüçüncüsü zaten kendiliğinden.",
+      "reason": "Metin hiçbir denemede kadraja/safe-zone'a sığmadı."
+    },
+    {
+      "content_id": "37c04fcc-a2a7-45d3-bcf4-c1f95a1d8417",
+      "type": "story",
+      "quote": "Sabah alarmını erteledim üç kere,\nher seferinde beş dakika daha çaldım kendimi.\nSonunda kalktım,\ngün zaten beni bekliyordu.",
       "reason": "Metin hiçbir denemede kadraja/safe-zone'a sığmadı."
     }
   ]
