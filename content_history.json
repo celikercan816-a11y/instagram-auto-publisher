@@ -3139,5 +3139,34 @@
     "instagram_media_id": "18121069568486122",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "93562711-19b8-4960-9b91-cc2765b4dc11",
+    "theme": "huzur/yalnızlık",
+    "content_type": "post",
+    "caption_summary": "#sessizlik #şehir #yalnızlık #atasözü #istanbul #manzara",
+    "hashtags": [
+      "#sessizlik",
+      "#şehir",
+      "#yalnızlık",
+      "#atasözü",
+      "#istanbul",
+      "#manzara"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "6668b39e72bddc81",
+      "quote_text": "Sessiz bir akşam yemeği, konuşacak bir şey kalmadığı için değil, konuşmaya gerek kalmadığı için de olabilir.",
+      "mood": "yalnizlik",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "huzur/yalnızlık",
+      "zone": "top_right"
+    },
+    "image_fingerprint": "fd49cdf6f29640b6f2848e0561b19e27fd9ebdadcb45e33ee062cfb0be4b623e",
+    "published_at": "2026-09-11T22:31:30.505818+00:00",
+    "instagram_media_id": "18099360191053555",
+    "insights": null,
+    "performance_score": null
   }
 ]
