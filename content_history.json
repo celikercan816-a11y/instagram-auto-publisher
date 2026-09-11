@@ -3054,5 +3054,62 @@
     "instagram_media_id": "18114481283473932",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "f07718d7-a887-4d2c-ac47-571b227b544f",
+    "theme": "farkındalık",
+    "content_type": "post",
+    "caption_summary": "#deniz #anlar #zaman #düşünce #yol #sakinlik",
+    "hashtags": [
+      "#deniz",
+      "#anlar",
+      "#zaman",
+      "#düşünce",
+      "#yol",
+      "#sakinlik"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "b90a41278392544a",
+      "quote_text": "Kaybettiğin bir alışkanlığı, ancak onu yapmadığın bir günün ortasında fark edersin.",
+      "mood": "zaman",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "farkındalık",
+      "zone": "top_right"
+    },
+    "image_fingerprint": "600ee3e2301ef7799fac19978a86197ed5d7b9933005f74420a14707b84ff0ce",
+    "published_at": "2026-09-11T17:47:42.007880+00:00",
+    "instagram_media_id": "18458252362186868",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "2b773ef3-d2b3-4d38-b299-e25575258b95",
+    "theme": "ayrılık",
+    "content_type": "post",
+    "caption_summary": "Hafif bir hüzün, kötü değil.\n\n#yol #gece #zaman #şiir #düşünce",
+    "hashtags": [
+      "#yol",
+      "#gece",
+      "#zaman",
+      "#şiir",
+      "#düşünce"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "3a4f42b3496c2152",
+      "quote_text": "Bir şehirde artık kimsenin seni beklemediğini fark etmek, orayı terk etmenden daha yavaş olur.",
+      "mood": "melankoli",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "ayrılık",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "8fc59eb92353eaee3d34abab048c8ed8e0f659ae9245369d262d6d0c36a773d3",
+    "published_at": "2026-09-11T17:47:52.169848+00:00",
+    "instagram_media_id": "18132375148733017",
+    "insights": null,
+    "performance_score": null
   }
 ]
