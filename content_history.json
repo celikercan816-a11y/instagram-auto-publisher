@@ -3002,5 +3002,57 @@
     "instagram_media_id": "18098450540375774",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "0faf9441-4109-421f-aed8-8bcd57c82790",
+    "theme": "başlangıç",
+    "content_type": "post",
+    "caption_summary": "#şehir #şiir #zaman",
+    "hashtags": [
+      "#şehir",
+      "#şiir",
+      "#zaman"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "7c7b856a6778f225",
+      "quote_text": "Yeni bir deftere ilk cümleyi yazmak zordur,\nboş sayfa hep suçlar gibi bakar.\nAma ikinci cümle gelir,\nüçüncüsü zaten kendiliğinden.",
+      "mood": "umut",
+      "category": "SHORT_POEM",
+      "source_type": "SHORT_POEM",
+      "theme": "başlangıç",
+      "zone": "bottom_right"
+    },
+    "image_fingerprint": "4065093f520be425cdaf75c0be1d6312c05cc9adb7a0312b42ee283a399acf37",
+    "published_at": "2026-09-11T14:20:51.599711+00:00",
+    "instagram_media_id": "18625649215063989",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "603b8002-a103-4d61-aa8d-ecab4005158e",
+    "theme": "hayat tespiti",
+    "content_type": "post",
+    "caption_summary": "Yeni bir gün.\n\n#deniz #anlar #zaman",
+    "hashtags": [
+      "#deniz",
+      "#anlar",
+      "#zaman"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "3afede2f91da9c42",
+      "quote_text": "Sabah alarmını erteledim üç kere,\nher seferinde beş dakika daha çaldım kendimi.\nSonunda kalktım,\ngün zaten beni bekliyordu.",
+      "mood": "umut",
+      "category": "SHORT_POEM",
+      "source_type": "SHORT_POEM",
+      "theme": "hayat tespiti",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "978c4625a9a9e2a3ed3a882c31be2f79ef9333c4be0b33c5dcca46e1b47b0d07",
+    "published_at": "2026-09-11T14:20:59.790114+00:00",
+    "instagram_media_id": "18114481283473932",
+    "insights": null,
+    "performance_score": null
   }
 ]
