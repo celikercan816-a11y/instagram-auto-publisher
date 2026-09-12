@@ -3266,5 +3266,33 @@
     "instagram_media_id": "17890795179674937",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "5ac0f07c-5c53-450f-a2fe-882f719d3829",
+    "theme": "yol/huzur",
+    "content_type": "post",
+    "caption_summary": "#anlar #doğa #atasözü #manzara #yol",
+    "hashtags": [
+      "#anlar",
+      "#doğa",
+      "#atasözü",
+      "#manzara",
+      "#yol"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "7927d02d7dbf4128",
+      "quote_text": "Herkes bir yere yetişiyordu istasyonda,\nben tek kişiydim beklemekten memnun.\nTren geldiğinde bile,\nacele etmedim binmeye.",
+      "mood": "yol",
+      "category": "SHORT_POEM",
+      "source_type": "SHORT_POEM",
+      "theme": "yol/huzur",
+      "zone": "bottom_right"
+    },
+    "image_fingerprint": "b542edaf822bb4828a1aba79e2cea59032988471e94a5f7000dfe4f5776b4ac8",
+    "published_at": "2026-09-12T16:13:26.607944+00:00",
+    "instagram_media_id": "18469376116117554",
+    "insights": null,
+    "performance_score": null
   }
 ]
