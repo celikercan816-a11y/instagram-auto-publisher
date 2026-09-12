@@ -1,105 +1,39 @@
 {
-  "date": "2026-09-11",
-  "generated_at": "2026-09-11T09:32:28.551113+00:00",
+  "date": "2026-09-12",
+  "generated_at": "2026-09-12T09:11:22.833492+00:00",
   "feed": [
     {
-      "content_id": "0faf9441-4109-421f-aed8-8bcd57c82790",
-      "scheduled_at": "2026-09-11T14:30:00+03:00",
-      "theme": "başlangıç"
-    },
-    {
-      "content_id": "603b8002-a103-4d61-aa8d-ecab4005158e",
-      "scheduled_at": "2026-09-11T16:30:00+03:00",
-      "theme": "hayat tespiti"
-    },
-    {
-      "content_id": "f07718d7-a887-4d2c-ac47-571b227b544f",
-      "scheduled_at": "2026-09-11T18:30:00+03:00",
-      "theme": "farkındalık"
-    },
-    {
-      "content_id": "2b773ef3-d2b3-4d38-b299-e25575258b95",
-      "scheduled_at": "2026-09-11T20:30:00+03:00",
-      "theme": "ayrılık"
-    },
-    {
-      "content_id": "f9b6d2ed-5526-4c5e-b3c6-cd5fa5bf5904",
-      "scheduled_at": "2026-09-11T22:00:00+03:00",
-      "theme": "ayrılık/yol"
-    },
-    {
-      "content_id": "93562711-19b8-4960-9b91-cc2765b4dc11",
-      "scheduled_at": "2026-09-11T23:30:00+03:00",
+      "content_id": "1d0ff045-5c0f-4c60-b62c-4d883edd1c93",
+      "scheduled_at": "2026-09-12T12:30:00+03:00",
       "theme": "huzur/yalnızlık"
+    },
+    {
+      "content_id": "42c0e138-ab8a-4fb5-9f99-e16cc493bdde",
+      "scheduled_at": "2026-09-12T14:30:00+03:00",
+      "theme": "başarı/emek"
+    },
+    {
+      "content_id": "5ac0f07c-5c53-450f-a2fe-882f719d3829",
+      "scheduled_at": "2026-09-12T16:30:00+03:00",
+      "theme": "yol/huzur"
     }
   ],
   "story": [],
   "feed_skipped_past_time": [
     "08:30",
-    "10:30",
-    "12:30"
+    "10:30"
   ],
   "story_skipped_blocks": [
     "07:30-10:30"
   ],
-  "feed_reserved": [
-    "1d0ff045-5c0f-4c60-b62c-4d883edd1c93"
-  ],
+  "feed_reserved": [],
   "story_reserved": [],
   "needs_review": [
     {
-      "content_id": "f818fa86-5c77-44c6-879b-924d293d8913",
+      "content_id": "0c1bf5f1-6c41-44ae-b2e0-dd0f2d539667",
       "type": "feed",
-      "quote": "Annem hâlâ eve geldiğimde koridor lambasını benim için açık bırakır, otuz yaşında olsam da.",
-      "reason": "QC geçemedi: score=87, placement=0.49"
-    },
-    {
-      "content_id": "6c072980-f7eb-4b1c-b4bb-004a9ddcbcd9",
-      "type": "feed",
-      "quote": "Vapur kalktı, ben kalmadım,\nrıhtım hâlâ oradaydı ama.\nBazı ayrılıklar limanı değil,\nseni değiştirir.",
-      "reason": "QC geçemedi: score=86, placement=0.45"
-    },
-    {
-      "content_id": "37583f85-a0d4-42cb-a990-8f3995ffc1c6",
-      "type": "feed",
-      "quote": "Bir çiftin ne kadar mutlu olduğunu, tartışırken bile birbirlerine nasıl seslendiklerine bakarak anlarsın.",
-      "reason": "QC geçemedi: score=88, placement=0.55"
-    },
-    {
-      "content_id": "a1c11cd3-91f6-486c-b933-df7d21d3f023",
-      "type": "feed",
-      "quote": "Kredi kartı ekstresi bazen bir insanı, söylediklerinden daha dürüst anlatır.",
-      "reason": "QC geçemedi: score=87, placement=0.47"
-    },
-    {
-      "content_id": "c107907e-c046-4df2-af09-5ad61311bc91",
-      "type": "feed",
-      "quote": "Evlilik yıl dönümünde çekilen fotoğraflar değil, sıradan bir salı akşamı gülüşü asıl aşkı gösterir.",
-      "reason": "QC geçemedi: score=91, placement=0.59"
-    },
-    {
-      "content_id": "13c3c8e3-06f0-4dae-85c8-6a22b0f023b3",
-      "type": "feed",
-      "quote": "Bir mahalleye yıllar sonra dönüp değişmediğini görmek, seni değişmiş hissettiren şeydir.",
-      "reason": "QC geçemedi: score=88, placement=0.49"
-    },
-    {
-      "content_id": "d64a59a6-f882-4a93-a521-8c6a472a3b29",
-      "type": "story",
-      "quote": "Kaybettiğin bir alışkanlığı, ancak onu yapmadığın bir günün ortasında fark edersin.",
-      "reason": "QC geçemedi: score=88, placement=0.48"
-    },
-    {
-      "content_id": "1acb79ca-2a5b-49e8-9478-6e53fa6ced33",
-      "type": "story",
-      "quote": "Yeni bir deftere ilk cümleyi yazmak zordur,\nboş sayfa hep suçlar gibi bakar.\nAma ikinci cümle gelir,\nüçüncüsü zaten kendiliğinden.",
-      "reason": "Metin hiçbir denemede kadraja/safe-zone'a sığmadı."
-    },
-    {
-      "content_id": "37c04fcc-a2a7-45d3-bcf4-c1f95a1d8417",
-      "type": "story",
-      "quote": "Sabah alarmını erteledim üç kere,\nher seferinde beş dakika daha çaldım kendimi.\nSonunda kalktım,\ngün zaten beni bekliyordu.",
-      "reason": "Metin hiçbir denemede kadraja/safe-zone'a sığmadı."
+      "quote": "Yıllar sonra o sokağa döndüm,\ndükkanlar değişmiş, isimler başka.\nAma köşedeki ışık hâlâ aynı yerde yanıyordu,\nbeni bekliyormuş gibi.",
+      "reason": "QC geçemedi: score=88, placement=0.57"
     }
   ]
 }

@@ -3718,7 +3718,7 @@
     "published_at": "2026-09-10T15:03:17.143043+00:00",
     "instagram_media_id": "18154015234450098",
     "quality_score": 92,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -3756,7 +3756,7 @@
     "published_at": "2026-09-10T15:03:24.253089+00:00",
     "instagram_media_id": "18621829495052848",
     "quality_score": 92,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -3793,7 +3793,7 @@
     "published_at": "2026-09-10T18:20:48.063952+00:00",
     "instagram_media_id": "18143730973602094",
     "quality_score": 90,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -3831,7 +3831,7 @@
     "published_at": "2026-09-10T18:21:00.773234+00:00",
     "instagram_media_id": "18018573857924101",
     "quality_score": 93,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -3866,7 +3866,7 @@
     "published_at": "2026-09-10T20:59:46.011471+00:00",
     "instagram_media_id": "18132623710727365",
     "quality_score": 93,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -3901,7 +3901,7 @@
     "published_at": "2026-09-10T20:59:58.273383+00:00",
     "instagram_media_id": "18098450540375774",
     "quality_score": 96,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -4132,6 +4132,117 @@
       "source_type": "ORIGINAL",
       "theme": "huzur/yalnızlık",
       "zone": "top_right"
+    },
+    "pipeline_version": "quote_v1"
+  },
+  {
+    "id": "1d0ff045-5c0f-4c60-b62c-4d883edd1c93",
+    "content_type": "post",
+    "theme": "huzur/yalnızlık",
+    "media_type": "IMAGE",
+    "media_source": "ai_generated",
+    "media_path": "media/generated/1d0ff045-5c0f-4c60-b62c-4d883edd1c93_feed.jpg",
+    "media_url": "https://raw.githubusercontent.com/celikercan816-a11y/instagram-auto-publisher/master/media/generated/1d0ff045-5c0f-4c60-b62c-4d883edd1c93_feed.jpg",
+    "image_prompt": null,
+    "caption": "🌊\n\n#gece #doğa #şiir #huzur #akşam",
+    "hashtags": [
+      "#gece",
+      "#doğa",
+      "#şiir",
+      "#huzur",
+      "#akşam"
+    ],
+    "scheduled_at": "2026-09-12T12:30:00+03:00",
+    "status": "pending",
+    "created_at": "2026-09-12T09:11:31.649345+00:00",
+    "published_at": null,
+    "instagram_media_id": null,
+    "quality_score": 89,
+    "performance_score": null,
+    "error": null,
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "e60ea9ee58764709",
+      "quote_text": "Bir bardak su içmek için kalktım gece yarısı,\nev sessizdi, ben de öyleydim.\nBazı sessizlikler korkutmaz,\nsadece dinlendirir.",
+      "mood": "huzur",
+      "category": "SHORT_POEM",
+      "source_type": "SHORT_POEM",
+      "theme": "huzur/yalnızlık",
+      "zone": "bottom_right"
+    },
+    "pipeline_version": "quote_v1"
+  },
+  {
+    "id": "42c0e138-ab8a-4fb5-9f99-e16cc493bdde",
+    "content_type": "post",
+    "theme": "başarı/emek",
+    "media_type": "IMAGE",
+    "media_source": "ai_generated",
+    "media_path": "media/generated/42c0e138-ab8a-4fb5-9f99-e16cc493bdde_feed.jpg",
+    "media_url": "https://raw.githubusercontent.com/celikercan816-a11y/instagram-auto-publisher/master/media/generated/42c0e138-ab8a-4fb5-9f99-e16cc493bdde_feed.jpg",
+    "image_prompt": null,
+    "caption": "Bugün biraz sessizlik iyi geldi.\n\n#şehir #gece #akşam #huzur #düşünce",
+    "hashtags": [
+      "#şehir",
+      "#gece",
+      "#akşam",
+      "#huzur",
+      "#düşünce"
+    ],
+    "scheduled_at": "2026-09-12T14:30:00+03:00",
+    "status": "pending",
+    "created_at": "2026-09-12T09:11:31.649716+00:00",
+    "published_at": null,
+    "instagram_media_id": null,
+    "quality_score": 95,
+    "performance_score": null,
+    "error": null,
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "da358ac26ff851d1",
+      "quote_text": "İşten çıkıp hemen eve gitmeyip arabada birkaç dakika oturmak, kimsenin bilmediği küçük bir moladır.",
+      "mood": "yalnizlik",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "başarı/emek",
+      "zone": "top_right"
+    },
+    "pipeline_version": "quote_v1"
+  },
+  {
+    "id": "5ac0f07c-5c53-450f-a2fe-882f719d3829",
+    "content_type": "post",
+    "theme": "yol/huzur",
+    "media_type": "IMAGE",
+    "media_source": "ai_generated",
+    "media_path": "media/generated/5ac0f07c-5c53-450f-a2fe-882f719d3829_feed.jpg",
+    "media_url": "https://raw.githubusercontent.com/celikercan816-a11y/instagram-auto-publisher/master/media/generated/5ac0f07c-5c53-450f-a2fe-882f719d3829_feed.jpg",
+    "image_prompt": null,
+    "caption": "#anlar #doğa #atasözü #manzara #yol",
+    "hashtags": [
+      "#anlar",
+      "#doğa",
+      "#atasözü",
+      "#manzara",
+      "#yol"
+    ],
+    "scheduled_at": "2026-09-12T16:30:00+03:00",
+    "status": "pending",
+    "created_at": "2026-09-12T09:11:31.650019+00:00",
+    "published_at": null,
+    "instagram_media_id": null,
+    "quality_score": 94,
+    "performance_score": null,
+    "error": null,
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "7927d02d7dbf4128",
+      "quote_text": "Herkes bir yere yetişiyordu istasyonda,\nben tek kişiydim beklemekten memnun.\nTren geldiğinde bile,\nacele etmedim binmeye.",
+      "mood": "yol",
+      "category": "SHORT_POEM",
+      "source_type": "SHORT_POEM",
+      "theme": "yol/huzur",
+      "zone": "bottom_right"
     },
     "pipeline_version": "quote_v1"
   }
