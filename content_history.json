@@ -3210,5 +3210,61 @@
     "instagram_media_id": "18099360191053555",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "1d0ff045-5c0f-4c60-b62c-4d883edd1c93",
+    "theme": "huzur/yalnızlık",
+    "content_type": "post",
+    "caption_summary": "🌊\n\n#gece #doğa #şiir #huzur #akşam",
+    "hashtags": [
+      "#gece",
+      "#doğa",
+      "#şiir",
+      "#huzur",
+      "#akşam"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "e60ea9ee58764709",
+      "quote_text": "Bir bardak su içmek için kalktım gece yarısı,\nev sessizdi, ben de öyleydim.\nBazı sessizlikler korkutmaz,\nsadece dinlendirir.",
+      "mood": "huzur",
+      "category": "SHORT_POEM",
+      "source_type": "SHORT_POEM",
+      "theme": "huzur/yalnızlık",
+      "zone": "bottom_right"
+    },
+    "image_fingerprint": "1d2bf2b7595120103be17ba11e3d59d49cb8fbb3b1cc18787cfdca73c333833b",
+    "published_at": "2026-09-12T12:55:50.298091+00:00",
+    "instagram_media_id": "17968155792155839",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "42c0e138-ab8a-4fb5-9f99-e16cc493bdde",
+    "theme": "başarı/emek",
+    "content_type": "post",
+    "caption_summary": "Bugün biraz sessizlik iyi geldi.\n\n#şehir #gece #akşam #huzur #düşünce",
+    "hashtags": [
+      "#şehir",
+      "#gece",
+      "#akşam",
+      "#huzur",
+      "#düşünce"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "da358ac26ff851d1",
+      "quote_text": "İşten çıkıp hemen eve gitmeyip arabada birkaç dakika oturmak, kimsenin bilmediği küçük bir moladır.",
+      "mood": "yalnizlik",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "başarı/emek",
+      "zone": "top_right"
+    },
+    "image_fingerprint": "5c6ccd3fc80ffcb835bbb3a7762b7623dbf5e57ca67d7e752cf4e4601d4dcb5c",
+    "published_at": "2026-09-12T12:56:01.809160+00:00",
+    "instagram_media_id": "17890795179674937",
+    "insights": null,
+    "performance_score": null
   }
 ]
