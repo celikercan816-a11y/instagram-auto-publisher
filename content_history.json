@@ -3336,5 +3336,33 @@
     "instagram_media_id": "18469376116117554",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "ee41d88f-eb18-4f41-82dc-ff935237c00a",
+    "theme": "hayat tespiti",
+    "content_type": "post",
+    "caption_summary": "#doğa #deniz #şiir #şehir #sakinlik",
+    "hashtags": [
+      "#doğa",
+      "#deniz",
+      "#şiir",
+      "#şehir",
+      "#sakinlik"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "51f81f82d7d17432",
+      "quote_text": "Kredi kartı ekstresi bazen bir insanı, söylediklerinden daha dürüst anlatır.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "hayat tespiti",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "5e19811d408638beac2849d693e87436af872e82f0e1381b508e718441337481",
+    "published_at": "2026-09-13T11:41:44.252401+00:00",
+    "instagram_media_id": "18133475074641586",
+    "insights": null,
+    "performance_score": null
   }
 ]

@@ -4264,10 +4264,10 @@
       "#sakinlik"
     ],
     "scheduled_at": "2026-09-13T14:30:00+03:00",
-    "status": "pending",
+    "status": "published",
     "created_at": "2026-09-13T10:10:03.965179+00:00",
-    "published_at": null,
-    "instagram_media_id": null,
+    "published_at": "2026-09-13T11:41:44.252401+00:00",
+    "instagram_media_id": "18133475074641586",
     "quality_score": 91,
     "performance_score": null,
     "error": null,
