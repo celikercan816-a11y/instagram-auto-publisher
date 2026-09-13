@@ -1,27 +1,18 @@
 {
-  "date": "2026-09-12",
-  "generated_at": "2026-09-12T09:11:22.833492+00:00",
+  "date": "2026-09-13",
+  "generated_at": "2026-09-13T10:08:24.860493+00:00",
   "feed": [
     {
-      "content_id": "1d0ff045-5c0f-4c60-b62c-4d883edd1c93",
-      "scheduled_at": "2026-09-12T12:30:00+03:00",
-      "theme": "huzur/yalnızlık"
-    },
-    {
-      "content_id": "42c0e138-ab8a-4fb5-9f99-e16cc493bdde",
-      "scheduled_at": "2026-09-12T14:30:00+03:00",
-      "theme": "başarı/emek"
-    },
-    {
-      "content_id": "5ac0f07c-5c53-450f-a2fe-882f719d3829",
-      "scheduled_at": "2026-09-12T16:30:00+03:00",
-      "theme": "yol/huzur"
+      "content_id": "ee41d88f-eb18-4f41-82dc-ff935237c00a",
+      "scheduled_at": "2026-09-13T14:30:00+03:00",
+      "theme": "hayat tespiti"
     }
   ],
   "story": [],
   "feed_skipped_past_time": [
     "08:30",
-    "10:30"
+    "10:30",
+    "12:30"
   ],
   "story_skipped_blocks": [
     "07:30-10:30"
@@ -30,10 +21,10 @@
   "story_reserved": [],
   "needs_review": [
     {
-      "content_id": "0c1bf5f1-6c41-44ae-b2e0-dd0f2d539667",
+      "content_id": "bb286083-7542-478b-8903-2dd6cfa7fa85",
       "type": "feed",
-      "quote": "Yıllar sonra o sokağa döndüm,\ndükkanlar değişmiş, isimler başka.\nAma köşedeki ışık hâlâ aynı yerde yanıyordu,\nbeni bekliyormuş gibi.",
-      "reason": "QC geçemedi: score=88, placement=0.57"
+      "quote": "Annem hâlâ eve geldiğimde koridor lambasını benim için açık bırakır, otuz yaşında olsam da.",
+      "reason": "Cloudflare background üretilemedi (3 deneme)."
     }
   ]
 }

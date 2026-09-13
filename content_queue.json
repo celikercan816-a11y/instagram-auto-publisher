@@ -3936,7 +3936,7 @@
     "published_at": "2026-09-11T14:20:51.599711+00:00",
     "instagram_media_id": "18625649215063989",
     "quality_score": 90,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -3971,7 +3971,7 @@
     "published_at": "2026-09-11T14:20:59.790114+00:00",
     "instagram_media_id": "18114481283473932",
     "quality_score": 89,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -4009,7 +4009,7 @@
     "published_at": "2026-09-11T17:47:42.007880+00:00",
     "instagram_media_id": "18458252362186868",
     "quality_score": 91,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -4046,7 +4046,7 @@
     "published_at": "2026-09-11T17:47:52.169848+00:00",
     "instagram_media_id": "18132375148733017",
     "quality_score": 93,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -4083,7 +4083,7 @@
     "published_at": "2026-09-11T20:05:14.665628+00:00",
     "instagram_media_id": "18121069568486122",
     "quality_score": 89,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -4121,7 +4121,7 @@
     "published_at": "2026-09-11T22:31:30.505818+00:00",
     "instagram_media_id": "18099360191053555",
     "quality_score": 98,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -4243,6 +4243,43 @@
       "source_type": "SHORT_POEM",
       "theme": "yol/huzur",
       "zone": "bottom_right"
+    },
+    "pipeline_version": "quote_v1"
+  },
+  {
+    "id": "ee41d88f-eb18-4f41-82dc-ff935237c00a",
+    "content_type": "post",
+    "theme": "hayat tespiti",
+    "media_type": "IMAGE",
+    "media_source": "ai_generated",
+    "media_path": "media/generated/ee41d88f-eb18-4f41-82dc-ff935237c00a_feed.jpg",
+    "media_url": "https://raw.githubusercontent.com/celikercan816-a11y/instagram-auto-publisher/master/media/generated/ee41d88f-eb18-4f41-82dc-ff935237c00a_feed.jpg",
+    "image_prompt": null,
+    "caption": "#doğa #deniz #şiir #şehir #sakinlik",
+    "hashtags": [
+      "#doğa",
+      "#deniz",
+      "#şiir",
+      "#şehir",
+      "#sakinlik"
+    ],
+    "scheduled_at": "2026-09-13T14:30:00+03:00",
+    "status": "pending",
+    "created_at": "2026-09-13T10:10:03.965179+00:00",
+    "published_at": null,
+    "instagram_media_id": null,
+    "quality_score": 91,
+    "performance_score": null,
+    "error": null,
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "51f81f82d7d17432",
+      "quote_text": "Kredi kartı ekstresi bazen bir insanı, söylediklerinden daha dürüst anlatır.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "hayat tespiti",
+      "zone": "bottom_left"
     },
     "pipeline_version": "quote_v1"
   }
