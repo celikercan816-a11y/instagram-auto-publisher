@@ -3385,5 +3385,34 @@
     "instagram_media_id": "18133475074641586",
     "insights": null,
     "performance_score": null
+  },
+  {
+    "id": "6a155d36-a1f0-4da1-b994-450332091f64",
+    "theme": "zaman/anı",
+    "content_type": "post",
+    "caption_summary": "🍂\n\n#zaman #sakinlik #sözler #doğa #anlar #şehir",
+    "hashtags": [
+      "#zaman",
+      "#sakinlik",
+      "#sözler",
+      "#doğa",
+      "#anlar",
+      "#şehir"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "b466940e7c3847f7",
+      "quote_text": "Yıllar sonra o sokağa döndüm,\ndükkanlar değişmiş, isimler başka.\nAma köşedeki ışık hâlâ aynı yerde yanıyordu,\nbeni bekliyormuş gibi.",
+      "mood": "zaman",
+      "category": "SHORT_POEM",
+      "source_type": "SHORT_POEM",
+      "theme": "zaman/anı",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "a8b9a9c1eb1c6a0e9fc34b1785bfd95ca787c4909272dce3c46d72c2d3d2330a",
+    "published_at": "2026-09-14T12:38:27.670469+00:00",
+    "instagram_media_id": "18094489829374077",
+    "insights": null,
+    "performance_score": null
   }
 ]
