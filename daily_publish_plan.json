@@ -1,11 +1,11 @@
 {
-  "date": "2026-09-13",
-  "generated_at": "2026-09-13T10:08:24.860493+00:00",
+  "date": "2026-09-14",
+  "generated_at": "2026-09-14T10:31:36.002808+00:00",
   "feed": [
     {
-      "content_id": "ee41d88f-eb18-4f41-82dc-ff935237c00a",
-      "scheduled_at": "2026-09-13T14:30:00+03:00",
-      "theme": "hayat tespiti"
+      "content_id": "6a155d36-a1f0-4da1-b994-450332091f64",
+      "scheduled_at": "2026-09-14T14:30:00+03:00",
+      "theme": "zaman/anı"
     }
   ],
   "story": [],
@@ -21,10 +21,16 @@
   "story_reserved": [],
   "needs_review": [
     {
-      "content_id": "bb286083-7542-478b-8903-2dd6cfa7fa85",
+      "content_id": "257dcfd4-8ef4-4a9a-a0d7-1bd86f767f6d",
       "type": "feed",
-      "quote": "Annem hâlâ eve geldiğimde koridor lambasını benim için açık bırakır, otuz yaşında olsam da.",
-      "reason": "Cloudflare background üretilemedi (3 deneme)."
+      "quote": "Bir çiftin ne kadar mutlu olduğunu, tartışırken bile birbirlerine nasıl seslendiklerine bakarak anlarsın.",
+      "reason": "QC geçemedi: score=87, placement=0.50"
+    },
+    {
+      "content_id": "f6b7d14b-1c4f-4654-a64f-6506e2b143bd",
+      "type": "feed",
+      "quote": "Bir mahalleye yıllar sonra dönüp değişmediğini görmek, seni değişmiş hissettiren şeydir.",
+      "reason": "QC geçemedi: score=90, placement=0.55"
     }
   ]
 }
