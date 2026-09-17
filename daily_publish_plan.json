@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-16",
-  "generated_at": "2026-09-16T09:50:30.029254+00:00",
+  "date": "2026-09-17",
+  "generated_at": "2026-09-17T09:56:07.742417+00:00",
   "feed": [],
   "story": [],
   "feed_skipped_past_time": [
@@ -13,5 +13,12 @@
   ],
   "feed_reserved": [],
   "story_reserved": [],
-  "needs_review": []
+  "needs_review": [
+    {
+      "content_id": "42b365bb-48da-4ff4-934b-e5b68628f55e",
+      "type": "feed",
+      "quote": "Annem hâlâ eve geldiğimde koridor lambasını benim için açık bırakır, otuz yaşında olsam da.",
+      "reason": "QC geçemedi: score=88, placement=0.51"
+    }
+  ]
 }
