@@ -3383,8 +3383,15 @@
     "image_fingerprint": "5e19811d408638beac2849d693e87436af872e82f0e1381b508e718441337481",
     "published_at": "2026-09-13T11:41:44.252401+00:00",
     "instagram_media_id": "18133475074641586",
-    "insights": null,
-    "performance_score": null
+    "insights": {
+      "reach": 1,
+      "likes": 0,
+      "comments": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 0
+    },
+    "performance_score": 0.0
   },
   {
     "id": "6a155d36-a1f0-4da1-b994-450332091f64",
@@ -3412,7 +3419,14 @@
     "image_fingerprint": "a8b9a9c1eb1c6a0e9fc34b1785bfd95ca787c4909272dce3c46d72c2d3d2330a",
     "published_at": "2026-09-14T12:38:27.670469+00:00",
     "instagram_media_id": "18094489829374077",
-    "insights": null,
-    "performance_score": null
+    "insights": {
+      "reach": 1,
+      "likes": 0,
+      "comments": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 0
+    },
+    "performance_score": 0.0
   }
 ]

@@ -1,7 +1,13 @@
 {
-  "date": "2026-09-17",
-  "generated_at": "2026-09-17T09:56:07.742417+00:00",
-  "feed": [],
+  "date": "2026-09-18",
+  "generated_at": "2026-09-18T09:36:18.488330+00:00",
+  "feed": [
+    {
+      "content_id": "6d001f8e-8cc7-4ef8-9583-c06be623f04b",
+      "scheduled_at": "2026-09-18T14:30:00+03:00",
+      "theme": "aşk"
+    }
+  ],
   "story": [],
   "feed_skipped_past_time": [
     "08:30",
@@ -15,10 +21,10 @@
   "story_reserved": [],
   "needs_review": [
     {
-      "content_id": "42b365bb-48da-4ff4-934b-e5b68628f55e",
+      "content_id": "6580823f-7598-416d-be61-c4e4920a154a",
       "type": "feed",
-      "quote": "Annem hâlâ eve geldiğimde koridor lambasını benim için açık bırakır, otuz yaşında olsam da.",
-      "reason": "QC geçemedi: score=88, placement=0.51"
+      "quote": "Bir mahalleye yıllar sonra dönüp değişmediğini görmek, seni değişmiş hissettiren şeydir.",
+      "reason": "QC geçemedi: score=88, placement=0.46"
     }
   ]
 }
