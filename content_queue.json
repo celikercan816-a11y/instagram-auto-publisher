@@ -4339,10 +4339,10 @@
       "#doğa"
     ],
     "scheduled_at": "2026-09-18T14:30:00+03:00",
-    "status": "pending",
+    "status": "published",
     "created_at": "2026-09-18T09:36:55.420848+00:00",
-    "published_at": null,
-    "instagram_media_id": null,
+    "published_at": "2026-09-18T11:47:54.382860+00:00",
+    "instagram_media_id": "18115251613950496",
     "quality_score": 91,
     "performance_score": null,
     "error": null,
