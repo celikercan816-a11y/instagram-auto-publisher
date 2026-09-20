@@ -1,11 +1,12 @@
 {
-  "date": "2026-09-19",
-  "generated_at": "2026-09-19T09:23:18.545372+00:00",
+  "date": "2026-09-20",
+  "generated_at": "2026-09-20T09:43:36.824952+00:00",
   "feed": [],
   "story": [],
   "feed_skipped_past_time": [
     "08:30",
-    "10:30"
+    "10:30",
+    "12:30"
   ],
   "story_skipped_blocks": [
     "07:30-10:30"
@@ -14,10 +15,16 @@
   "story_reserved": [],
   "needs_review": [
     {
-      "content_id": "6ffd5dab-13cb-466f-b90b-3037b860f9c0",
+      "content_id": "1f8ac0d0-555b-4bfe-afb1-a3d50223fb96",
       "type": "feed",
-      "quote": "Annem hâlâ eve geldiğimde koridor lambasını benim için açık bırakır, otuz yaşında olsam da.",
-      "reason": "QC geçemedi: score=90, placement=0.60"
+      "quote": "Vapur kalktı, ben kalmadım,\nrıhtım hâlâ oradaydı ama.\nBazı ayrılıklar limanı değil,\nseni değiştirir.",
+      "reason": "QC geçemedi: score=87, placement=0.53"
+    },
+    {
+      "content_id": "11267ad3-9f96-46e9-b3ea-ade3c20d23ce",
+      "type": "feed",
+      "quote": "Evlilik yıl dönümünde çekilen fotoğraflar değil, sıradan bir salı akşamı gülüşü asıl aşkı gösterir.",
+      "reason": "QC geçemedi: score=90, placement=0.55"
     }
   ]
 }
