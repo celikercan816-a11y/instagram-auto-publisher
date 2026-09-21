@@ -4377,10 +4377,10 @@
       "#manzara"
     ],
     "scheduled_at": "2026-09-21T14:30:00+03:00",
-    "status": "pending",
+    "status": "published",
     "created_at": "2026-09-21T10:37:19.993533+00:00",
-    "published_at": null,
-    "instagram_media_id": null,
+    "published_at": "2026-09-21T13:59:43.492586+00:00",
+    "instagram_media_id": "18095626493560407",
     "quality_score": 90,
     "performance_score": null,
     "error": null,

@@ -3463,5 +3463,34 @@
       "total_interactions": 0
     },
     "performance_score": 0.0
+  },
+  {
+    "id": "6309542e-d221-4b95-82f3-e912c7caa8a3",
+    "theme": "aile",
+    "content_type": "post",
+    "caption_summary": "#deniz #sakinlik #huzur #şiir #anlar #manzara",
+    "hashtags": [
+      "#deniz",
+      "#sakinlik",
+      "#huzur",
+      "#şiir",
+      "#anlar",
+      "#manzara"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "dcbdfe065e0bd5f2",
+      "quote_text": "Annem hâlâ eve geldiğimde koridor lambasını benim için açık bırakır, otuz yaşında olsam da.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aile",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "4c5483cd664adafb751a2391c1e1caa399b28245b7e541673df1df594c179b6b",
+    "published_at": "2026-09-21T13:59:43.492586+00:00",
+    "instagram_media_id": "18095626493560407",
+    "insights": null,
+    "performance_score": null
   }
 ]
