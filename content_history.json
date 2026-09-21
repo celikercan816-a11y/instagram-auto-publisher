@@ -3454,7 +3454,14 @@
     "image_fingerprint": "38368c6dc49cb42c95f63abe246edbca17b85dc1cedd913b321ddac7c3b4e0e8",
     "published_at": "2026-09-18T11:47:54.382860+00:00",
     "instagram_media_id": "18115251613950496",
-    "insights": null,
-    "performance_score": null
+    "insights": {
+      "reach": 0,
+      "likes": 0,
+      "comments": 0,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 0
+    },
+    "performance_score": 0.0
   }
 ]

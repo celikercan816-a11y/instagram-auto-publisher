@@ -1,7 +1,13 @@
 {
-  "date": "2026-09-20",
-  "generated_at": "2026-09-20T09:43:36.824952+00:00",
-  "feed": [],
+  "date": "2026-09-21",
+  "generated_at": "2026-09-21T10:36:42.090141+00:00",
+  "feed": [
+    {
+      "content_id": "6309542e-d221-4b95-82f3-e912c7caa8a3",
+      "scheduled_at": "2026-09-21T14:30:00+03:00",
+      "theme": "aile"
+    }
+  ],
   "story": [],
   "feed_skipped_past_time": [
     "08:30",
@@ -15,16 +21,10 @@
   "story_reserved": [],
   "needs_review": [
     {
-      "content_id": "1f8ac0d0-555b-4bfe-afb1-a3d50223fb96",
+      "content_id": "2af8a102-db68-485a-b30c-3329943aaaca",
       "type": "feed",
-      "quote": "Vapur kalktı, ben kalmadım,\nrıhtım hâlâ oradaydı ama.\nBazı ayrılıklar limanı değil,\nseni değiştirir.",
-      "reason": "QC geçemedi: score=87, placement=0.53"
-    },
-    {
-      "content_id": "11267ad3-9f96-46e9-b3ea-ade3c20d23ce",
-      "type": "feed",
-      "quote": "Evlilik yıl dönümünde çekilen fotoğraflar değil, sıradan bir salı akşamı gülüşü asıl aşkı gösterir.",
-      "reason": "QC geçemedi: score=90, placement=0.55"
+      "quote": "Bir mahalleye yıllar sonra dönüp değişmediğini görmek, seni değişmiş hissettiren şeydir.",
+      "reason": "QC geçemedi: score=89, placement=0.53"
     }
   ]
 }
