@@ -3499,5 +3499,58 @@
       "total_interactions": 1
     },
     "performance_score": 100.0
+  },
+  {
+    "id": "a26da9ec-8b90-4994-b6aa-a1d4d32ff221",
+    "theme": "ayrılık/yol",
+    "content_type": "post",
+    "caption_summary": "#şehir #istanbul #düşünce #sessizlik",
+    "hashtags": [
+      "#şehir",
+      "#istanbul",
+      "#düşünce",
+      "#sessizlik"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "b54dba12b6c33968",
+      "quote_text": "Vapur kalktı, ben kalmadım,\nrıhtım hâlâ oradaydı ama.\nBazı ayrılıklar limanı değil,\nseni değiştirir.",
+      "mood": "melankoli",
+      "category": "SHORT_POEM",
+      "source_type": "SHORT_POEM",
+      "theme": "ayrılık/yol",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "bb296892d41d0358542393a69dde014e742714f109aeb6cc7dc259ca4ecca491",
+    "published_at": "2026-10-01T17:31:58.825135+00:00",
+    "instagram_media_id": "18112919183274872",
+    "insights": null,
+    "performance_score": null
+  },
+  {
+    "id": "cebffe24-eee0-4252-b64e-973ab905c1ac",
+    "theme": "aşk",
+    "content_type": "post",
+    "caption_summary": "Bu manzara yeterliydi.\n\n#huzur #düşünce #deniz",
+    "hashtags": [
+      "#huzur",
+      "#düşünce",
+      "#deniz"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "dbde05b2aca46d08",
+      "quote_text": "Evlilik yıl dönümünde çekilen fotoğraflar değil, sıradan bir salı akşamı gülüşü asıl aşkı gösterir.",
+      "mood": "huzur",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "aşk",
+      "zone": "bottom_left"
+    },
+    "image_fingerprint": "67d1539280144c4648144be5d1ec927d62a1ab4025f1e4b1a82007e70ed46d42",
+    "published_at": "2026-10-01T17:32:08.430459+00:00",
+    "instagram_media_id": "18114686408001933",
+    "insights": null,
+    "performance_score": null
   }
 ]
