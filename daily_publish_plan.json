@@ -1,24 +1,12 @@
 {
-  "date": "2026-10-01",
-  "generated_at": "2026-10-01T11:31:17.862578+00:00",
-  "feed": [
-    {
-      "content_id": "a26da9ec-8b90-4994-b6aa-a1d4d32ff221",
-      "scheduled_at": "2026-10-01T16:30:00+03:00",
-      "theme": "ayrılık/yol"
-    },
-    {
-      "content_id": "cebffe24-eee0-4252-b64e-973ab905c1ac",
-      "scheduled_at": "2026-10-01T18:30:00+03:00",
-      "theme": "aşk"
-    }
-  ],
+  "date": "2026-10-02",
+  "generated_at": "2026-10-02T11:00:27.950859+00:00",
+  "feed": [],
   "story": [],
   "feed_skipped_past_time": [
     "08:30",
     "10:30",
-    "12:30",
-    "14:30"
+    "12:30"
   ],
   "story_skipped_blocks": [
     "07:30-10:30",
