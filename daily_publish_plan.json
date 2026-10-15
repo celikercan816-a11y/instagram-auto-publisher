@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-14",
-  "generated_at": "2026-10-14T10:03:21.237052+00:00",
+  "date": "2026-10-15",
+  "generated_at": "2026-10-15T09:46:06.670384+00:00",
   "feed": [],
   "story": [],
   "feed_skipped_past_time": [
@@ -13,5 +13,12 @@
   ],
   "feed_reserved": [],
   "story_reserved": [],
-  "needs_review": []
+  "needs_review": [
+    {
+      "content_id": "80942031-eedd-402e-9600-d0a013742886",
+      "type": "feed",
+      "quote": "Bir mahalleye yıllar sonra dönüp değişmediğini görmek, seni değişmiş hissettiren şeydir.",
+      "reason": "QC geçemedi: score=89, placement=0.54"
+    }
+  ]
 }
