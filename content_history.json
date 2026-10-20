@@ -3566,5 +3566,32 @@
       "total_interactions": 1
     },
     "performance_score": 100.0
+  },
+  {
+    "id": "e3bcb3dc-63b9-4adf-8566-d4af4ab0a276",
+    "theme": "hayat tespiti",
+    "content_type": "post",
+    "caption_summary": "🍂\n\n#manzara #şehir #sakinlik #yol",
+    "hashtags": [
+      "#manzara",
+      "#şehir",
+      "#sakinlik",
+      "#yol"
+    ],
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "9accbb453bd1d360",
+      "quote_text": "Bir mahalleye yıllar sonra dönüp değişmediğini görmek, seni değişmiş hissettiren şeydir.",
+      "mood": "zaman",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "hayat tespiti",
+      "zone": "bottom_right"
+    },
+    "image_fingerprint": "f5c85d6fa47de9cd5dc8b6d8b530814bd351989422b09fd1657ae74c9ca8ec77",
+    "published_at": "2026-10-20T13:03:26.593190+00:00",
+    "instagram_media_id": "18126133873943840",
+    "insights": null,
+    "performance_score": null
   }
 ]

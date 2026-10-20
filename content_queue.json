@@ -4484,10 +4484,10 @@
       "#yol"
     ],
     "scheduled_at": "2026-10-20T14:30:00+03:00",
-    "status": "pending",
+    "status": "published",
     "created_at": "2026-10-20T09:56:46.573880+00:00",
-    "published_at": null,
-    "instagram_media_id": null,
+    "published_at": "2026-10-20T13:03:26.593190+00:00",
+    "instagram_media_id": "18126133873943840",
     "quality_score": 91,
     "performance_score": null,
     "error": null,
