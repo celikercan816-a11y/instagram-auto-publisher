@@ -4418,7 +4418,7 @@
     "published_at": "2026-10-01T17:31:58.825135+00:00",
     "instagram_media_id": "18112919183274872",
     "quality_score": 96,
-    "performance_score": null,
+    "performance_score": 0.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -4453,7 +4453,7 @@
     "published_at": "2026-10-01T17:32:08.430459+00:00",
     "instagram_media_id": "18114686408001933",
     "quality_score": 92,
-    "performance_score": null,
+    "performance_score": 100.0,
     "error": null,
     "attributes": {
       "pipeline_version": "quote_v1",
@@ -4464,6 +4464,42 @@
       "source_type": "ORIGINAL",
       "theme": "aşk",
       "zone": "bottom_left"
+    },
+    "pipeline_version": "quote_v1"
+  },
+  {
+    "id": "e3bcb3dc-63b9-4adf-8566-d4af4ab0a276",
+    "content_type": "post",
+    "theme": "hayat tespiti",
+    "media_type": "IMAGE",
+    "media_source": "ai_generated",
+    "media_path": "media/generated/e3bcb3dc-63b9-4adf-8566-d4af4ab0a276_feed.jpg",
+    "media_url": "https://raw.githubusercontent.com/celikercan816-a11y/instagram-auto-publisher/master/media/generated/e3bcb3dc-63b9-4adf-8566-d4af4ab0a276_feed.jpg",
+    "image_prompt": null,
+    "caption": "🍂\n\n#manzara #şehir #sakinlik #yol",
+    "hashtags": [
+      "#manzara",
+      "#şehir",
+      "#sakinlik",
+      "#yol"
+    ],
+    "scheduled_at": "2026-10-20T14:30:00+03:00",
+    "status": "pending",
+    "created_at": "2026-10-20T09:56:46.573880+00:00",
+    "published_at": null,
+    "instagram_media_id": null,
+    "quality_score": 91,
+    "performance_score": null,
+    "error": null,
+    "attributes": {
+      "pipeline_version": "quote_v1",
+      "quote_hash": "9accbb453bd1d360",
+      "quote_text": "Bir mahalleye yıllar sonra dönüp değişmediğini görmek, seni değişmiş hissettiren şeydir.",
+      "mood": "zaman",
+      "category": "ORIGINAL",
+      "source_type": "ORIGINAL",
+      "theme": "hayat tespiti",
+      "zone": "bottom_right"
     },
     "pipeline_version": "quote_v1"
   }
