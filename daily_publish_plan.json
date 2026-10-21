@@ -1,13 +1,7 @@
 {
-  "date": "2026-10-20",
-  "generated_at": "2026-10-20T09:56:43.279608+00:00",
-  "feed": [
-    {
-      "content_id": "e3bcb3dc-63b9-4adf-8566-d4af4ab0a276",
-      "scheduled_at": "2026-10-20T14:30:00+03:00",
-      "theme": "hayat tespiti"
-    }
-  ],
+  "date": "2026-10-21",
+  "generated_at": "2026-10-21T10:00:24.440257+00:00",
+  "feed": [],
   "story": [],
   "feed_skipped_past_time": [
     "08:30",
