@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-30",
-  "generated_at": "2026-10-30T11:17:48.480680+00:00",
+  "date": "2026-10-31",
+  "generated_at": "2026-10-31T10:50:30.665436+00:00",
   "feed": [],
   "story": [],
   "feed_skipped_past_time": [
@@ -9,8 +9,7 @@
     "12:30"
   ],
   "story_skipped_blocks": [
-    "07:30-10:30",
-    "10:30-14:00"
+    "07:30-10:30"
   ],
   "feed_reserved": [],
   "story_reserved": [],
